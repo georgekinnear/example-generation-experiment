@@ -1,0 +1,262 @@
+---
+title: "Study 2 analysis"
+author: "George Kinnear"
+date: "18/05/2021"
+output: 
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+#Plots
+library(ggplot2)
+library(patchwork) # for combining plots
+
+# For Bayesian stats:
+library(bayestestR)
+#library(insight)
+#library(see)
+library(rstanarm)
+library(tidybayes)
+#library(BayesFactor)
+ci_width = 0.95  # Use 95% HDIs
+set.seed(20210518)
+
+# Tables
+library(knitr)
+library(kableExtra)
+basic_kable = function(df) {
+  df %>% 
+    kable() %>%
+    kable_styling(bootstrap_options = "striped", full_width = F)
+}
+
+# Plot styling
+heathers = c("#00b3c3","#e51c24","#016637","#fcb123")
+heathers = c("#87005a", "#c66005","#016637","#fcb123")
+groupcolours = c("CG" = heathers[1],
+                 "GC" = heathers[2]
+                 )
+theme_set(theme_minimal())
+```
+
+For this analysis we use "intention to treat", i.e. we include all students who consented to participate, without regard for whether (or the extent to which) they engaged with the experimental tasks.
+
+```{r read-data, message=FALSE, warning=FALSE}
+question_marks = read_csv("data-clean/study2/FAC_LGE2-tasks.csv") %>%
+  select(question_name, marks_available)
+
+attempt_data_all = read_rds("data-clean/FAC_LGE2-attempt_data.rds") %>% 
+  # tidy up group names
+  mutate(
+    group = str_replace(group, "Group ", ""),
+    overall_group = str_sub(group, 1, 1)
+  ) %>% 
+  mutate(
+    quiz = case_when(
+      question_name %in% c("FarC1", "FarC2") ~ "FT",
+      str_detect(question_name, "Mid") ~ "S2",
+      TRUE ~ "S1"
+    )
+  ) %>% 
+  left_join(question_marks, by = "question_name") %>% 
+  mutate(
+    # default to 1 mark per question if not specified
+    marks_available = replace_na(marks_available, 1),
+    marks_attained = fraction * marks_available
+  )
+```
+
+# Data summary
+
+```{r}
+attempts_summary = attempt_data_all %>% 
+  filter(attempt_number == 1) %>% 
+  group_by(overall_group, group, username, quiz) %>% 
+  summarise(
+    marks_prop = sum(marks_attained, na.rm = TRUE) / sum(marks_available, na.rm = TRUE),
+    n = n(),
+    num_nas = sum(is.na(fraction)),
+    num_qs = n_distinct(question_name),
+    .groups = "drop"
+  )
+
+attempts_summary %>% 
+  group_by(quiz) %>% 
+  summarise(
+    n_students = n(),
+    marks_mean = mean(marks_prop),
+    marks_sd = sd(marks_prop),
+    .groups = "drop"
+  ) %>% 
+  basic_kable()
+
+attempts_summary %>% 
+  group_by(quiz, overall_group, group) %>% 
+  summarise(
+    n_students = n(),
+    marks_mean = mean(marks_prop),
+    marks_sd = sd(marks_prop),
+    num_qs_in_quiz = max(num_qs),
+    overall_nas = mean(num_nas) / num_qs_in_quiz,
+    .groups = "drop"
+  ) %>% 
+  basic_kable()
+```
+
+# Far Test
+
+Using the performance on the two classification questions in the week's Final Test as the outcome measure, we use `stan_glm` to find Bayesian estimates for the
+
+```{r}
+FT_data <- attempts_summary %>%
+  filter(quiz == "FT") %>%
+  select(group, marks_prop) %>%
+  group_by(group) %>%
+  mutate(n = n(), group_label = str_glue("{group}\n(n={n})")) %>% 
+  ungroup()
+
+FT_data %>% 
+  write_csv("data-clean/study2_ft.csv")
+
+model <- stan_glm(
+  formula = marks_prop ~ 0 + group,
+  data = FT_data,
+  refresh = 0 # to prevent messages about the MCMC iterations being printed
+)
+prior_summary(model)
+plot(model, "trace")
+#plot(model, "hist")
+```
+
+```{r}
+means <- modelbased::estimate_means(model, ci = ci_width, centrality = "median", ci_method = "hdi")
+contrasts <- modelbased::estimate_contrasts(model, ci = ci_width, centrality = "median", ci_method = "hdi")
+```
+
+This plot shows the raw data (each point represents one student) as well as the estimated mean for each group (with 95% HDI).
+
+```{r}
+FT_data  %>% 
+  ggplot(aes(x = group, y = marks_prop, colour = group)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
+  geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.5),
+                  size = 1) +
+  scale_x_discrete("", labels = FT_data %>% select(group, group_label) %>% distinct() %>% deframe()) +
+  scale_y_continuous("Proportion of marks attained", labels = scales::percent) +
+  scale_colour_manual("Group", values = groupcolours)
+```
+
+These are the estimated means (with 95% HDIs) for each group:
+
+```{r}
+means %>% basic_kable()
+```
+
+Both groups appear very similar.
+
+## Contrasts
+
+These are the estimated differences between each of the groups:
+
+```{r}
+contrasts %>% basic_kable()
+```
+
+
+We can also manually compute the contrasts by using `spread_draws` to sample from the posterior estimates.
+
+```{r}
+model_draws <- model %>% 
+  spread_draws(groupCG, groupGC, sigma) %>%
+  mutate(
+    CG_vs_GC_contrast = groupCG - groupGC,
+    CG_vs_GC_effect = CG_vs_GC_contrast / sigma
+  )
+model_draws_long <- model_draws %>%
+  pivot_longer(
+    cols = starts_with("CG_vs_GC"),
+    names_to = "parameter",
+    names_prefix = "CG_vs_GC_",
+    values_to = "est"
+  )
+model_hdi_summary <- model_draws_long %>% 
+  group_by(parameter) %>% 
+  median_hdi(est)
+model_hdi_summary %>% basic_kable()
+```
+
+The following plot summarises these estimates, also showing a representation of the posterior distribution for the estimates as 100 dots. The default ROPE width of 0.1*sd is used for the difference (and 0.1 for the effect size).
+
+(Note that the ROPE_Percentage returned by `estimate_contrasts` above is based on the ROPE being [-0.1, 0.1] rather than [-0.1*sd, 0.1*sd].)
+
+```{r fig.height=3, fig.width=6}
+rope_width = 0.1 * FT_data %>% summarise(marks_sd = sd(marks_prop)) %>% deframe()
+
+p_diffs <- bind_rows(
+    "CG vs GC" = model_draws %>% rename_with( ~ str_remove(., "CG_vs_GC_")),
+    .id = "key"
+  ) %>%
+  ggplot(aes(x = contrast, y = 0)) +
+  geom_rect(xmin = -rope_width, xmax = rope_width, ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  stat_dotsinterval(
+    point_interval = mode_hdi,
+    .width = .95,
+    slab_size = 0,
+    quantiles = 100
+  ) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  expand_limits(x = c(-0.1, 0.1)) +
+  xlab("Difference") +
+  facet_wrap( ~ key, scales = "free_x") +
+  theme(panel.grid = element_blank(),
+        axis.ticks = element_line(color = "grey40"))
+
+p_effsize <- bind_rows(
+    "CG vs GC" = model_draws %>% rename_with( ~ str_remove(., "CG_vs_GC_")),
+    .id = "key"
+  ) %>%
+  ggplot(aes(x = effect, y = 0)) +
+  geom_rect(xmin = -0.1, xmax = 0.1, ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  stat_dotsinterval(
+    point_interval = mode_hdi,
+    .width = .95,
+    slab_size = 0,
+    quantiles = 100
+  ) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  expand_limits(x = c(-0.1, 0.1)) +
+  xlab("Effect size") +
+  facet_wrap( ~ key, scales = "free_x") +
+  theme(panel.grid = element_blank(),
+        axis.ticks = element_line(color = "grey40"))
+
+p_diffs / p_effsize
+```
+
+```{r}
+result <- estimate_density(model)
+plot(result, stack = FALSE, priors = TRUE)
+```
+
+```{r}
+rope_result <- rope(model, ci = ci_width)
+rope_result
+```
+
+```{r}
+modelbased::estimate_contrasts(model, ci = ci_width, centrality = "median", ci_method = "hdi", rope_range = c(-0.1, 0.1))
+```
+
+
+#### Session info
+
+```{r}
+sessionInfo()
+```
