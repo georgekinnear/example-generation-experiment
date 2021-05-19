@@ -1,0 +1,17 @@
+question_id,question_name,question_note,marks_available
+23602,Ga,ConditionG,3
+23603,Gb,ConditionG,3
+23604,Gc,ConditionG,3
+23601,Gd1,ConditionG,1
+23605,Gd2,ConditionG,1
+23606,Gd3,ConditionG,1
+23608,NearG,In Quiz 1,1
+23607,NearC,In Quiz 1,1
+23609,C1,ConditionC,10
+23610,C2,ConditionC,3
+23611,C3,ConditionC,2
+23487,MidG,In Quiz 2 (arith seq),4
+23502,MidC1,In Quiz 2 (arith seq),1
+23503,MidC2,In Quiz 2 (geo seq),1
+23582,FarC1,Unit Test,1
+23581,FarC2,Unit Test,1

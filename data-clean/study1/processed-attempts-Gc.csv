@@ -1,0 +1,1105 @@
+"csv_file_name","question_name","id","questionusageid","slot","behaviour","questionid","variant","maxmark","minfraction","maxfraction","flagged","questionsummary","rightanswer","responsesummary","timemodified","questionattemptid","sequencenumber","state","fraction","timecreated","userid","username","firstname","lastname","attempt_number","group"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501870,70240,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [3,9,27,81, 243,729, 2187,6561] [score]; ans1_whydifferent: ""donno"" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,-1,1,-1,1,-1,1,-1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574204425,554293,3,"gradedright",1,1574203591,1494,"anon100","anonfirstname100","anonlastname100",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500684,70221,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [7,10,13,16,19,21,24,27] [score]; ans1_whydifferent: """" [score]; ans2: [10,9,8,7,6,5,4,3] [score]; ans3: [1,-1,1,-1,1,-1,1,-1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573848942,553716,1,"gradedright",1,1573847874,1495,"anon101","anonfirstname101","anonlastname101",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502087,70243,31,"interactivecountback",23604,1,0,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [4] [score]; ans1_whydifferent: ""erer"" [score]; ans2: [23] [score]; ans3: [12] [score]; prt1: ATGTE_false. | prt1-2-F; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1573646936,554394,3,"gradedwrong",0,1573645768,1498,"anon104","anonfirstname104","anonlastname104",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502046,70243,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: """" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573646936,554376,1,"gradedright",1,1573645832,1498,"anon104","anonfirstname104","anonlastname104",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500373,70216,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [2,4,6,8,10,12,14,16] [score]; ans1_whydifferent: """" [score]; ans2: [-2,-4,-6,-8,-10,-12,-14,-16] [score]; ans3: [1,-1,1,-1,1,-1,1,-1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573938882,553576,1,"gradedright",1,1573938143,1503,"anon109","anonfirstname109","anonlastname109",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501328,70231,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574263383,554030,0,"todo",NA,1574101584,1508,"anon114","anonfirstname114","anonlastname114",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503944,70272,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574226482,555306,0,"todo",NA,1574226481,1512,"anon118","anonfirstname118","anonlastname118",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501371,70232,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574115463,554056,0,"todo",NA,1574105913,1517,"anon123","anonfirstname123","anonlastname123",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500893,70224,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574108297,553812,0,"todo",NA,1573942243,1521,"anon127","anonfirstname127","anonlastname127",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502954,70255,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0,2,4,6,8,10,12,14] [score]; ans1_whydifferent: """" [score]; ans2: [10,9,8,7,6,5,4,3,2] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573921749,554797,1,"gradedright",1,1573921747,1525,"anon131","anonfirstname131","anonlastname131",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502895,70254,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574249660,554767,0,"todo",NA,1573903962,1527,"anon133","anonfirstname133","anonlastname133",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503555,70264,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: """" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574094303,555072,1,"gradedright",1,1574093409,1531,"anon137","anonfirstname137","anonlastname137",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500033,70210,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1573681324,553412,0,"todo",NA,1573681174,1534,"anon140","anonfirstname140","anonlastname140",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500548,70219,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1, 3, 5, 7, 9, 11, 13, 15] [score]; ans1_whydifferent: ""n+2"" [score]; ans2: [10, 9, 8, 7, 6, 5, 4, 3, 2] [score]; ans3: [1, 1, 1, 1, 1, 1, 1, 1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573824605,553654,1,"gradedright",1,1573823396,1535,"anon141","anonfirstname141","anonlastname141",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501425,70233,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,4,9,16,25,36,49,64] [score]; ans1_whydifferent: ""they are squared."" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574114269,554086,1,"gradedright",1,1574113630,1537,"anon143","anonfirstname143","anonlastname143",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502764,70252,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574246245,554695,0,"todo",NA,1573814832,1538,"anon144","anonfirstname144","anonlastname144",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503775,70269,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: """" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574186294,555210,1,"gradedright",1,1574185971,1776,"anon145","anonfirstname145","anonlastname145",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500827,70223,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: """" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573943761,553780,1,"gradedright",1,1573931144,1777,"anon146","anonfirstname146","anonlastname146",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501632,70236,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [4,7,10,13,16,19,22,25] [score]; ans1_whydifferent: ""n+3"" [score]; ans2: [5, 2,-1,-4,-7,-10,-13,-16] [score]; ans3: [-2,+2,-2,+2,-2,+2,-2,+2] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574173281,554172,2,"gradedright",1,1574173257,1778,"anon147","anonfirstname147","anonlastname147",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502681,70251,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [3,4,5,6,7,8,9,10] [score]; ans1_whydifferent: ""n+2"" [score]; ans2: [10,9,8,7,6,5,4,3] [score]; ans3: [2,-2,2,-2,2,-2,2,-2] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573945011,554658,1,"gradedright",1,1573807062,1779,"anon148","anonfirstname148","anonlastname148",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503905,70271,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","prt1: #; prt2: #; prt3: #",1574197389,555280,1,"gaveup",NA,1574197389,1409,"anon15","anonfirstname15","anonlastname15",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502589,70250,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""different number"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573782144,554617,1,"gradedright",1,1573778450,1782,"anon151","anonfirstname151","anonlastname151",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503483,70263,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""Everything"" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574106364,555040,1,"gradedright",1,1574090093,1785,"anon154","anonfirstname154","anonlastname154",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500428,70217,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,100] [score]; ans1_whydifferent: ""Has 100"" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,3,1,5,6,7,8,3] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573820793,553601,1,"gradedright",1,1573819717,1786,"anon155","anonfirstname155","anonlastname155",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500929,70225,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574004034,553841,0,"complete",NA,1574004033,1786,"anon155","anonfirstname155","anonlastname155",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503276,70260,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [3, 5, 7, 9, 11, 13, 15, 17] [score]; ans1_whydifferent: ""difference"" [score]; ans2: [17, 15, 13, 11, 9, 7, 5, 3] [score]; ans3: [1, -1, 1, -1, 1, -1, 1, -1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574017885,554945,2,"gradedright",1,1574015809,1787,"anon156","anonfirstname156","anonlastname156",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500793,70222,29,"interactivecountback",23604,1,0,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [-2,4,-8,16,-32,64,-128,256] [score]; ans1_whydifferent: ""is is unbounded"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [0,0,0,0,0,0,0,0] [score]; prt1: ATGTE_true. | prt1-2-T | ATSet_wrongsz. | prt1-1-F; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573859310,553765,3,"gradedpartial",0.6666667,1573857072,1789,"anon158","anonfirstname158","anonlastname158",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500757,70222,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8] [score]; ans1_whydifferent: ""it is written in decimals"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [0,0,0,0,0,0,0,0] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573859310,553749,1,"gradedright",1,1573857179,1789,"anon158","anonfirstname158","anonlastname158",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501109,70228,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,4,9,16,25,36,49,64] [score]; ans1_whydifferent: ""It is n^2 "" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574017447,553928,1,"gradedright",1,1574015396,1790,"anon159","anonfirstname159","anonlastname159",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501981,70242,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","prt1: #; prt2: #; prt3: #",1574250400,554348,1,"gaveup",NA,1574250399,1410,"anon16","anonfirstname16","anonlastname16",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503203,70259,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,3,5,7,9,11,13,15] [score]; ans1_whydifferent: ""0"" [score]; ans2: [0] [score]; ans3: [0] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1574100702,554913,1,"gradedpartial",0.3333333,1574019192,1792,"anon161","anonfirstname161","anonlastname161",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500134,70212,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,1/2,1/3,1/4,1/5,1/6,1/7,1/8] [score]; ans1_whydifferent: ""its not the same"" [score]; ans2: [1,2,3,4,5,6,7,8] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | ATSet_wrongentries. | prt1-1-F; prt2: ATGTE_true. | prt2-2-T | prt2-1-F; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573749407,553462,1,"gradedpartial",0.3333333,1573749397,1803,"anon172","anonfirstname172","anonlastname172",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501765,70238,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574206480,554234,0,"todo",NA,1574183812,1804,"anon173","anonfirstname173","anonlastname173",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501928,70241,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574234664,554323,0,"todo",NA,1574233868,1810,"anon179","anonfirstname179","anonlastname179",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503695,70267,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""first term"" [score]; ans2: [8,8,8,8,8,8,8,8] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574195725,555160,1,"gradedright",1,1574194698,1811,"anon180","anonfirstname180","anonlastname180",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500003,70209,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1573664962,553387,0,"todo",NA,1573664681,1812,"anon181","anonfirstname181","anonlastname181",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501486,70234,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,3,5,7,9,11,13,15] [score]; ans1_whydifferent: ""2*n-1"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574125588,554112,1,"gradedright",1,1574124768,1815,"anon184","anonfirstname184","anonlastname184",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500974,70226,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1, 2, 3, 4, 5, 6, 7, 8] [score]; ans1_whydifferent: ""increasing one at a time"" [score]; ans2: [1, 0, -1, -2, -3, -4, -5, -6] [score]; ans3: [1, 1, 1, 1, 1, 1, 1, 1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574009685,553869,2,"gradedright",1,1574008389,1816,"anon185","anonfirstname185","anonlastname185",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503622,70265,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574093773,555110,0,"todo",NA,1574093772,1820,"anon189","anonfirstname189","anonlastname189",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502525,70249,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [5,10,15,25,30,35,40,45] [score]; ans1_whydifferent: ""this is a multiplication instead of addition or subtraction."" [score]; ans2: [-5,-10,-15,-20,-25,-30,-40,-45] [score]; ans3: [-2,4,-8,16,-32,64,-128, 256] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573932167,554588,1,"gradedright",1,1573914787,1824,"anon193","anonfirstname193","anonlastname193",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503653,70266,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574104207,555135,0,"todo",NA,1574102039,1828,"anon197","anonfirstname197","anonlastname197",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502480,70248,33,"interactivecountback",23604,1,0,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [2] [score]; ans1_whydifferent: ""2"" [score]; ans2: [2] [score]; ans3: [2] [score]; prt1: ATGTE_false. | prt1-2-F; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1573922750,554567,1,"gradedwrong",0,1573921800,1414,"anon20","anonfirstname20","anonlastname20",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502437,70248,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8] [score]; ans1_whydifferent: ""the terms are decimals"" [score]; ans2: [-1, -2, -3, -4, -5, -6, -7, -8] [score]; ans3: [2, 4, 2, 4, 2, 4, 2, 4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573922750,554547,1,"gradedright",1,1573921930,1414,"anon20","anonfirstname20","anonlastname20",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500319,70215,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1573817207,553549,0,"todo",NA,1573815227,1835,"anon204","anonfirstname204","anonlastname204",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503855,70270,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574260897,555253,0,"todo",NA,1574192678,1845,"anon214","anonfirstname214","anonlastname214",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501278,70230,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","prt1: #; prt2: #; prt3: #",1574049350,554004,1,"gaveup",NA,1574049350,1849,"anon218","anonfirstname218","anonlastname218",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502334,70246,35,"interactivecountback",23604,1,0,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""the difference. is equal"" [score]; ans2: [0,0] [score]; ans3: [0,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1573686223,554502,2,"gradedpartial",0.3333333,1573684329,1850,"anon219","anonfirstname219","anonlastname219",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502285,70246,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""decimals "" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573686223,554480,1,"gradedright",1,1573684416,1850,"anon219","anonfirstname219","anonlastname219",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501544,70235,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [2,4,8,16,32,64,128,256] [score]; ans1_whydifferent: ""exponential increase"" [score]; ans2: [1,1/2,1/3,1/4,1/5,1/6,1/7,1/8] [score]; ans3: [-1,1,-1,1,-1,1,-1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574159148,554137,1,"gradedright",1,1574157758,1852,"anon221","anonfirstname221","anonlastname221",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503146,70258,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574173034,554887,2,"invalid",NA,1574023230,1854,"anon223","anonfirstname223","anonlastname223",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501194,70229,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""It is actual number"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574099840,553966,1,"gradedright",1,1574092807,1855,"anon224","anonfirstname224","anonlastname224",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503347,70261,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,4,9,16,25,36,49,64] [score]; ans1_whydifferent: ""it's n^2"" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574030700,554978,1,"gradedright",1,1574027227,1420,"anon26","anonfirstname26","anonlastname26",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500619,70220,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: """" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573927560,553686,1,"gradedright",1,1573925784,1434,"anon40","anonfirstname40","anonlastname40",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502188,70244,38,"interactivecountback",23604,1,0,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1] [score]; ans1_whydifferent: ""1"" [score]; ans2: [1] [score]; ans3: [1] [score]; prt1: ATGTE_false. | prt1-2-F; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1573995110,554437,1,"gradedwrong",0,1573994493,1444,"anon50","anonfirstname50","anonlastname50",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502127,70244,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573995110,554412,1,"gradedright",1,1573994552,1444,"anon50","anonfirstname50","anonlastname50",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500246,70214,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""Everything"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8-9] [score]; ans3: [0,0,0,0,0,0,0,0] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573776933,553513,1,"gradedright",1,1573775818,1445,"anon51","anonfirstname51","anonlastname51",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503410,70262,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,4,8,16,32,64,128] [score]; ans1_whydifferent: ""This example has multiplication rather than addition."" [score]; ans2: [1,1,1,1,1,1,1,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574081020,555007,1,"gradedright",1,1574075266,1447,"anon53","anonfirstname53","anonlastname53",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501800,70239,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574202127,554259,0,"todo",NA,1574188693,1448,"anon54","anonfirstname54","anonlastname54",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503736,70268,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","",1574259901,555185,0,"todo",NA,1574183050,1400,"anon6","anonfirstname6","anonlastname6",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500493,70218,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","prt1: #; prt2: #; prt3: #",1573821290,553629,1,"gaveup",NA,1573821289,1454,"anon60","anonfirstname60","anonlastname60",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500081,70211,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2] [score]; ans1_whydifferent: ""1"" [score]; ans2: [1,2] [score]; ans3: [1,2] [score]; prt1: ATGTE_false. | prt1-2-F; prt2: ATGTE_false. | prt2-2-F; prt3: ATGTE_false. | prt3-5-F",1573750101,553437,3,"gradedwrong",0,1573749619,1460,"anon66","anonfirstname66","anonlastname66",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503010,70256,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","prt1: #; prt2: #; prt3: #",1573919365,554825,1,"gaveup",NA,1573919364,1463,"anon69","anonfirstname69","anonlastname69",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1503069,70257,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""1"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573931181,554852,1,"gradedright",1,1573930697,1465,"anon71","anonfirstname71","anonlastname71",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1500189,70213,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,8,10,12,14,16] [score]; ans1_whydifferent: """" [score]; ans2: [a-1,a-2,a-3,a-4,a-5,a-6,a-7,a-8] [score]; ans3: [a,a,a,a,a,a,a,a,a] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573867345,553488,3,"gradedright",1,1573859613,1478,"anon84","anonfirstname84","anonlastname84",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501713,70237,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [2,4,6,8,10,12,14,16] [score]; ans1_whydifferent: """" [score]; ans2: [-2,-4,-6,-8,-10,-12,-14,-16] [score]; ans3: [2,-2,2,-2,2,-2,2,-2] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574186538,554208,1,"gradedright",1,1574167698,1480,"anon86","anonfirstname86","anonlastname86",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1501051,70227,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""It is just whole numbers"" [score]; ans2: [1,-1,-3,-5,-7,-9,-11,-13] [score]; ans3: [-2,2,-2,2,-2,2,-2,2] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1574010476,553902,1,"gradedright",1,1574009789,1481,"anon87","anonfirstname87","anonlastname87",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502373,70247,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [2,4,6,8,10,12,14,16] [score]; ans1_whydifferent: ""a_n=2*n"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573735350,554519,1,"gradedright",1,1573734724,1403,"anon9","anonfirstname9","anonlastname9",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502223,70245,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [1,2,3,4,5,6,7,8] [score]; ans1_whydifferent: ""nothing"" [score]; ans2: [8,7,6,5,4,3,2,1] [score]; ans3: [1,1,1,1,1,1,1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573675438,554453,1,"gradedright",1,1573674708,1486,"anon92","anonfirstname92","anonlastname92",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gc",1502808,70253,13,"interactivecountback",23604,1,1,0,1,0,"For each of the following, find an example of a sequence with the given property.
+
+Enter the FIRST 8 TERMS of your sequence as a list, e.g. [a,b,c,d,e,f,g,h].
+
+	*
+increasing, and different from the examples above: [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+What is different about your example? [[input:ans1_whydifferent]][[validation:ans1_whydifferent]]
+
+	*
+not increasing: [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+not increasing, and not decreasing: [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8] [score]; ans1_whydifferent: ""The terms are decimals"" [score]; ans2: [-1,-2,-3,-4,-5,-6,-7,-8] [score]; ans3: [2,4,2,4,2,4,2,4] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T","ans1: [9/8,5/4,11/8,3/2,13/8,7/4,15/8,2] [score]; ans1_whydifferent: ""increasing"" [score]; ans2: [1/2,1/4,1/8,1/16,1/32,1/64,1/128,1/256] [score]; ans3: [-1,1,-1,1,-1,1,-1,1] [score]; prt1: ATGTE_true. | prt1-2-T | prt1-1-T; prt2: ATGTE_true. | prt2-2-T | ATLogic_True | prt2-1-T; prt3: ATGTE_true. | prt3-5-T | ATLogic_True | prt3-6-T | ATLogic_True | prt3-7-T",1573853725,554720,2,"gradedright",1,1573851724,1489,"anon95","anonfirstname95","anonlastname95",1,"LGE Group GCG"

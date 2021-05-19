@@ -1,0 +1,1495 @@
+"csv_file_name","question_name","id","questionusageid","slot","behaviour","questionid","variant","maxmark","minfraction","maxfraction","flagged","questionsummary","rightanswer","responsesummary","timemodified","questionattemptid","sequencenumber","state","fraction","timecreated","userid","username","firstname","lastname","attempt_number","group"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501866,70240,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: (1/2)^n [score]; ans2: 2+(1/2)^n [score]; ans3: 17/16+(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574204425,554292,1,"gradedpartial",0.8666667,1574203365,1494,"anon100","anonfirstname100","anonlastname100",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500720,70221,30,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1-1/n [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1573848942,553733,1,"gradedpartial",0.1333333,1573847561,1495,"anon101","anonfirstname101","anonlastname101",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500722,70221,31,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1/n+2 [score]; ans3: 1/n+1-1/n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1573848942,553734,1,"gradedpartial",0.8,1573847650,1495,"anon101","anonfirstname101","anonlastname101",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500682,70221,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1/n+2 [score]; ans3: 1/n+3/4 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573848942,553715,1,"gradedright",1,1573847704,1495,"anon101","anonfirstname101","anonlastname101",3,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502083,70243,30,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-9 [score]; ans2: 1+1/2^n [score]; ans3: 3/2 + 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573646936,554393,1,"gradedpartial",0.5333333,1573645655,1498,"anon104","anonfirstname104","anonlastname104",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502044,70243,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n + 15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573646936,554375,1,"gradedright",1,1573645700,1498,"anon104","anonfirstname104","anonlastname104",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500371,70216,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: -1 + 1/2^n [score]; ans3: -257/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573938882,553575,1,"gradedpartial",0.8666667,1573938011,1503,"anon109","anonfirstname109","anonlastname109",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501327,70231,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574263383,554029,0,"todo",NA,1574101584,1508,"anon114","anonfirstname114","anonlastname114",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503943,70272,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574226482,555305,0,"todo",NA,1574226481,1512,"anon118","anonfirstname118","anonlastname118",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501367,70232,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574115669,554055,-3,"todo",NA,1574115669,1517,"anon123","anonfirstname123","anonlastname123",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500892,70224,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574108297,553811,0,"todo",NA,1573942243,1521,"anon127","anonfirstname127","anonlastname127",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502952,70255,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1-n [score]; ans2: 1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573921749,554796,1,"gradedright",1,1573921655,1525,"anon131","anonfirstname131","anonlastname131",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502894,70254,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574249660,554766,0,"todo",NA,1573903962,1527,"anon133","anonfirstname133","anonlastname133",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503553,70264,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 10-n [score]; ans2: 1/n [score]; ans3: 4/n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574094303,555071,1,"gradedright",1,1574093334,1531,"anon137","anonfirstname137","anonlastname137",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500032,70210,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1573681324,553411,0,"todo",NA,1573681174,1534,"anon140","anonfirstname140","anonlastname140",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500588,70219,31,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1+(1/2^n) [score]; ans3: 6 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1573824605,553672,1,"gradedpartial",0.3333333,1573822945,1535,"anon141","anonfirstname141","anonlastname141",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500546,70219,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1+1/2^n [score]; ans3: 98 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1573824605,553653,1,"gradedpartial",0.6666667,1573823011,1535,"anon141","anonfirstname141","anonlastname141",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501423,70233,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: 1/2^n  [score]; ans3: 1/2^n + 255/256 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574114269,554085,2,"gradedpartial",0.8666667,1574113503,1537,"anon143","anonfirstname143","anonlastname143",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502763,70252,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574246245,554694,0,"todo",NA,1573814832,1538,"anon144","anonfirstname144","anonlastname144",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503817,70269,32,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n+1 [score]; ans2: 1-1/2^n [score]; ans3: 31/16 - 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1574185567,555229,1,"gradedwrong",0,1574185542,1776,"anon145","anonfirstname145","anonlastname145",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503823,70269,35,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: x-1 [score]; ans2: 1/2^n [score]; ans3: 1/16 + 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574186035,555232,1,"gradedpartial",0.5333333,1574185861,1776,"anon145","anonfirstname145","anonlastname145",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503773,70269,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 10-n [score]; ans2: 1/2^n [score]; ans3: 15/16 + 1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574186294,555209,1,"gradedright",1,1574186289,1776,"anon145","anonfirstname145","anonlastname145",3,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500825,70223,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: -ln(n) [score]; ans3: 1+ln(4)-ln(n) [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | prt2-4-F; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | prt3-4-F",1573943761,553779,1,"gradedpartial",0.7333333,1573931012,1777,"anon146","anonfirstname146","anonlastname146",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501682,70236,35,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-3 [score]; ans2: 2+(1/(n+3)) [score]; ans3: (7/15)*(2+(1/(n+3))) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574173281,554194,1,"gradedpartial",0.6666667,1574171974,1778,"anon147","anonfirstname147","anonlastname147",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501684,70236,36,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 12-n [score]; ans2: 2-(1/n) [score]; ans3: (4/7)*(2-(1/n)) [score]; prt1: ATLogic_True | prt1-1-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1574173281,554195,1,"gradedpartial",0.4666667,1574172191,1778,"anon147","anonfirstname147","anonlastname147",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501629,70236,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 2+1/(n+3) [score]; ans3: (7/15)*(2+1/(n+3)) [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574173281,554171,1,"gradedright",1,1574172808,1778,"anon147","anonfirstname147","anonlastname147",3,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502725,70251,33,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1/2^n-1 [score]; ans3: 1/2^n+15/16 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573945011,554678,1,"gradedpartial",0.6666667,1573806705,1779,"anon148","anonfirstname148","anonlastname148",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502679,70251,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1-n [score]; ans2: 1/2^n-1 [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573945011,554657,1,"gradedright",1,1573806757,1779,"anon148","anonfirstname148","anonlastname148",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503903,70271,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","prt1: #; prt2: #; prt3: #",1574197389,555279,1,"gaveup",NA,1574197389,1409,"anon15","anonfirstname15","anonlastname15",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502628,70250,30,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-2 [score]; ans2: -1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573782144,554634,1,"gradedpartial",0.6666667,1573778079,1782,"anon151","anonfirstname151","anonlastname151",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502587,70250,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 2-n [score]; ans2: -1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573782144,554616,1,"gradedright",1,1573778237,1782,"anon151","anonfirstname151","anonlastname151",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503524,70263,31,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574106364,555058,1,"gradedpartial",0.6666667,1574089957,1785,"anon154","anonfirstname154","anonlastname154",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503481,70263,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 15/16+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574106364,555039,1,"gradedright",1,1574090003,1785,"anon154","anonfirstname154","anonlastname154",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500426,70217,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -3*n [score]; ans2: 2^(-n) [score]; ans3: 2^(-n)+1-1/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573820793,553600,1,"gradedright",1,1573819602,1786,"anon155","anonfirstname155","anonlastname155",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500928,70225,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574004034,553840,0,"complete",NA,1574004033,1786,"anon155","anonfirstname155","anonlastname155",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503310,70260,29,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1+(1/2)^n [score]; ans3: 15/16+(1/2)^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574017885,554961,1,"gradedpartial",0.6666667,1574015438,1787,"anon156","anonfirstname156","anonlastname156",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503273,70260,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1+1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574017885,554944,1,"gradedright",1,1574015513,1787,"anon156","anonfirstname156","anonlastname156",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500755,70222,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573859310,553748,2,"gradedright",1,1573857068,1789,"anon158","anonfirstname158","anonlastname158",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501107,70228,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: 1/n [score]; ans3: 4/n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574017447,553927,2,"gradedright",1,1574015256,1790,"anon159","anonfirstname159","anonlastname159",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501979,70242,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1/n [score]; ans3: (1/n)+1-(1/4) [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574250400,554347,1,"gradedright",1,1574249847,1410,"anon16","anonfirstname16","anonlastname16",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503201,70259,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574100702,554912,1,"gradedpartial",0.6666667,1574018916,1792,"anon161","anonfirstname161","anonlastname161",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500132,70212,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-9 [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573749407,553461,1,"gradedpartial",0.6666667,1573749212,1803,"anon172","anonfirstname172","anonlastname172",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501764,70238,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574206480,554233,0,"todo",NA,1574183812,1804,"anon173","anonfirstname173","anonlastname173",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501927,70241,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574234664,554322,0,"todo",NA,1574233868,1810,"anon179","anonfirstname179","anonlastname179",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503693,70267,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-9 [score]; ans2: 1+1/2^n [score]; ans3: 17/16-1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1574195725,555159,1,"gradedpartial",0.4666667,1574192095,1811,"anon180","anonfirstname180","anonlastname180",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500002,70209,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1573664962,553386,0,"todo",NA,1573664681,1812,"anon181","anonfirstname181","anonlastname181",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501484,70234,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1+(1/2)^n [score]; ans3: 15/16+(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574125588,554111,1,"gradedright",1,1574124654,1815,"anon184","anonfirstname184","anonlastname184",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500971,70226,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-3 [score]; ans2: 6/5+1/2^n [score]; ans3: 1/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574009685,553868,1,"gradedpartial",0.5333333,1574007637,1816,"anon185","anonfirstname185","anonlastname185",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503621,70265,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574093773,555109,0,"todo",NA,1574093772,1820,"anon189","anonfirstname189","anonlastname189",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502523,70249,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1 [score]; ans2: -1+1/(2^n) [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1573932167,554587,1,"gradedpartial",0.4666667,1573914457,1824,"anon193","anonfirstname193","anonlastname193",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503652,70266,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574104207,555134,0,"todo",NA,1574102039,1828,"anon197","anonfirstname197","anonlastname197",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502478,70248,32,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-9 [score]; ans2: 1+1/2^n [score]; ans3: 257/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573922750,554566,1,"gradedpartial",0.5333333,1573921606,1414,"anon20","anonfirstname20","anonlastname20",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502435,70248,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573922750,554546,1,"gradedright",1,1573921687,1414,"anon20","anonfirstname20","anonlastname20",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500318,70215,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1573817207,553548,0,"todo",NA,1573815227,1835,"anon204","anonfirstname204","anonlastname204",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503854,70270,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574260897,555252,0,"todo",NA,1574192678,1845,"anon214","anonfirstname214","anonlastname214",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501276,70230,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","prt1: #; prt2: #; prt3: #",1574049350,554003,1,"gaveup",NA,1574049350,1849,"anon218","anonfirstname218","anonlastname218",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502283,70246,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-n^2 [score]; ans2: 1+1/n [score]; ans3: 1 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1573686223,554479,1,"gradedpartial",0.8,1573683942,1850,"anon219","anonfirstname219","anonlastname219",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501542,70235,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: 1/n [score]; ans3: 4/n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574159148,554136,1,"gradedright",1,1574157453,1852,"anon221","anonfirstname221","anonlastname221",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503173,70258,26,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1 [score]; ans2: 1 [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1574023243,554900,1,"gradedpartial",0.1333333,1574023122,1854,"anon223","anonfirstname223","anonlastname223",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503143,70258,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1 [score]; ans2: 1 [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1574173034,554886,1,"gradedpartial",0.1333333,1574023255,1854,"anon223","anonfirstname223","anonlastname223",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501234,70229,31,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1-3^n [score]; ans3: 9 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | prt2-4-F; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1574099840,553984,1,"gradedpartial",0.1666667,1574038001,1855,"anon224","anonfirstname224","anonlastname224",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501192,70229,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574099840,553965,1,"gradedright",1,1574091960,1855,"anon224","anonfirstname224","anonlastname224",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503345,70261,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574030700,554977,1,"gradedright",1,1574026927,1420,"anon26","anonfirstname26","anonlastname26",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500653,70220,29,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: 1/n [score]; ans3: 1/n+15/4 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573927560,553702,1,"gradedpartial",0.8666667,1573925594,1434,"anon40","anonfirstname40","anonlastname40",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500617,70220,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n [score]; ans2: 1/n [score]; ans3: 1/n+3/4 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573927560,553685,1,"gradedright",1,1573925656,1434,"anon40","anonfirstname40","anonlastname40",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502186,70244,37,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n^2 [score]; ans2: 1-n^2 [score]; ans3: 2-n^2/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | prt2-4-F; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | prt3-4-F",1573995110,554436,1,"gradedpartial",0.7333333,1573994414,1444,"anon50","anonfirstname50","anonlastname50",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502125,70244,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1/n^2 [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573995110,554411,1,"gradedright",1,1573994474,1444,"anon50","anonfirstname50","anonlastname50",2,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500283,70214,30,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 0-1/n^2 [score]; ans3: 5 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1573776933,553530,1,"gradedwrong",0,1573775677,1445,"anon51","anonfirstname51","anonlastname51",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500244,70214,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 15/16+1/n^2 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573776933,553512,1,"gradedright",1,1573775741,1445,"anon51","anonfirstname51","anonlastname51",2,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503408,70262,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-9 [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574081020,555006,1,"gradedpartial",0.6666667,1574075128,1447,"anon53","anonfirstname53","anonlastname53",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501799,70239,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574202127,554258,0,"todo",NA,1574188693,1448,"anon54","anonfirstname54","anonlastname54",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503735,70268,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","",1574259901,555184,0,"todo",NA,1574183050,1400,"anon6","anonfirstname6","anonlastname6",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500491,70218,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","prt1: #; prt2: #; prt3: #",1573821290,553628,1,"gaveup",NA,1573821289,1454,"anon60","anonfirstname60","anonlastname60",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500077,70211,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1/2^n+1 [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1573750101,553436,2,"gradedpartial",0.4666667,1573749538,1460,"anon66","anonfirstname66","anonlastname66",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503008,70256,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: (n-1)^2-2 [score]; ans3: (n-2)^2-2 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-F | ATAlgEquiv_SA_not_logic. | prt3-1-F | ATAlgEquiv_SA_not_logic. | prt3-2-F",1573919365,554824,1,"gradedwrong",0,1573918286,1463,"anon69","anonfirstname69","anonlastname69",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1503067,70257,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 1-n [score]; ans2: 1+1/2^n [score]; ans3: 15/16+1/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573931181,554851,1,"gradedright",1,1573930611,1465,"anon71","anonfirstname71","anonlastname71",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1500185,70213,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: 9-n [score]; ans2: 1+(1/2^n) [score]; ans3: 0 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1573867345,553487,1,"gradedpartial",0.6666667,1573850324,1478,"anon84","anonfirstname84","anonlastname84",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501711,70237,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-1 [score]; ans2: 1/n [score]; ans3: 1/n+3/4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1574186538,554207,1,"gradedpartial",0.6666667,1574167543,1480,"anon86","anonfirstname86","anonlastname86",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1501049,70227,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: n-3 [score]; ans2: 1-3/4^n [score]; ans3: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-T | prt3-1-F | ATLogic_True | prt3-2-T",1574010476,553901,1,"gradedpartial",0.1333333,1574009508,1481,"anon87","anonfirstname87","anonlastname87",1,"LGE Group GGC"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502371,70247,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1/2^n [score]; ans3: 16/2^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573735350,554518,1,"gradedright",1,1573734578,1403,"anon9","anonfirstname9","anonlastname9",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502221,70245,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1/n [score]; ans3: 1/n+3/4 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573675438,554452,1,"gradedright",1,1573674626,1486,"anon92","anonfirstname92","anonlastname92",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502852,70253,34,"interactivecountback",23603,1,0,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: -1-1/2^n [score]; ans3: -1-1/900^n [score]; prt1: ATLogic_True | prt1-1-T; prt2: prt2-1-F | ATLogic_True | prt2-2-T; prt3: prt3-5-F | prt3-1-F | ATLogic_True | prt3-2-T",1573853725,554741,1,"gradedpartial",0.3333333,1573848307,1489,"anon95","anonfirstname95","anonlastname95",1,"LGE Group GCG"
+"../data-raw/study1/attempts-Quiz1.csv","Gb",1502805,70253,12,"interactivecountback",23603,1,1,0,1,0,"Give the formula for the \(n\)th term of a sequence \(u_1, u_2, u_3, \ldots\) which is:
+
+	*
+decreasing
+
+  \(u_n=\) [[input:ans1]][[feedback:prt1]] [[validation:ans1]]
+
+	*
+decreasing and bounded below
+
+  \(u_n=\) [[input:ans2]][[feedback:prt2]] [[validation:ans2]]
+
+	*
+decreasing, bounded below, and has \(u_4=1\)
+
+  \(u_n=\) [[input:ans3]][[feedback:prt3]] [[validation:ans3]]
+
+","ans1: 11-n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T","ans1: -n [score]; ans2: 1/2^n [score]; ans3: 1/2^n+15/16 [score]; prt1: ATLogic_True | prt1-1-T; prt2: ATLogic_True | prt2-1-T | prt2-3-F | ATLogic_True | prt2-4-T; prt3: prt3-5-T | ATLogic_True | prt3-1-T | prt3-3-F | ATLogic_True | prt3-4-T",1573853725,554719,1,"gradedright",1,1573848361,1489,"anon95","anonfirstname95","anonlastname95",2,"LGE Group GCG"
