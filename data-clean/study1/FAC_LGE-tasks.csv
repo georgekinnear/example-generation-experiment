@@ -1,17 +1,17 @@
 question_id,question_name,question_note,marks_available
-23602,Ga,ConditionG,3
-23603,Gb,ConditionG,3
-23604,Gc,ConditionG,3
-23601,Gd1,ConditionG,1
-23605,Gd2,ConditionG,1
-23606,Gd3,ConditionG,1
-23608,NearG,In Quiz 1,1
-23607,NearC,In Quiz 1,1
-23609,C1,ConditionC,10
-23610,C2,ConditionC,3
-23611,C3,ConditionC,2
-23487,MidG,In Quiz 2 (arith seq),4
-23502,MidC1,In Quiz 2 (arith seq),1
-23503,MidC2,In Quiz 2 (geo seq),1
-23582,FarC1,Unit Test,1
-23581,FarC2,Unit Test,1
+3717,Ga,ConditionG,3
+3718,Gb,ConditionG,3
+3719,Gc,ConditionG,3
+3716,Gd1,ConditionG,1
+3720,Gd2,ConditionG,1
+3721,Gd3,ConditionG,1
+3723,NearG,In Quiz 1,1
+3722,NearC,In Quiz 1,2
+3724,C1,ConditionC,10
+3725,C2,ConditionC,3
+3726,C3,ConditionC,2
+3602,MidG,In Quiz 2 (arith seq),4
+3617,MidC1,In Quiz 2 (arith seq),2
+3618,MidC2,In Quiz 2 (geo seq),2
+3697,FarC1,Unit Test,2
+3696,FarC2,Unit Test,2

@@ -16,14 +16,15 @@ question_details = read_csv("../data-raw/study1/FAC_LGE-tasks.csv") %>%
 #
 
 # Experimental groups
-participant_groups = read_csv("../data-raw/study1/FAC_LGE-groups.csv") %>% 
+participant_groups = read_csv("../data-raw/study1/FAC1920-groups.csv") %>% 
   clean_names() %>% 
   separate(email_address, c("username", NA), sep = "@") %>% 
   select(username, group) %>% 
+  mutate(group = str_extract(group, "LGE Group [:alpha:]{3}")) %>% 
   mutate(group = str_replace_all(group, "X", "G"))
 
 # Consent
-participants = read_csv("../data-raw/study1/FAC_LGE-Course design research-grades.csv") %>% 
+participants = read_csv("../data-raw/study1/FAC1920-Course design research-grades.csv") %>% 
   clean_names() %>% 
   # get rid of the summary row at the end
   filter(str_length(email_address) > 0) %>% 
@@ -52,6 +53,8 @@ all_attempt_data =
   unnest(cols = c(csv_data)) %>% 
   # attach details of each question
   left_join(question_details, by = "questionid") %>% 
+  # the username field does not exist, so create it
+  mutate(username = str_replace(firstname, "firstname", "")) %>% 
   # tidy up the table, and number each attempt at a question by each student
   arrange(question_name, username, timecreated) %>% 
   group_by(question_name, username) %>% 
@@ -59,7 +62,10 @@ all_attempt_data =
     attempt_number = row_number()
   ) %>% 
   ungroup() %>% 
-  select(csv_file_name, question_name, everything())
+  select(csv_file_name, question_name, everything()) %>% 
+  # remove unnecessary code from questions with jsxgraph content
+  mutate(questionsummary = str_remove(questionsummary, regex("\\[\\[jsxgraph.*/jsxgraph\\]\\]", dotall = TRUE)))
+
 
 # Restrict to data from those who gave consent
 attempt_data = all_attempt_data %>% 

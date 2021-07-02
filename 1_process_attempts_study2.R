@@ -51,7 +51,7 @@ all_attempt_data =
   unnest(cols = c(csv_data)) %>% 
   # attach details of each question
   left_join(question_details, by = "questionid") %>% 
-  # the username field does not exist, unlike in study 1, so create it
+  # the username field does not exist, so create it
   mutate(username = str_replace(firstname, "firstname", "")) %>% 
   # tidy up the table, and number each attempt at a question by each student
   arrange(question_name, username, timecreated) %>% 

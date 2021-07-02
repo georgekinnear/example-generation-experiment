@@ -1,991 +1,1087 @@
-"csv_file_name","question_name","id","questionusageid","slot","behaviour","questionid","variant","maxmark","minfraction","maxfraction","flagged","questionsummary","rightanswer","responsesummary","timemodified","questionattemptid","sequencenumber","state","fraction","timecreated","userid","username","firstname","lastname","attempt_number","group"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503999,70273,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+"csv_file_name","question_name","ï..id","questionusageid","slot","behaviour","questionid","variant","maxmark","minfraction","maxfraction","flagged","questionsummary","rightanswer","responsesummary","timemodified","questionattemptid","sequencenumber","state","fraction","timecreated","userid","firstname","lastname","username","attempt_number","group"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162488,28864,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4-1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574076921,555337,1,"gradedright",1,1574076379,1404,"anon10","anonfirstname10","anonlastname10",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501890,70240,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573853725,492695,1,"gradedright",1,1573850976,222,"anonfirstname100","anonlastname100","anon100",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164624,28900,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574204425,554302,1,"gradedright",1,1574204077,1494,"anon100","anonfirstname100","anonlastname100",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500724,70221,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-(1/2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574129306,493769,1,"gradedright",1,1574128545,223,"anonfirstname101","anonlastname101","anon101",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164696,28901,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573848942,553735,1,"gradedwrong",0,1573848333,1495,"anon101","anonfirstname101","anonlastname101",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500704,70221,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573768558,493802,1,"gradedright",1,1573768161,225,"anonfirstname103","anonlastname103","anon103",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164777,28902,31,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573848942,553725,1,"gradedright",1,1573848349,1495,"anon101","anonfirstname101","anonlastname101",2,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506108,70311,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n/2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573643571,493839,1,"gradedpartial",0.5,1573642845,226,"anonfirstname104","anonlastname104","anon104",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164752,28902,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574178615,556360,1,"gaveup",NA,1574178615,1497,"anon103","anonfirstname103","anonlastname103",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502097,70243,36,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/(2^n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573643571,493827,1,"gradedright",1,1573642879,226,"anonfirstname104","anonlastname104","anon104",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160069,28824,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n+9 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573646936,554399,1,"gradedwrong",0,1573646778,1498,"anon104","anonfirstname104","anonlastname104",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502069,70243,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574204425,491498,1,"gradedright",1,1574204077,227,"anonfirstname105","anonlastname105","anon105",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160155,28825,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573646936,554386,1,"gradedright",1,1573646794,1498,"anon104","anonfirstname104","anonlastname104",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506183,70312,28,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573848942,491538,1,"gradedwrong",0,1573848333,228,"anonfirstname106","anonlastname106","anon106",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160135,28825,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574020198,556394,1,"gradedpartial",0.5,1574017347,1499,"anon105","anonfirstname105","anonlastname105",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506167,70312,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573848942,491528,1,"gradedright",1,1573848349,228,"anonfirstname106","anonlastname106","anon106",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165939,28925,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574020198,556386,1,"gradedright",1,1574017420,1499,"anon105","anonfirstname105","anonlastname105",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506228,70313,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574178615,494431,1,"gaveup",NA,1574178615,230,"anonfirstname108","anonlastname108","anon108",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162616,28865,36,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+u_n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573682950,556414,1,"gradedwrong",0,1573682685,1501,"anon107","anonfirstname107","anonlastname107",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506268,70314,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n+9 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573646936,492755,1,"gradedwrong",0,1573646778,231,"anonfirstname109","anonlastname109","anon109",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162588,28865,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574176869,556439,0,"complete",NA,1574175958,1501,"anon107","anonfirstname107","anonlastname107",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505043,70290,26,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573646936,492742,1,"gradedright",1,1573646794,231,"anonfirstname109","anonlastname109","anon109",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166014,28926,28,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 6^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574021634,555819,1,"gradedpartial",0.5,1574021195,1502,"anon108","anonfirstname108","anonlastname108",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505026,70290,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574020198,494465,1,"gradedpartial",0.5,1574017347,232,"anonfirstname110","anonlastname110","anon110",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165998,28926,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 12-(1/(5^n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574021634,555812,1,"gradedright",1,1574021227,1502,"anon108","anonfirstname108","anonlastname108",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500393,70216,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574020198,494457,1,"gradedright",1,1574017420,232,"anonfirstname110","anonlastname110","anon110",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166059,28927,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n -1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573938882,553585,1,"gradedpartial",0.5,1573938707,1503,"anon109","anonfirstname109","anonlastname109",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504065,70274,26,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+u_n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573682950,494485,1,"gradedwrong",0,1573682685,234,"anonfirstname112","anonlastname112","anon112",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166099,28928,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574258259,555366,1,"gradedwrong",0,1574256519,1405,"anon11","anonfirstname11","anonlastname11",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504050,70274,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574176869,494510,0,"complete",NA,1574175958,234,"anonfirstname112","anonlastname112","anon112",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164846,28903,26,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574258259,555359,1,"gradedright",1,1574256542,1405,"anon11","anonfirstname11","anonlastname11",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505102,70291,24,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 6^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574021634,493868,1,"gradedpartial",0.5,1574021195,235,"anonfirstname113","anonlastname113","anon113",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164829,28903,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574085423,555846,1,"gradedwrong",0,1574083718,1504,"anon110","anonfirstname110","anonlastname110",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505092,70291,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 12-(1/(5^n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574021634,493861,1,"gradedright",1,1574021227,235,"anonfirstname113","anonlastname113","anon113",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160207,28826,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574085423,555841,1,"gradedright",1,1574084771,1504,"anon110","anonfirstname110","anonlastname110",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505127,70292,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n -1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573938882,491561,1,"gradedpartial",0.5,1573938707,236,"anonfirstname114","anonlastname114","anon114",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164905,28904,24,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/(4*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573847742,555865,1,"gradedwrong",0,1573847724,1506,"anon112","anonfirstname112","anonlastname112",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501338,70231,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574085423,493895,1,"gradedwrong",0,1574083718,237,"anonfirstname115","anonlastname115","anon115",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164895,28904,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574263403,554039,0,"todo",NA,1574101584,1508,"anon114","anonfirstname114","anonlastname114",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506293,70315,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574085423,493890,1,"gradedright",1,1574084771,237,"anonfirstname115","anonlastname115","anon115",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164930,28905,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574163860,556464,0,"todo",NA,1574163859,1511,"anon117","anonfirstname117","anonlastname117",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503954,70272,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/(4*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573847742,493914,1,"gradedwrong",0,1573847724,239,"anonfirstname117","anonlastname117","anon117",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161748,28853,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574226482,555316,0,"todo",NA,1574226481,1512,"anon118","anonfirstname118","anonlastname118",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505180,70293,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573735350,492351,1,"gradedright",1,1573735053,134,"anonfirstname12","anonlastname12","anon12",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160242,28827,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (n-1)/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573831587,555887,1,"gradedright",1,1573830397,1513,"anon119","anonfirstname119","anonlastname119",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506377,70316,38,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574263403,491586,0,"todo",NA,1574101584,242,"anonfirstname120","anonlastname120","anon120",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166124,28929,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2*n -1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574110190,556504,1,"gradedpartial",0.5,1574109156,1514,"anon120","anonfirstname120","anonlastname120",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506340,70316,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574163860,494535,0,"todo",NA,1574163859,245,"anonfirstname123","anonlastname123","anon123",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162639,28866,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1- 1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574110190,556486,1,"gradedright",1,1574109182,1514,"anon120","anonfirstname120","anonlastname120",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506399,70317,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574226482,492778,0,"todo",NA,1574226481,246,"anonfirstname124","anonlastname124","anon124",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164983,28906,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574261192,556525,0,"todo",NA,1574261191,1515,"anon121","anonfirstname121","anonlastname121",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505251,70294,28,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (n-1)/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573831587,493936,1,"gradedright",1,1573830397,247,"anonfirstname125","anonlastname125","anon125",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166208,28930,38,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: log(x) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573742064,555920,1,"gradedwrong",0,1573734675,1516,"anon122","anonfirstname122","anonlastname122",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505233,70294,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2*n -1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574110190,494575,1,"gradedpartial",0.5,1574109156,248,"anonfirstname126","anonlastname126","anon126",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166171,28930,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573742064,555911,1,"gradedright",1,1573734731,1516,"anon122","anonfirstname122","anonlastname122",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501380,70232,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1- 1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574110190,494557,1,"gradedright",1,1574109182,248,"anonfirstname126","anonlastname126","anon126",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166230,28931,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574105914,554065,0,"todo",NA,1574105913,1517,"anon123","anonfirstname123","anonlastname123",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500904,70224,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574261192,494596,0,"todo",NA,1574261191,249,"anonfirstname127","anonlastname127","anon127",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165054,28907,28,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573942579,553821,0,"todo",NA,1573942243,1521,"anon127","anonfirstname127","anonlastname127",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504126,70275,26,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: log(x) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573742064,493969,1,"gradedwrong",0,1573734675,250,"anonfirstname128","anonlastname128","anon128",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165036,28907,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2-1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573738750,555393,1,"gradedpartial",0.5,1573737759,1407,"anon13","anonfirstname13","anonlastname13",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504128,70275,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573742064,493960,1,"gradedright",1,1573734731,250,"anonfirstname128","anonlastname128","anon128",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160284,28828,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573738750,555394,1,"gradedwrong",0,1573737810,1407,"anon13","anonfirstname13","anonlastname13",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504112,70275,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574105914,491612,0,"todo",NA,1574105913,251,"anonfirstname129","anonlastname129","anon129",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163774,28885,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573738750,555386,1,"gradedright",1,1573737827,1407,"anon13","anonfirstname13","anonlastname13",3,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502973,70255,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4-1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574076921,493359,1,"gradedright",1,1574076379,135,"anonfirstname13","anonlastname13","anon13",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160333,28829,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573993839,554807,0,"todo",NA,1573914768,1525,"anon131","anonfirstname131","anonlastname131",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502911,70254,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573942579,491642,0,"todo",NA,1573942243,255,"anonfirstname133","anonlastname133","anon133",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162686,28867,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-2/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574249880,554777,1,"gradedright",1,1574249859,1527,"anon133","anonfirstname133","anonlastname133",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503601,70264,34,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573993839,492803,0,"todo",NA,1573914768,259,"anonfirstname137","anonlastname137","anon137",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162727,28868,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574094303,555093,1,"gradedwrong",0,1574093685,1531,"anon137","anonfirstname137","anonlastname137",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503579,70264,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-2/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574249880,492831,1,"gradedright",1,1574249859,261,"anonfirstname139","anonlastname139","anon139",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163840,28886,26,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574094303,555082,1,"gradedright",1,1574093697,1531,"anon137","anonfirstname137","anonlastname137",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506424,70318,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574258259,493388,1,"gradedwrong",0,1574256519,136,"anonfirstname14","anonlastname14","anon14",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163825,28886,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573922549,556547,0,"todo",NA,1573922548,1532,"anon138","anonfirstname138","anonlastname138",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500043,70210,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574258259,493381,1,"gradedright",1,1574256542,136,"anonfirstname14","anonlastname14","anon14",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163863,28887,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574119970,553421,0,"todo",NA,1573681174,1534,"anon140","anonfirstname140","anonlastname140",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500570,70219,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574430977,493408,0,"complete",NA,1574430977,136,"anonfirstname14","anonlastname14","anon14",3,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163870,28887,26,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1573824605,553663,1,"gaveup",NA,1573824605,1535,"anon141","anonfirstname141","anonlastname141",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506492,70319,29,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574430977,493415,0,"complete",NA,1574430977,136,"anonfirstname14","anonlastname14","anon14",4,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162819,28869,34,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2*n  [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574108750,556578,2,"gradedpartial",0.5,1574107773,1536,"anon142","anonfirstname142","anonlastname142",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506471,70319,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574094303,492872,1,"gradedwrong",0,1574093685,265,"anonfirstname143","anonlastname143","anon143",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162797,28869,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 - 1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574108750,556569,1,"gradedright",1,1574107820,1536,"anon142","anonfirstname142","anonlastname142",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501447,70233,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574094303,492861,1,"gradedright",1,1574093697,265,"anonfirstname143","anonlastname143","anon143",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166255,28932,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: x [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574114269,554095,1,"gradedwrong",0,1574113983,1537,"anon143","anonfirstname143","anonlastname143",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502776,70252,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573922549,494618,0,"todo",NA,1573922548,266,"anonfirstname144","anonlastname144","anon144",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160370,28830,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573814833,554705,0,"todo",NA,1573814832,1538,"anon144","anonfirstname144","anonlastname144",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503837,70269,42,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574119970,491671,0,"todo",NA,1573681174,269,"anonfirstname146","anonlastname146","anon146",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160424,28831,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574186732,555239,1,"gradedwrong",0,1574186727,1776,"anon145","anonfirstname145","anonlastname145",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503797,70269,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1573824605,491696,1,"gaveup",NA,1573824605,270,"anonfirstname147","anonlastname147","anon147",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166323,28933,29,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574187269,555220,1,"gradedright",1,1574186742,1776,"anon145","anonfirstname145","anonlastname145",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500868,70223,31,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2*n  [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574108750,494649,2,"gradedpartial",0.5,1574107773,271,"anonfirstname148","anonlastname148","anon148",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166302,28933,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573943761,553798,1,"gradedwrong",0,1573943147,1777,"anon146","anonfirstname146","anonlastname146",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500870,70223,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 - 1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574108750,494640,1,"gradedright",1,1574107820,271,"anonfirstname148","anonlastname148","anon148",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160496,28832,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^(-n) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573943761,553799,1,"gradedwrong",0,1573943180,1777,"anon146","anonfirstname146","anonlastname146",2,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500848,70223,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: x [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574114269,491728,1,"gradedwrong",0,1574113983,272,"anonfirstname149","anonlastname149","anon149",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162869,28870,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -(2^(-n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573943761,553789,1,"gradedright",1,1573943206,1777,"anon146","anonfirstname146","anonlastname146",3,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501652,70236,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573814833,492899,0,"todo",NA,1573814832,273,"anonfirstname150","anonlastname150","anon150",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162959,28871,42,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574173281,554181,1,"gradedright",1,1574164491,1778,"anon147","anonfirstname147","anonlastname147",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502703,70251,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574186732,492943,1,"gradedwrong",0,1574186727,274,"anonfirstname151","anonlastname151","anon151",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162919,28871,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573945011,554668,1,"gradedright",1,1573807665,1779,"anon148","anonfirstname148","anonlastname148",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503925,70271,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574187269,492924,1,"gradedright",1,1574186742,274,"anonfirstname151","anonlastname151","anon151",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160575,28833,31,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574197389,555290,1,"gaveup",NA,1574197389,1409,"anon15","anonfirstname15","anonlastname15",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502638,70250,35,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573943761,491763,1,"gradedwrong",0,1573943147,275,"anonfirstname152","anonlastname152","anon152",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160577,28833,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573782144,554639,1,"gradedpartial",0.5,1573778962,1782,"anon151","anonfirstname151","anonlastname151",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502640,70250,36,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^(-n) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573943761,491764,1,"gradedwrong",0,1573943180,275,"anonfirstname152","anonlastname152","anon152",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160555,28833,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573782144,554640,1,"gradedwrong",0,1573778996,1782,"anon151","anonfirstname151","anonlastname151",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502642,70250,37,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -(2^(-n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573943761,491754,1,"gradedright",1,1573943206,275,"anonfirstname152","anonlastname152","anon152",3,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160635,28834,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573782144,554641,1,"gradedwrong",0,1573779022,1782,"anon151","anonfirstname151","anonlastname151",3,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502613,70250,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574173281,491786,1,"gradedright",1,1574164491,276,"anonfirstname153","anonlastname153","anon153",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163014,28872,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573782144,554627,1,"gradedright",1,1573779048,1782,"anon151","anonfirstname151","anonlastname151",4,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505284,70295,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573945011,492967,1,"gradedright",1,1573807665,277,"anonfirstname154","anonlastname154","anon154",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163123,28873,35,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573730657,555944,0,"todo",NA,1573730654,1784,"anon153","anonfirstname153","anonlastname153",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503507,70263,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573782144,493016,1,"gradedpartial",0.5,1573778962,280,"anonfirstname157","anonlastname157","anon157",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163125,28873,36,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 257/16-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574106364,555050,1,"gradedright",1,1574090430,1785,"anon154","anonfirstname154","anonlastname154",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500451,70217,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573782144,493017,1,"gradedwrong",0,1573778996,280,"anonfirstname157","anonlastname157","anon157",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163127,28873,37,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573820793,553610,1,"gradedright",1,1573820060,1786,"anon155","anonfirstname155","anonlastname155",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500938,70225,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573782144,493018,1,"gradedwrong",0,1573779022,280,"anonfirstname157","anonlastname157","anon157",3,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163098,28873,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574004034,553850,0,"complete",NA,1574004034,1786,"anon155","anonfirstname155","anonlastname155",2,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503316,70260,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573782144,493004,1,"gradedright",1,1573779048,280,"anonfirstname157","anonlastname157","anon157",4,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165087,28908,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574017885,554964,1,"gradedpartial",0.5,1574017339,1787,"anon156","anonfirstname156","anonlastname156",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503298,70260,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573730657,493993,0,"todo",NA,1573730654,282,"anonfirstname159","anonlastname159","anon159",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163929,28888,26,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017885,554955,1,"gradedright",1,1574017357,1787,"anon156","anonfirstname156","anonlastname156",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500777,70222,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2-1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573738750,493442,1,"gradedpartial",0.5,1573737759,138,"anonfirstname16","anonlastname16","anon16",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163931,28888,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573859310,553758,1,"gradedright",1,1573858282,1789,"anon158","anonfirstname158","anonlastname158",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501131,70228,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573738750,493443,1,"gradedwrong",0,1573737810,138,"anonfirstname16","anonlastname16","anon16",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163915,28888,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017447,553937,1,"gradedright",1,1574016078,1790,"anon159","anonfirstname159","anonlastname159",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502003,70242,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573738750,493435,1,"gradedright",1,1573737827,138,"anonfirstname16","anonlastname16","anon16",3,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163188,28874,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574250400,554357,1,"gradedright",1,1574250108,1410,"anon16","anonfirstname16","anonlastname16",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503243,70259,31,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 257/16-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574106364,493045,1,"gradedright",1,1574090430,283,"anonfirstname160","anonlastname160","anon160",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160719,28835,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574100702,554931,1,"gradedpartial",0.5,1574096386,1792,"anon161","anonfirstname161","anonlastname161",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503226,70259,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573820793,491822,1,"gradedright",1,1573820060,284,"anonfirstname161","anonlastname161","anon161",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160755,28836,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574100702,554923,1,"gradedright",1,1574096426,1792,"anon161","anonfirstname161","anonlastname161",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506524,70320,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574004034,491850,0,"complete",NA,1574004034,284,"anonfirstname161","anonlastname161","anon161",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163278,28875,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574194166,556603,0,"todo",NA,1574194165,1793,"anon162","anonfirstname162","anonlastname162",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505332,70296,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574017885,493086,1,"gradedpartial",0.5,1574017339,285,"anonfirstname162","anonlastname162","anon162",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163260,28875,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 7 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573929901,555966,2,"gradedwrong",0,1573928038,1794,"anon163","anonfirstname163","anonlastname163",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506588,70321,28,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017885,493077,1,"gradedright",1,1574017357,285,"anonfirstname162","anonlastname162","anon162",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160812,28837,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/(2*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574212561,556633,1,"gradedwrong",0,1574212152,1796,"anon165","anonfirstname165","anonlastname165",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506590,70321,29,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573859310,491878,1,"gradedright",1,1573858282,287,"anonfirstname164","anonlastname164","anon164",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160885,28838,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574212561,556634,1,"gradedpartial",0.5,1574212204,1796,"anon165","anonfirstname165","anonlastname165",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506572,70321,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017447,491909,1,"gradedright",1,1574016078,288,"anonfirstname165","anonlastname165","anon165",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163350,28876,31,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574212561,556625,1,"gradedright",1,1574212288,1796,"anon165","anonfirstname165","anonlastname165",3,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506627,70322,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574100702,493118,1,"gradedpartial",0.5,1574096386,290,"anonfirstname167","anonlastname167","anon167",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163333,28876,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574245130,556655,1,"gradedwrong",0,1573837382,1799,"anon168","anonfirstname168","anonlastname168",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506719,70323,34,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574100702,493110,1,"gradedright",1,1574096426,290,"anonfirstname167","anonlastname167","anon167",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166355,28934,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sin(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1573654224,556691,1,"gradedwrong",0,1573653047,1800,"anon169","anonfirstname169","anonlastname169",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506684,70323,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574194166,494674,0,"todo",NA,1574194165,291,"anonfirstname168","anonlastname168","anon168",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165135,28909,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573654224,556677,1,"gradedright",1,1573653130,1800,"anon169","anonfirstname169","anonlastname169",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500152,70212,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 7 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573929901,494015,2,"gradedwrong",0,1573928038,292,"anonfirstname169","anonlastname169","anon169",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160968,28839,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573750029,553471,1,"gradedwrong",0,1573749977,1803,"anon172","anonfirstname172","anonlastname172",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501776,70238,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574525486,491947,1,"gradedright",1,1574523116,293,"anonfirstname170","anonlastname170","anon170",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166419,28935,28,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574206274,554243,0,"todo",NA,1574183812,1804,"anon173","anonfirstname173","anonlastname173",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506778,70324,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/(2*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574212561,494704,1,"gradedwrong",0,1574212152,294,"anonfirstname171","anonlastname171","anon171",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166421,28935,29,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573758519,556716,1,"gradedright",1,1573758286,1807,"anon176","anonfirstname176","anonlastname176",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501945,70241,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574212561,494705,1,"gradedpartial",0.5,1574212204,294,"anonfirstname171","anonlastname171","anon171",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166403,28935,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4^n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574235405,554332,1,"gradedpartial",0.5,1574235116,1810,"anon179","anonfirstname179","anonlastname179",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503717,70267,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574212561,494696,1,"gradedright",1,1574212288,294,"anonfirstname171","anonlastname171","anon171",3,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166458,28936,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574195725,555170,1,"gradedpartial",0.5,1574195432,1811,"anon180","anonfirstname180","anonlastname180",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500014,70209,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574245130,494726,1,"gradedwrong",0,1573837382,297,"anonfirstname174","anonlastname174","anon174",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166550,28937,34,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573664682,553396,0,"todo",NA,1573664681,1812,"anon181","anonfirstname181","anonlastname181",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501507,70234,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sin(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1573654224,494762,1,"gradedwrong",0,1573653047,298,"anonfirstname175","anonlastname175","anon175",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166515,28937,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574125588,554121,1,"gradedright",1,1574125283,1815,"anon184","anonfirstname184","anonlastname184",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500997,70226,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573654224,494748,1,"gradedright",1,1573653130,298,"anonfirstname175","anonlastname175","anon175",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161031,28840,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574009685,553878,1,"gradedpartial",0.5,1574009249,1816,"anon185","anonfirstname185","anonlastname185",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505386,70297,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573750029,491978,1,"gradedwrong",0,1573749977,301,"anonfirstname178","anonlastname178","anon178",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161092,28841,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574204068,555989,1,"gradedright",1,1574203481,1818,"anon187","anonfirstname187","anonlastname187",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503632,70265,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1575944911,492004,1,"gradedright",1,1575943809,302,"anonfirstname179","anonlastname179","anon179",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161810,28854,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574093773,555120,0,"todo",NA,1574093772,1820,"anon189","anonfirstname189","anonlastname189",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502546,70249,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574197389,492379,1,"gaveup",NA,1574197389,140,"anonfirstname18","anonlastname18","anon18",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166609,28938,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573920706,554598,1,"gradedright",1,1573915400,1824,"anon193","anonfirstname193","anonlastname193",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506836,70325,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573758519,494787,1,"gradedright",1,1573758286,305,"anonfirstname182","anonlastname182","anon182",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166644,28939,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -3/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573827349,556741,1,"gradedright",1,1573827052,1827,"anon196","anonfirstname196","anonlastname196",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503664,70266,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1575584857,494812,0,"todo",NA,1575584856,307,"anonfirstname184","anonlastname184","anon184",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161166,28842,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574102040,555145,0,"todo",NA,1574102039,1828,"anon197","anonfirstname197","anonlastname197",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502490,70248,38,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 4^n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574235405,492040,1,"gradedpartial",0.5,1574235116,308,"anonfirstname185","anonlastname185","anon185",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163403,28877,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2*n+4 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573922750,554572,1,"gradedpartial",0.5,1573922316,1414,"anon20","anonfirstname20","anonlastname20",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502459,70248,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574195725,493142,1,"gradedpartial",0.5,1574195432,309,"anonfirstname186","anonlastname186","anon186",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161198,28843,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573922750,554557,1,"gradedright",1,1573922337,1414,"anon20","anonfirstname20","anonlastname20",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506910,70326,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573664682,492065,0,"todo",NA,1573664681,310,"anonfirstname187","anonlastname187","anon187",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166696,28940,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sqrt(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573643183,556773,1,"gradedpartial",0.5,1573642680,1831,"anon200","anonfirstname200","anonlastname200",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506895,70326,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1575946537,494834,1,"gradedright",1,1575943236,312,"anonfirstname189","anonlastname189","anon189",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166745,28941,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573643183,556766,1,"gradedright",1,1573642734,1831,"anon200","anonfirstname200","anonlastname200",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506937,70327,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1576560254,494865,0,"complete",NA,1576560254,312,"anonfirstname189","anonlastname189","anon189",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159414,28812,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573984257,556794,0,"complete",NA,1573984257,1831,"anon200","anonfirstname200","anonlastname200",3,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506944,70327,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574250400,491165,1,"gradedright",1,1574250108,141,"anonfirstname19","anonlastname19","anon19",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161252,28844,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573984257,556801,0,"complete",NA,1573984257,1831,"anon200","anonfirstname200","anonlastname200",4,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500334,70215,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574125588,492090,1,"gradedright",1,1574125283,313,"anonfirstname190","anonlastname190","anon190",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161313,28845,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: u_1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574248339,553558,1,"gradedright",1,1573817992,1835,"anon204","anonfirstname204","anonlastname204",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506990,70328,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574009685,492115,1,"gradedpartial",0.5,1574009249,314,"anonfirstname191","anonlastname191","anon191",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165189,28910,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/-n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574012325,556822,1,"gradedright",1,1574011702,1836,"anon205","anonfirstname205","anonlastname205",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505454,70298,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574204068,494038,1,"gradedright",1,1574203481,316,"anonfirstname193","anonlastname193","anon193",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163430,28878,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574144330,556019,1,"gradedright",1,1574143765,1837,"anon206","anonfirstname206","anonlastname206",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505500,70299,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","Seed: 1; ans1: 1-1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T","",1586886380,493167,0,"todo",NA,1586886379,317,"anonfirstname194","anonlastname194","anon194",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163455,28879,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574196313,556046,0,"todo",NA,1574026665,1842,"anon211","anonfirstname211","anonlastname211",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1507081,70329,31,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574093773,493192,0,"todo",NA,1574093772,318,"anonfirstname195","anonlastname195","anon195",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163507,28880,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5/2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573948219,556864,1,"gradedpartial",0.5,1573946535,1843,"anon212","anonfirstname212","anonlastname212",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1507059,70329,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573920706,493217,1,"gradedright",1,1573915400,322,"anonfirstname199","anonlastname199","anon199",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161843,28855,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573948219,556853,1,"gradedright",1,1573946572,1843,"anon212","anonfirstname212","anonlastname212",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503875,70270,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1575634790,492405,0,"todo",NA,1575634789,142,"anonfirstname20","anonlastname20","anon20",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166801,28942,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 3*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574261085,555267,1,"gradedpartial",0.5,1574260991,1845,"anon214","anonfirstname214","anonlastname214",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503869,70270,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -3/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573827349,494896,1,"gradedright",1,1573827052,325,"anonfirstname202","anonlastname202","anon202",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163552,28881,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5*n-3 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574261097,555263,1,"gradedpartial",0.5,1574261096,1845,"anon214","anonfirstname214","anonlastname214",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505544,70300,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574102040,493246,0,"todo",NA,1574102039,326,"anonfirstname203","anonlastname203","anon203",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166875,28943,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574025836,556069,1,"gradedright",1,1574025342,1846,"anon215","anonfirstname215","anonlastname215",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501300,70230,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sqrt(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573643183,494928,1,"gradedpartial",0.5,1573642680,329,"anonfirstname206","anonlastname206","anon206",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166860,28943,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574049350,554013,1,"gaveup",NA,1574049350,1849,"anon218","anonfirstname218","anonlastname218",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502307,70246,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573643183,494921,1,"gradedright",1,1573642734,329,"anonfirstname206","anonlastname206","anon206",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166902,28944,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573686223,554490,1,"gradedright",1,1573685277,1850,"anon219","anonfirstname219","anonlastname219",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501579,70235,28,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573984257,494949,0,"complete",NA,1573984257,329,"anonfirstname206","anonlastname206","anon206",3,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166909,28944,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574159148,554152,1,"gradedpartial",0.5,1574158213,1852,"anon221","anonfirstname221","anonlastname221",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501565,70235,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573984257,494956,0,"complete",NA,1573984257,329,"anonfirstname206","anonlastname206","anon206",4,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161377,28846,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574159148,554146,1,"gradedright",1,1574158269,1852,"anon221","anonfirstname221","anonlastname221",2,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503167,70258,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: u_1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574248339,492148,1,"gradedright",1,1573817992,333,"anonfirstname210","anonlastname210","anon210",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1166955,28945,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574028181,554897,1,"gradedwrong",0,1574025053,1854,"anon223","anonfirstname223","anonlastname223",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501216,70229,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/-n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574012325,494977,1,"gradedright",1,1574011702,334,"anonfirstname211","anonlastname211","anon211",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165257,28911,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574099840,553975,1,"gradedright",1,1574095616,1855,"anon224","anonfirstname224","anonlastname224",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503369,70261,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574144330,494068,1,"gradedright",1,1574143765,335,"anonfirstname212","anonlastname212","anon212",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165303,28912,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574030700,554988,1,"gradedright",1,1574029296,1420,"anon26","anonfirstname26","anonlastname26",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505587,70301,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574196313,494095,0,"todo",NA,1574026665,340,"anonfirstname217","anonlastname217","anon217",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1167046,28946,31,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573831995,556099,0,"todo",NA,1573831994,1426,"anon32","anonfirstname32","anonlastname32",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504190,70276,30,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5/2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573948219,495019,1,"gradedpartial",0.5,1573946535,341,"anonfirstname218","anonlastname218","anon218",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1167024,28946,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (2*n+3)/(n+1) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573812899,555425,1,"gradedwrong",0,1573812845,1432,"anon38","anonfirstname38","anonlastname38",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504192,70276,31,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573948219,495008,1,"gradedright",1,1573946572,341,"anonfirstname218","anonlastname218","anon218",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161411,28847,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (2^(2*n)+1)/(4^n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1573812957,555426,1,"gradedwrong",0,1573812943,1432,"anon38","anonfirstname38","anonlastname38",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504168,70276,19,"interactivecountback",23608,1,1,0,1,1,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1576710360,492175,0,"todo",NA,1576710359,342,"anonfirstname219","anonlastname219","anon219",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163590,28882,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574237788,555414,1,"gradedright",1,1573812974,1432,"anon38","anonfirstname38","anonlastname38",3,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500639,70220,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 3*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574261085,493275,1,"gradedpartial",0.5,1574260991,343,"anonfirstname220","anonlastname220","anon220",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163584,28882,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573927560,553695,1,"gradedright",1,1573927146,1434,"anon40","anonfirstname40","anonlastname40",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504237,70277,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5*n-3 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574261097,493271,1,"gradedpartial",0.5,1574261096,343,"anonfirstname220","anonlastname220","anon220",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165347,28913,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 10-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573995858,555446,1,"gradedright",1,1573995220,1435,"anon41","anonfirstname41","anonlastname41",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504291,70278,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1575220001,494118,1,"gradedright",1,1574025342,344,"anonfirstname221","anonlastname221","anon221",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161466,28848,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573815615,555470,1,"gradedpartial",0.5,1573815316,1436,"anon42","anonfirstname42","anonlastname42",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504370,70279,26,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1574049350,492200,1,"gaveup",NA,1574049350,347,"anonfirstname224","anonlastname224","anon224",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161501,28849,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/4*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574014726,555504,1,"gradedpartial",0.5,1574014027,1438,"anon44","anonfirstname44","anonlastname44",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504356,70279,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1575647765,492226,0,"todo",NA,1575647765,347,"anonfirstname224","anonlastname224","anon224",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163642,28883,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574014726,555497,1,"gradedright",1,1574014088,1438,"anon44","anonfirstname44","anonlastname44",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505653,70302,28,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573686223,493298,1,"gradedright",1,1573685277,348,"anonfirstname225","anonlastname225","anon225",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161569,28850,28,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573941680,556129,1,"gradedpartial",0.5,1573940663,1440,"anon46","anonfirstname46","anonlastname46",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505637,70302,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574159148,492258,1,"gradedpartial",0.5,1574158213,350,"anonfirstname227","anonlastname227","anon227",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161555,28850,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1:  1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573941680,556121,2,"gradedright",1,1573940769,1440,"anon46","anonfirstname46","anonlastname46",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505708,70303,23,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574159148,492252,1,"gradedright",1,1574158269,350,"anonfirstname227","anonlastname227","anon227",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163725,28884,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573653832,556154,1,"gradedpartial",0.5,1573653312,1443,"anon49","anonfirstname49","anonlastname49",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505702,70303,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574028181,493337,1,"gradedwrong",0,1574025053,397,"anonfirstname229","anonlastname229","anon229",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161927,28856,38,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573653832,556151,1,"gradedright",1,1573653378,1443,"anon49","anonfirstname49","anonlastname49",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505728,70304,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2*n+4 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573922750,492445,1,"gradedpartial",0.5,1573922316,145,"anonfirstname23","anonlastname23","anon23",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161896,28856,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573668075,556174,0,"complete",NA,1573668075,1443,"anon49","anonfirstname49","anonlastname49",3,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505731,70304,23,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573922750,492430,1,"gradedright",1,1573922337,145,"anonfirstname23","anonlastname23","anon23",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161635,28851,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573668075,556177,0,"complete",NA,1573668075,1443,"anon49","anonfirstname49","anonlastname49",4,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502152,70244,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574099840,492287,1,"gradedright",1,1574095616,398,"anonfirstname230","anonlastname230","anon230",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161984,28857,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573995110,554422,2,"gradedright",1,1573994799,1444,"anon50","anonfirstname50","anonlastname50",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500289,70214,33,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574030700,492471,1,"gradedright",1,1574029296,151,"anonfirstname29","anonlastname29","anon29",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159450,28813,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573776933,553533,1,"gradedwrong",0,1573776167,1445,"anon51","anonfirstname51","anonlastname51",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500267,70214,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1576840426,491193,0,"todo",NA,1576840425,154,"anonfirstname32","anonlastname32","anon32",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165392,28914,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573776933,553522,1,"gradedright",1,1573776189,1445,"anon51","anonfirstname51","anonlastname51",2,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503452,70262,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573831995,494148,0,"todo",NA,1573831994,157,"anonfirstname35","anonlastname35","anon35",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165418,28915,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 3*n+2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574081020,555026,1,"gradedpartial",0.5,1574075601,1447,"anon53","anonfirstname53","anonlastname53",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503434,70262,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1575564234,494170,0,"todo",NA,1575564233,159,"anonfirstname37","anonlastname37","anon37",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163993,28889,30,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574081020,555017,1,"gradedright",1,1574075637,1447,"anon53","anonfirstname53","anonlastname53",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501815,70239,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (2*n+3)/(n+1) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573812899,493474,1,"gradedwrong",0,1573812845,164,"anonfirstname42","anonlastname42","anon42",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163995,28889,31,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574202123,554268,0,"todo",NA,1574188693,1448,"anon54","anonfirstname54","anonlastname54",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504409,70280,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: (2^(2*n)+1)/(4^n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1573812957,493475,1,"gradedwrong",0,1573812943,164,"anonfirstname42","anonlastname42","anon42",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1163971,28889,19,"interactivecountback",3723,1,1,0,1,1,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574184431,555527,0,"todo",NA,1574158362,1449,"anon55","anonfirstname55","anonlastname55",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504476,70281,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574846442,493463,1,"gradedright",1,1573812974,164,"anonfirstname42","anonlastname42","anon42",3,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159502,28814,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573763156,555558,1,"gradedpartial",0.5,1573757787,1450,"anon56","anonfirstname56","anonlastname56",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504460,70281,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573927560,491218,1,"gradedright",1,1573927146,166,"anonfirstname44","anonlastname44","anon44",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164040,28890,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573763156,555550,1,"gradedright",1,1573757842,1450,"anon56","anonfirstname56","anonlastname56",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503747,70268,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 10-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573995858,493495,1,"gradedright",1,1573995220,167,"anonfirstname45","anonlastname45","anon45",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164094,28891,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574252081,555195,0,"todo",NA,1574183050,1400,"anon6","anonfirstname6","anonlastname6",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500513,70218,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573815615,493519,1,"gradedpartial",0.5,1573815316,168,"anonfirstname46","anonlastname46","anon46",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164173,28892,26,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573821290,553638,1,"gradedright",1,1573821027,1454,"anon60","anonfirstname60","anonlastname60",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505776,70305,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/4*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574014726,493553,1,"gradedpartial",0.5,1574014027,170,"anonfirstname48","anonlastname48","anon48",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164159,28892,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573653480,556197,1,"gradedright",1,1573652500,1455,"anon61","anonfirstname61","anonlastname61",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504514,70282,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574014726,493546,1,"gradedright",1,1574014088,170,"anonfirstname48","anonlastname48","anon48",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165484,28916,28,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573995171,555580,0,"todo",NA,1573681155,1457,"anon63","anonfirstname63","anonlastname63",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500101,70211,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573941680,494200,1,"gradedpartial",0.5,1573940663,172,"anonfirstname50","anonlastname50","anon50",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165468,28916,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1573750101,553446,1,"gaveup",NA,1573750101,1460,"anon66","anonfirstname66","anonlastname66",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503032,70256,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1:  1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573941680,494192,2,"gradedright",1,1573940769,172,"anonfirstname50","anonlastname50","anon50",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165539,28917,23,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573919365,554835,1,"gradedpartial",0.5,1573918779,1463,"anon69","anonfirstname69","anonlastname69",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504578,70283,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573653832,494225,1,"gradedpartial",0.5,1573653312,175,"anonfirstname53","anonlastname53","anon53",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165533,28917,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573828908,555611,1,"gradedpartial",0.5,1573827782,1464,"anon70","anonfirstname70","anonlastname70",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504562,70283,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/3^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573653832,494222,1,"gradedright",1,1573653378,175,"anonfirstname53","anonlastname53","anon53",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165559,28918,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573828908,555603,1,"gradedright",1,1573827807,1464,"anon70","anonfirstname70","anonlastname70",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503113,70257,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573668075,494245,0,"complete",NA,1573668075,175,"anonfirstname53","anonlastname53","anon53",3,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165562,28918,23,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573931181,554871,1,"gradedwrong",0,1573930892,1465,"anon71","anonfirstname71","anonlastname71",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503115,70257,33,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573668075,494248,0,"complete",NA,1573668075,175,"anonfirstname53","anonlastname53","anon53",4,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162051,28858,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573931181,554872,1,"gradedwrong",0,1573930908,1465,"anon71","anonfirstname71","anonlastname71",2,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1503094,70257,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573995110,492500,2,"gradedright",1,1573994799,176,"anonfirstname54","anonlastname54","anon54",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159590,28815,33,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573931181,554862,1,"gradedright",1,1573930928,1465,"anon71","anonfirstname71","anonlastname71",3,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504646,70284,27,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573776933,491259,1,"gradedwrong",0,1573776167,177,"anonfirstname55","anonlastname55","anon55",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159568,28815,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574017874,555641,1,"gradedwrong",0,1574017293,1471,"anon77","anonfirstname77","anonlastname77",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504628,70284,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573776933,491248,1,"gradedright",1,1573776189,177,"anonfirstname55","anonlastname55","anon55",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162164,28859,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017874,555633,1,"gradedright",1,1574017317,1471,"anon77","anonfirstname77","anonlastname77",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504695,70285,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 3*n+2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1574081020,492550,1,"gradedpartial",0.5,1574075601,179,"anonfirstname57","anonlastname57","anon57",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162146,28859,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1^-n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574187581,555663,1,"gradedwrong",0,1574187180,1473,"anon79","anonfirstname79","anonlastname79",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505844,70306,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574081020,492541,1,"gradedright",1,1574075637,179,"anonfirstname57","anonlastname57","anon57",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159632,28816,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573778031,556228,1,"gradedright",1,1573776929,1474,"anon80","anonfirstname80","anonlastname80",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1500211,70213,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574202123,491284,0,"todo",NA,1574188693,180,"anonfirstname58","anonlastname58","anon58",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164212,28893,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n-n^2 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573867345,553497,1,"gradedwrong",0,1573862119,1478,"anon84","anonfirstname84","anonlastname84",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505920,70307,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574184431,493576,0,"todo",NA,1574158362,181,"anonfirstname59","anonlastname59","anon59",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164279,28894,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574108077,556260,1,"gradedright",1,1574107308,1479,"anon85","anonfirstname85","anonlastname85",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501735,70237,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573763156,493607,1,"gradedpartial",0.5,1573757787,182,"anonfirstname60","anonlastname60","anon60",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164263,28894,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574186538,554217,1,"gradedright",1,1574186178,1480,"anon86","anonfirstname86","anonlastname86",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1501071,70227,22,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573763156,493599,1,"gradedright",1,1573757842,182,"anonfirstname60","anonlastname60","anon60",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159688,28817,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n/(n+1) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574010476,553911,1,"gradedright",1,1574010151,1481,"anon87","anonfirstname87","anonlastname87",1,"LGE Group GGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504771,70286,32,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574620664,491318,0,"todo",NA,1574620663,185,"anonfirstname63","anonlastname63","anon63",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159745,28818,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: u_n/5 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573893539,555698,1,"gradedwrong",0,1573819855,1482,"anon88","anonfirstname88","anonlastname88",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504744,70286,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573821290,491345,1,"gradedright",1,1573821027,186,"anonfirstname64","anonlastname64","anon64",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165607,28919,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573893539,555685,1,"gradedright",1,1573892703,1482,"anon88","anonfirstname88","anonlastname88",2,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502396,70247,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573653480,494268,1,"gradedright",1,1573652500,187,"anonfirstname65","anonlastname65","anon65",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164317,28895,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573735350,554529,1,"gradedright",1,1573735053,1403,"anon9","anonfirstname9","anonlastname9",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1505983,70308,20,"interactivecountback",23608,1,1,0,1,1,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1573995171,493629,0,"todo",NA,1573681155,189,"anonfirstname67","anonlastname67","anon67",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159806,28819,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sqrt(10-n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1574073622,556288,1,"gradedwrong",0,1573943106,1485,"anon91","anonfirstname91","anonlastname91",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506012,70309,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","prt1: #",1573750101,491370,1,"gaveup",NA,1573750101,192,"anonfirstname70","anonlastname70","anon70",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162217,28860,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574173123,556311,0,"complete",NA,1574173122,1485,"anon91","anonfirstname91","anonlastname91",2,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502247,70245,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573919365,492574,1,"gradedpartial",0.5,1573918779,195,"anonfirstname73","anonlastname73","anon73",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164381,28896,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573675438,554463,1,"gradedright",1,1573675114,1486,"anon92","anonfirstname92","anonlastname92",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1506053,70310,20,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573828908,493660,1,"gradedpartial",0.5,1573827782,196,"anonfirstname74","anonlastname74","anon74",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164365,28896,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574175438,556334,0,"todo",NA,1573647533,1487,"anon93","anonfirstname93","anonlastname93",1,"LGE Group CCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1502830,70253,23,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573828908,493652,1,"gradedright",1,1573827807,196,"anonfirstname74","anonlastname74","anon74",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162298,28861,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573853725,554730,1,"gradedright",1,1573850976,1489,"anon95","anonfirstname95","anonlastname95",1,"LGE Group GCG"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504821,70287,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573931181,492610,1,"gradedwrong",0,1573930892,197,"anonfirstname75","anonlastname75","anon75",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162300,28861,33,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-(1/2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574129306,555720,1,"gradedright",1,1574128545,1490,"anon96","anonfirstname96","anonlastname96",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504893,70288,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573931181,492611,1,"gradedwrong",0,1573930908,197,"anonfirstname75","anonlastname75","anon75",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162279,28861,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573768558,555753,1,"gradedright",1,1573768161,1492,"anon98","anonfirstname98","anonlastname98",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504974,70289,31,"interactivecountback",23608,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573931181,492601,1,"gradedright",1,1573930928,197,"anonfirstname75","anonlastname75","anon75",3,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162375,28862,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n/2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F",1573643571,555790,1,"gradedpartial",0.5,1573642845,1493,"anon99","anonfirstname99","anonlastname99",1,"LGE Group CGC"
-"../data-raw/study1/attempts-Quiz1.csv","NearG",1504949,70289,19,"interactivecountback",23608,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1/3**n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574674880,492645,1,"gradedwrong",0,1574674468,200,"anonfirstname78","anonlastname78","anon78",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162357,28862,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
-","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-(1/(2^n)) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573643571,555778,1,"gradedright",1,1573642879,1493,"anon99","anonfirstname99","anonlastname99",2,"LGE Group CGC"
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/3**n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574674880,492636,1,"gradedright",1,1574674509,200,"anonfirstname78","anonlastname78","anon78",2,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164449,28897,27,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574017874,493690,1,"gradedwrong",0,1574017293,204,"anonfirstname82","anonlastname82","anon82",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164431,28897,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/(2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574017874,493682,1,"gradedright",1,1574017317,204,"anonfirstname82","anonlastname82","anon82",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164498,28898,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1^-n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1574187581,493712,1,"gradedwrong",0,1574187180,206,"anonfirstname84","anonlastname84","anon84",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165675,28920,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573778031,494299,1,"gradedright",1,1573776929,207,"anonfirstname85","anonlastname85","anon85",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159865,28820,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n-n^2 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573867345,491395,1,"gradedwrong",0,1573862119,211,"anonfirstname89","anonlastname89","anon89",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1161693,28852,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574252081,492326,0,"todo",NA,1574183050,131,"anonfirstname9","anonlastname9","anon9",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165751,28921,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574108077,494331,1,"gradedright",1,1574107308,212,"anonfirstname90","anonlastname90","anon90",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159922,28821,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574186538,491420,1,"gradedright",1,1574186178,213,"anonfirstname91","anonlastname91","anon91",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1159957,28822,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1575397131,491446,0,"complete",NA,1575397131,213,"anonfirstname91","anonlastname91","anon91",2,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1160010,28823,22,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: n/(n+1) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1574010476,491472,1,"gradedright",1,1574010151,214,"anonfirstname92","anonlastname92","anon92",1,"LGE Group GGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164574,28899,32,"interactivecountback",3723,1,0,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: u_n/5 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T",1573893539,493747,1,"gradedwrong",0,1573819855,215,"anonfirstname93","anonlastname93","anon93",1,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1164547,28899,19,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573893539,493734,1,"gradedright",1,1573892703,215,"anonfirstname93","anonlastname93","anon93",2,"LGE Group CGC"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165814,28922,20,"interactivecountback",3723,1,1,0,1,1,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: sqrt(10-n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F",1574073622,494359,1,"gradedwrong",0,1573943106,218,"anonfirstname96","anonlastname96","anon96",1,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165843,28923,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574173123,494382,0,"complete",NA,1574173122,218,"anonfirstname96","anonlastname96","anon96",2,"LGE Group CCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1162428,28863,23,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T",1573675438,492668,1,"gradedright",1,1573675114,219,"anonfirstname97","anonlastname97","anon97",1,"LGE Group GCG"
+"../data-raw/study1/attempts-NearG.csv","NearG",1165884,28924,20,"interactivecountback",3723,1,1,0,1,0,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+","ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T","",1574175438,494405,0,"todo",NA,1573647533,220,"anonfirstname98","anonlastname98","anon98",1,"LGE Group CCG"
