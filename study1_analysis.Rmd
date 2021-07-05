@@ -14,6 +14,7 @@ library(tidyverse)
 #Plots
 library(ggplot2)
 library(patchwork) # for combining plots
+library(ggtext) # for markdown in plots
 
 # For Bayesian stats:
 library(bayestestR)
@@ -163,11 +164,12 @@ attempts_summary_stats = attempts_summary %>%
       str_detect(question_name, "Far") ~ "4. Far"
     )
   )
+```
 
+This shows the mean score on each of the items:
+
+```{r}
 attempts_summary_stats %>% 
-  mutate(
-    question_name = fct_reorder(question_name, plot_order)
-  ) %>% 
   ggplot(aes(x = question_name,
              y = mean_score,
              colour = attempt_type,
@@ -185,6 +187,138 @@ attempts_summary_stats %>%
   ylim(c(0,1)) +
   labs(caption = "Hollow points show the proportion of null responses")
 ```
+
+## Initial learning task: Classification
+
+```{r}
+# Separate the raw response data into details of the 10 different sub-parts
+# - extract the details of which sub-part is which of the Alcock & Simpson items (item_part)
+# - plus the corresponding response (ans_part) and score (score_part) for each sub-part
+responses_C1 <- attempt_data_all %>%
+  filter(question_name == "C1",
+         attempt_number == 1,
+         !is.na(marks_attained)) %>%
+  select(group, username, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the responses to each part
+  # STACK output uses [score] to separate the responses to each part; use NA to discard the final bit that is about the PRTs
+  separate(col = responsesummary,
+           into = c(paste0("ans_part", c(1:10)), NA),
+           sep = "\\[score\\]; ",
+           remove = FALSE) %>% 
+  mutate(across(contains("ans"), ~ str_remove(., ".*: "))) %>% 
+  # pick out the scores for each part (this time discarding the first bit that holds the responses)
+  separate(col = responsesummary,
+           into = paste0("score_part", c(0:10)),
+           sep = "\\| prt") %>% 
+  select(-score_part0) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ";.*"))) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ".*-.*-"))) %>% 
+  mutate(questionsummary = str_remove_all(questionsummary, "\\[|\\]")) %>% 
+  separate(col = questionsummary,
+           into = paste0("item_part", c(1:10)),
+           sep = ",")
+
+responses_C1_long = responses_C1 %>% 
+  pivot_longer(
+    # take variables of the form STUFF_partN and separate
+    # into a column for each kind of STUFF and store the
+    # values of N in a column called "part"
+    contains("part"),
+    names_to = c(".value", "part"),
+    names_sep = "_part"
+  ) %>% 
+  mutate(score = if_else(score == "T", 1, 0)) %>% 
+  mutate(score = replace_na(score, 0),
+         item = as.integer(item),
+         item = as.factor(item),
+         ans = str_remove_all(ans, '\\"| '),
+         ans = na_if(ans, ""))
+
+responses_C1_summary = responses_C1_long  %>% 
+  group_by(item, ans) %>% 
+  summarise(
+    count = n(),
+    .groups = "drop"
+  ) %>% 
+  arrange(item) %>% 
+  group_by(item) %>% 
+  mutate(
+    correct_ans = case_when(
+      item %in% c(2,9) & ans == "Increasing" ~ "Correct",
+      item %in% c(3,10) & ans == "Decreasing" ~ "Correct",
+      item %in% c(1,4,5,6,7,8) & ans == "Neither" ~ "Correct",
+      TRUE ~ "Incorrect"
+    ),
+    signed_count = if_else(correct_ans == "Correct", count, -count),
+    signed_prop = signed_count / sum(count*!is.na(ans))
+  ) %>% 
+  drop_na()
+
+library(latex2exp)
+responses_C1_summary %>% 
+  mutate(item = as.numeric(item)) %>% 
+  ggplot(aes(x = item, y = signed_count, fill = ans)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 50, 25)) +
+  scale_x_reverse(
+    position = "top",
+    breaks = c(1:10),
+    minor_breaks = c(1:10),
+    labels = c(
+      "1" = parse(text = TeX("1. (0,1,0,1,0,1,0,1,\\ldots)")),
+      "2" = parse(text = TeX("2. (1, 4, 9, 16, 25, 36, 49, 64,\\ldots)")),
+      "3" = parse(text = TeX("3. (1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\frac{1}{5},\\frac{1}{6},\\frac{1}{7},\\frac{1}{8},\\ldots)")),
+      "4" = parse(text = TeX("4. (1,-1,2,-2,3,-3,4,-4,\\ldots)")),
+      "5" = parse(text = TeX("5. (3,3,3,3,3,3,3,3,\\ldots)")),
+      "6" = parse(text = TeX("6. (1, 3, 2, 4, 3, 5, 4, 6,\\ldots)")),
+      "7" = parse(text = TeX("7. (6, 6, 7, 7, 8, 8, 9, 9,\\ldots)")),
+      "8" = parse(text = TeX("8. (0, 1, 0, 2, 0, 3, 0, 4,\\ldots)")),
+      "9" = parse(text = TeX("9. (\\frac{1}{2}, \\frac{3}{4}, \\frac{7}{8}, \\frac{15}{16}, \\frac{31}{32}, \\frac{63}{64}, \\frac{127}{128}, \\frac{255}{256},\\ldots)")),
+      "10" = parse(text = TeX("10. (-2,-4,-6,-8,-10,-12,-14,-16,\\ldots)"))
+    )
+  ) +
+  labs(x = "") +
+  coord_flip() +
+  annotate("text", x = -0.5, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
+  annotate("text", x = -0.5, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
+  theme(axis.text.x = element_markdown(),
+        panel.grid.minor.x = element_blank(),
+        legend.position = "left")
+
+ggsave("figs/FIG_study1_responses_C1.pdf", width = 18, height = 11, units = "cm")
+```
+
+
+## Initial learning task: Example generation
+
+```{r}
+attempts_summary_stats %>% 
+  filter(str_detect(question_name, "^G")) %>% 
+  ggplot(aes(x = question_name,
+             y = mean_score,
+             colour = attempt_type,
+             group = attempt_type)) +
+  geom_point() +
+  geom_line() +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 1),
+        legend.position = "bottom") +
+  ylim(c(0,1)) +
+  scale_colour_manual("Attempt", values = heathers) +
+  labs(y = "Mean proportion of marks attained",
+       x = "Question")
+```
+
+## Outcome measures
+
+There are various possible outcome measures, based on:
+
+* whether to use all subsequent questions (after the learning task) or only the two questions in the Far test
+* whether to focus on the marks relating to increasing/decreasing sequences and boundedness separately
+
 
 ```{r}
 detailed_scores <- attempt_data_all %>% 
@@ -246,33 +380,6 @@ detailed_scores_summary %>%
   write_csv("data-clean/study1_detail.csv")
 ```
 
-
-## Initial learning task: Example generation
-
-```{r}
-attempts_summary_stats %>% 
-  filter(str_detect(question_name, "^G")) %>% 
-  ggplot(aes(x = question_name,
-             y = mean_score,
-             colour = attempt_type,
-             group = attempt_type)) +
-  geom_point() +
-  geom_line() +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, hjust = 1),
-        legend.position = "bottom") +
-  ylim(c(0,1)) +
-  scale_colour_manual("Attempt", values = heathers) +
-  labs(y = "Mean proportion of marks attained",
-       x = "Question")
-```
-
-## Outcome measures
-
-There are various possible outcome measures, based on:
-
-* whether to use all subsequent questions (after the learning task) or only the two questions in the Far test
-* whether to focus on the marks relating to increasing/decreasing sequences and boundedness separately
 
 Here we carry out all the analyses to compare the results.
 
@@ -417,7 +524,7 @@ plot_far_only <- contrast_data_for_plotting %>%
 
 ## Main comparison
 
-Since the pattern of results is basically the same for all measures, we focus on `marks_attained` across all questions.
+Since the pattern of results is basically the same for all outcome measures, we focus on `marks_attained` across all questions.
 
 ```{r}
 model <- (all_model_fits %>% filter(measure == "marks_attained") %>% pull(model))[[1]]
