@@ -373,21 +373,107 @@ ggsave("figs/FIG_study1_responses_C.pdf", width = 18, height = 12, units = "cm")
 ## Initial learning task: Example generation
 
 ```{r}
-attempts_summary_stats %>% 
-  filter(str_detect(question_name, "^G")) %>% 
-  ggplot(aes(x = question_name,
-             y = mean_score,
-             colour = attempt_type,
-             group = attempt_type)) +
-  geom_point() +
-  geom_line() +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 0, hjust = 1),
-        legend.position = "bottom") +
-  ylim(c(0,1)) +
-  scale_colour_manual("Attempt", values = heathers) +
-  labs(y = "Mean proportion of marks attained",
-       x = "Question")
+responses_G <- attempt_data_all %>%
+  filter(
+    str_detect(question_name, "^G"),
+    # focus on students doing this as their initial learning task
+    str_detect(group, "G-"),
+    attempt_number == 1,
+    !is.na(marks_attained)
+  ) %>% 
+  select(group, username, question_name, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the various answers - str_match_all returns a matrix, which we have to wrangle a bit
+  mutate(ans_bits = str_match_all(responsesummary, "(ans[:digit:]): ([^;]*)(?=\\[score\\];)")) %>% 
+  mutate(ans_bits = map(ans_bits, ~ tibble(part = .x[,2], response = .x[,3]))) %>% 
+  unnest(ans_bits) %>% 
+  # this pulls out all the PRT parts, but we don't actually need to - see "fully_correct" below
+  #mutate(prt_bits = str_match_all(responsesummary, "(prt[:digit:]): ([^;]*)(?=; |$)")) %>% 
+  #mutate(prt_bits = map(prt_bits, ~ tibble(prt = .x[,2], tree = .x[,3]))) %>% 
+  #unnest(prt_bits) %>% 
+  # construct a simplified name for each question part
+  mutate(
+    G_part = case_when(
+      question_name %in% c("Ga", "Gb", "Gc") ~ paste0(question_name, parse_number(part)),
+      # Gd1/2/3 are already in the right form
+      TRUE ~ question_name
+    ),
+    fully_correct = case_when(
+      #part == "ans1" ~ str_detect(responsesummary, "prt1-1-T"),
+      #question_name %in% c("Ga", "Gb")
+      G_part == "Ga1" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "Ga2" ~ str_detect(responsesummary, "prt2-4-T"),
+      G_part == "Ga3" ~ str_detect(responsesummary, "prt3-4-T"),
+      G_part == "Gb1" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "Gb2" ~ str_detect(responsesummary, "prt2-4-T"),
+      G_part == "Gb3" ~ str_detect(responsesummary, "prt3-4-T"),
+      G_part == "Gc1" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "Gc2" ~ str_detect(responsesummary, "prt2-1-T"),
+      G_part == "Gc3" ~ str_detect(responsesummary, "prt3-7-T"),
+      G_part == "Gd1" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "Gd2" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "Gd3" ~ str_detect(responsesummary, "prt1-2-T"),
+    ),
+    relevant_prt = case_when(
+      question_name %in% c("Ga", "Gb", "Gc") ~ str_match_all(responsesummary, str_glue("prt{parse_number(part)}: [^;]*(?=; |$)")),
+      TRUE ~ str_match_all(responsesummary, str_glue("prt1: [^;]*(?=; |$)"))
+    )
+  ) %>% 
+  select(-contains("summary"))
+
+responses_G_summary <- responses_G %>% 
+  janitor::tabyl(G_part, fully_correct) %>% 
+  rename(part = G_part, incorrect = "FALSE", correct = "TRUE")
+
+responses_G_summary %>% 
+  basic_kable()
+
+responses_G_summary %>% 
+  pivot_longer(cols = contains("correct"), names_to = "type", values_to = "count") %>% 
+  ggplot(aes(x = part, y = count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous("Number of responses")
+```
+
+```{r}
+responses_G %>% 
+  group_by(G_part, fully_correct, response) %>% tally() %>% arrange(G_part, fully_correct, -n) %>% 
+  write_csv("data-clean/study1/G_part_analysis.csv")
+```
+
+### Ga
+
+For part 1 (increasing):
+
+* the most common correct answer was `n+1` (10 responses), with most correct responses being either of the form `a*n` or `n+k`.
+
+* the single most common incorrect answer was `1` (7 responses, and there were 4 more that were integers), perhaps because the students were "gaming the system" to see the worked solution (as noted in Kinnear et al., 2021). 
+Another common class of incorrect answers were expressions involving `u_n` (`r responses_G %>% filter(G_part == "Ga1", !fully_correct, str_detect(response, "u_n")) %>% tally()` responses), i.e. taking the form of recurrence relations rather than a formula for the n'th term as requested.
+
+For part 2 (increasing and bounded above):
+
+* integer responses were again common as wrong answers (25 responses), suggesting students were not sure how to answer
+
+* other incorrect responses included `(-1)^n` (x3) suggesting some confusion about "increasing"; `ln(n)` (x2) which fails to be bounded above (though students might have the misconception that it is, due to the way it is often depicted in sketches)
+
+* the correct respones were: `-1/n` (x2), `-1/(2^n)`, `-e^(-n)` and `2-(1/2)^n`
+
+For part 3 (increasing, bounded above, and has u4=16):
+
+* 30 students gave an integer as their answer, though only 2 of them chose 16
+
+* the correct responses were:
+
+```{r}
+responses_G %>% filter(G_part == "Ga3", fully_correct) %>% select(username, response) %>% distinct()
+```
+
+Focusing on those students' responses throughout Ga, there is some evidence of a "transformation" strategy (Antonini) moving from 2 to 3, as they modify their previous example to suit the new constraints:
+
+```{r}
+responses_G %>% filter(str_detect(G_part, "Ga"), str_detect(username, "anon161$|anon19$|anon97$")) %>% select(username, G_part, response) %>% distinct() %>% 
+  pivot_wider(names_from = "username", values_from = "response") %>% 
+  basic_kable()
 ```
 
 ## Outcome measures
