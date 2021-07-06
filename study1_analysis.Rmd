@@ -291,6 +291,9 @@ responses_C_long = responses_C1 %>%
 
 ```{r}
 responses_C_summary = responses_C_long %>% 
+  # we are only interested in responses from the students completing the question during the learning task,
+  # not students from the G- group completing the question later when the materials were made available
+  filter(str_detect(group, "C-")) %>% 
   group_by(item, ans) %>% 
   summarise(
     count = n(),
@@ -331,7 +334,7 @@ responses_C_summary %>%
   #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
   scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
   #scale_fill_grey("Answer", end = 0.8) +
-  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 50, 25)) +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-40, 40, 20)) +
   scale_x_reverse(
     position = "top",
     breaks = c(1:15),
@@ -356,6 +359,7 @@ responses_C_summary %>%
   ) +
   labs(x = "") +
   coord_flip() +
+  expand_limits(y = c(-40,40)) +
   annotate("text", x = -0.5, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
   annotate("text", x = -0.5, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
   theme(axis.text.y = element_text(family="Times"),
