@@ -218,7 +218,61 @@ responses_C1 <- attempt_data_all %>%
            into = paste0("item_part", c(1:10)),
            sep = ",")
 
-responses_C1_long = responses_C1 %>% 
+responses_C2 <- attempt_data_all %>%
+  filter(question_name == "C2",
+         attempt_number == 1,
+         !is.na(marks_attained)) %>%
+  select(group, username, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the responses to each part
+  separate(col = responsesummary,
+           # interleave vectors https://stackoverflow.com/a/50516988
+           into = c(as.vector(rbind(paste0("ans_part", c(11:13)),c(NA,NA,NA))), NA),
+           sep = "\\[score\\]; ",
+           remove = FALSE) %>% 
+  mutate(across(contains("ans"), ~ str_remove(., ".*: "))) %>% 
+  # pick out the scores for each part (this time discarding the first bit that holds the responses)
+  separate(col = responsesummary,
+           into = c(NA, as.vector(rbind(paste0("score_part", c(11:13)),c(NA,NA,NA)))),
+           sep = "\\| prt") %>% 
+  mutate(across(contains("score"), ~ str_remove(., ";.*"))) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ".*-.*-"))) %>% 
+  mutate(questionsummary = str_remove_all(questionsummary, "\\[|\\]")) %>% 
+  separate(col = questionsummary,
+           into = paste0("item_part", c(11:13)),
+           sep = ",") %>% 
+  # make the item numbers 11,12,13 instead of 1,2,3
+  rowwise() %>% 
+  mutate(across(contains("item_part"), ~ as.character(sum(c(as.numeric(.x), 10)))))
+
+responses_C3 <- attempt_data_all %>%
+  filter(question_name == "C3",
+         attempt_number == 1,
+         !is.na(marks_attained)) %>%
+  select(group, username, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the responses to each part
+  separate(col = responsesummary,
+           into = c(paste0("ans_part", c(14:15)), NA),
+           sep = "\\[score\\]; ",
+           remove = FALSE) %>% 
+  mutate(across(contains("ans"), ~ str_remove(., ".*: "))) %>% 
+  # pick out the scores for each part (this time discarding the first bit that holds the responses)
+  separate(col = responsesummary,
+           into = c(NA,paste0("score_part", c(14:15))),
+           sep = "\\| prt") %>% 
+  mutate(across(contains("score"), ~ str_remove(., ";.*"))) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ".*-.*-"))) %>% 
+  mutate(questionsummary = str_remove_all(questionsummary, "\\[|\\]")) %>% 
+  separate(col = questionsummary,
+           into = paste0("item_part", c(14:15)),
+           sep = ",") %>% 
+  # make the item numbers 14,15 instead of 1,2
+  rowwise() %>% 
+  mutate(across(contains("item_part"), ~ as.character(sum(c(as.numeric(.x), 13)))))
+
+responses_C_long = responses_C1 %>% 
+  select(-marks_attained) %>% 
+  full_join(responses_C2 %>% select(-marks_attained), by = c("group", "username")) %>% 
+  full_join(responses_C3 %>% select(-marks_attained), by = c("group", "username")) %>% 
   pivot_longer(
     # take variables of the form STUFF_partN and separate
     # into a column for each kind of STUFF and store the
@@ -233,8 +287,10 @@ responses_C1_long = responses_C1 %>%
          item = as.factor(item),
          ans = str_remove_all(ans, '\\"| '),
          ans = na_if(ans, ""))
+```
 
-responses_C1_summary = responses_C1_long  %>% 
+```{r}
+responses_C_summary = responses_C_long %>% 
   group_by(item, ans) %>% 
   summarise(
     count = n(),
@@ -244,9 +300,9 @@ responses_C1_summary = responses_C1_long  %>%
   group_by(item) %>% 
   mutate(
     correct_ans = case_when(
-      item %in% c(2,9) & ans == "Increasing" ~ "Correct",
+      item %in% c(2,9,11,13,15) & ans == "Increasing" ~ "Correct",
       item %in% c(3,10) & ans == "Decreasing" ~ "Correct",
-      item %in% c(1,4,5,6,7,8) & ans == "Neither" ~ "Correct",
+      item %in% c(1,4,5,6,7,8,12,14) & ans == "Neither" ~ "Correct",
       TRUE ~ "Incorrect"
     ),
     signed_count = if_else(correct_ans == "Correct", count, -count),
@@ -254,19 +310,32 @@ responses_C1_summary = responses_C1_long  %>%
   ) %>% 
   drop_na()
 
+options(knitr.kable.NA = '')
+responses_C_summary %>% 
+  pivot_wider(
+    id_cols = item,
+    names_from = ans,
+    values_from = count
+  ) %>% 
+  basic_kable(
+    #format = "latex", booktabs = T
+  )
+
 library(latex2exp)
-responses_C1_summary %>% 
+windowsFonts(Times=windowsFont("TT Times New Roman"))
+responses_C_summary %>% 
   mutate(item = as.numeric(item)) %>% 
   ggplot(aes(x = item, y = signed_count, fill = ans)) +
   geom_bar(position = "stack", stat = "identity") +
   geom_hline(yintercept = 0) +
   #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
   scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  #scale_fill_grey("Answer", end = 0.8) +
   scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 50, 25)) +
   scale_x_reverse(
     position = "top",
-    breaks = c(1:10),
-    minor_breaks = c(1:10),
+    breaks = c(1:15),
+    minor_breaks = c(1:15),
     labels = c(
       "1" = parse(text = TeX("1. (0,1,0,1,0,1,0,1,\\ldots)")),
       "2" = parse(text = TeX("2. (1, 4, 9, 16, 25, 36, 49, 64,\\ldots)")),
@@ -277,18 +346,23 @@ responses_C1_summary %>%
       "7" = parse(text = TeX("7. (6, 6, 7, 7, 8, 8, 9, 9,\\ldots)")),
       "8" = parse(text = TeX("8. (0, 1, 0, 2, 0, 3, 0, 4,\\ldots)")),
       "9" = parse(text = TeX("9. (\\frac{1}{2}, \\frac{3}{4}, \\frac{7}{8}, \\frac{15}{16}, \\frac{31}{32}, \\frac{63}{64}, \\frac{127}{128}, \\frac{255}{256},\\ldots)")),
-      "10" = parse(text = TeX("10. (-2,-4,-6,-8,-10,-12,-14,-16,\\ldots)"))
+      "10" = parse(text = TeX("10. (-2,-4,-6,-8,-10,-12,-14,-16,\\ldots)")),
+      "11" = parse(text = TeX("11. u_n = n^2+1")),
+      "12" = parse(text = TeX("12. u_n = 3+(-1)^n")),
+      "13" = parse(text = TeX("13. u_n = 5-1/(2^n)")),
+      "14" = parse(text = TeX("14. Plot of u_n = 3+(-1)^n")),
+      "15" = parse(text = TeX("15. Plot of u_n = 5-3/n"))
     )
   ) +
   labs(x = "") +
   coord_flip() +
   annotate("text", x = -0.5, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
   annotate("text", x = -0.5, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
-  theme(axis.text.x = element_markdown(),
+  theme(axis.text.y = element_text(family="Times"),
         panel.grid.minor.x = element_blank(),
         legend.position = "left")
 
-ggsave("figs/FIG_study1_responses_C1.pdf", width = 18, height = 11, units = "cm")
+ggsave("figs/FIG_study1_responses_C.pdf", width = 18, height = 12, units = "cm")
 ```
 
 
