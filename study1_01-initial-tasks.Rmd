@@ -1,7 +1,7 @@
 ---
-title: "Study 1 analysis"
+title: "Study 1 analysis: initial learning tasks"
 author: "George Kinnear"
-date: "18/05/2021"
+date: "07/07/2021"
 output: 
   html_document:
     code_folding: hide
@@ -15,6 +15,7 @@ library(tidyverse)
 library(ggplot2)
 library(patchwork) # for combining plots
 library(ggtext) # for markdown in plots
+library(latex2exp) # for formatting latex in plot captions
 
 # For Bayesian stats:
 library(bayestestR)
@@ -47,8 +48,6 @@ four_groups = c("CCG", "CGC", "GCG", "GGC")
 theme_set(theme_minimal())
 ```
 
-For this analysis we use "intention to treat", i.e. we include all students who consented to participate, without regard for whether (or the extent to which) they engaged with the experimental tasks.
-
 ```{r read-data, message=FALSE, warning=FALSE}
 question_marks = read_csv("data-clean/study1/FAC_LGE-tasks.csv") %>%
   select(question_name, marks_available)
@@ -75,46 +74,8 @@ attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>%
   )
 ```
 
-# Data summary
-
-```{r}
-first_attempts_summary = attempt_data_all %>% 
-  filter(attempt_number == 1) %>% 
-  group_by(overall_group, group, username, quiz) %>% 
-  summarise(
-    marks_prop = sum(marks_attained, na.rm = TRUE) / sum(marks_available, na.rm = TRUE),
-    n = n(),
-    num_nas = sum(is.na(fraction)),
-    num_qs = n_distinct(question_name),
-    .groups = "drop"
-  )
-
-first_attempts_summary %>% 
-  group_by(quiz) %>% 
-  summarise(
-    n_students = n(),
-    marks_mean = mean(marks_prop),
-    marks_sd = sd(marks_prop),
-    .groups = "drop"
-  ) %>% 
-  basic_kable()
-
-first_attempts_summary %>% 
-  group_by(quiz, overall_group, group) %>% 
-  summarise(
-    n_students = n(),
-    marks_mean = mean(marks_prop),
-    marks_sd = sd(marks_prop),
-    num_qs_in_quiz = max(num_qs),
-    overall_nas = mean(num_nas) / num_qs_in_quiz,
-    .groups = "drop"
-  ) %>% 
-  basic_kable()
-```
 
 # Item performance
-
-TODO - bring in plots from 3c_check_learning_tasks.R
 
 ```{r}
 first_attempts = attempt_data_all %>% 
@@ -313,18 +274,7 @@ responses_C_summary = responses_C_long %>%
   ) %>% 
   drop_na()
 
-options(knitr.kable.NA = '')
-responses_C_summary %>% 
-  pivot_wider(
-    id_cols = item,
-    names_from = ans,
-    values_from = count
-  ) %>% 
-  basic_kable(
-    #format = "latex", booktabs = T
-  )
-
-library(latex2exp)
+# library(latex2exp) needed here
 windowsFonts(Times=windowsFont("TT Times New Roman"))
 responses_C_summary %>% 
   mutate(item = as.numeric(item)) %>% 
@@ -367,12 +317,24 @@ responses_C_summary %>%
         legend.position = "left")
 
 ggsave("figs/FIG_study1_responses_C.pdf", width = 18, height = 12, units = "cm")
+
+
+options(knitr.kable.NA = '')
+responses_C_summary %>% 
+  pivot_wider(
+    id_cols = item,
+    names_from = ans,
+    values_from = count
+  ) %>% 
+  basic_kable(
+    #format = "latex", booktabs = T
+  )
 ```
 
 
 ## Initial learning task: Example generation
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 responses_G <- attempt_data_all %>%
   filter(
     str_detect(question_name, "^G"),
@@ -432,10 +394,6 @@ responses_G_summary <- responses_G %>%
 
 responses_G_summary %>% 
   filter(!is.na(part)) %>% 
-  basic_kable()
-
-responses_G_summary %>% 
-  filter(!is.na(part)) %>% 
   pivot_longer(cols = contains("correct"), names_to = "type", values_to = "count") %>% 
   ggplot(aes(x = part, y = count, fill = type)) +
   geom_bar(position = "stack", stat = "identity") +
@@ -443,11 +401,73 @@ responses_G_summary %>%
   scale_y_continuous("Number of responses") +
   labs(x = "Question part")
 
-ggsave("figs/FIG_study1_responses_G.pdf", width = 18, height = 6, units = "cm")
+responses_G_summary %>% 
+  filter(!is.na(part)) %>%
+  mutate(part = fct_rev(part)) %>% 
+  pivot_longer(cols = contains("correct"), names_to = "type", values_to = "count") %>% 
+  mutate(signed_count = if_else(type == "correct", count, -count)) %>% 
+  ggplot(aes(x = part, y = signed_count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  #scale_fill_grey("Answer", end = 0.8) +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 50, 10)) +
+  scale_x_discrete(
+    position = "top",
+    labels = c(
+      "G1a" = "G1a: increasing",
+      "G1b" = "G1b: increasing and bounded above",
+      "G1c" = parse(text = TeX("G1c: increasing, bounded above, and has $u_4=16$")),
+      "G2a" = "G2a: decreasing",
+      "G2b" = "G2b: decreasing and bounded below",
+      "G2c" = parse(text = TeX("G2c: decreasing, bounded below, and has $u_4=1$")),
+      "G3a" = "G3a: increasing, and different from the examples above",
+      "G3b" = "G3b: not increasing",
+      "G3c" = "G3c: not increasing, and not decreasing",
+      "G4a" = "G4a: increasing",
+      "G4b" = "G4b: decreasing",
+      "G4c" = "G4c: neither increasing nor decreasing"
+    )
+  ) +
+  labs(x = "") +
+  coord_flip() +
+  expand_limits(y = c(-50,50)) +
+  annotate("text", x = 13.2, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
+  annotate("text", x = 13.2, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
+  theme(axis.text.y = element_text(family="Times"),
+        panel.grid.minor.x = element_blank(),
+        legend.position = "none")
+
+ggsave("figs/FIG_study1_responses_G.pdf", width = 18, height = 8, units = "cm")
+
+responses_G_summary %>% 
+  filter(!is.na(part)) %>% 
+  basic_kable()
 ```
+
+Summary of responses to G1-G3:
 
 ```{r}
 responses_G %>% 
+  filter(!str_detect(G_part, "G4")) %>% 
+  group_by(G_part, fully_correct, relevant_prt, response) %>% 
+  tally() %>% 
+  group_by(G_part, fully_correct, relevant_prt) %>% 
+  summarise(
+    num_responses = sum(n),
+    responses = paste0(str_trim(response), collapse = "; "),
+    .groups = "drop"
+  ) %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+Details of all the responses are saved to `data-clean/study1_G_part_analysis.csv`.
+
+```{r}
+responses_G %>% 
+  mutate(response = str_trim(response)) %>% 
   group_by(G_part, fully_correct, response) %>% tally() %>% arrange(G_part, fully_correct, -n) %>% 
   write_csv("data-clean/study1_G_part_analysis.csv")
 ```
@@ -456,26 +476,27 @@ responses_G %>%
 
 #### (a) increasing:
 
-* the most common correct answer was `n+1` (10 responses), with most correct responses being either of the form `a*n` or `n+k`.
+* The most common correct answer was `n+1` (10 responses), with most correct responses being either of the form `a*n` or `n+k`.
 
-* the single most common incorrect answer was `1` (7 responses, and there were 4 more that were integers), perhaps because the students were "gaming the system" to see the worked solution (as noted in Kinnear et al., 2021). 
-Another common class of incorrect answers were expressions involving `u_n` (`r responses_G %>% filter(G_part == "G1a", !fully_correct, str_detect(response, "u_n")) %>% tally()` responses), i.e. taking the form of recurrence relations rather than a formula for the n'th term as requested.
+* The single most common incorrect answer was `1` (7 responses, and there were 4 more that were integers), perhaps because the students were "gaming the system" to see the worked solution (as noted in Kinnear et al., 2021). 
+
+  Another common class of incorrect answers were expressions involving `u_n` (`r responses_G %>% filter(G_part == "G1a", !fully_correct, str_detect(response, "u_n")) %>% tally() %>% deframe()` responses), i.e. taking the form of recurrence relations rather than a formula for the n'th term as requested.
 
 #### (b) increasing and bounded above:
 
-* integer responses were again common as wrong answers (25 responses), suggesting students were not sure how to answer this question and just wanted to submit a response in order to see the solution.
+* Integer responses were again common as wrong answers (25 responses), suggesting students were not sure how to answer this question and just wanted to submit a response in order to see the solution.
 
-* other incorrect responses included `(-1)^n` (x3) suggesting some confusion about "increasing"; `ln(n)` or `log(n)` (x3) which fails to be bounded above (though students might have the misconception that it is, due to the way it is often depicted in sketches).
+  Other incorrect responses included `(-1)^n` (x3) suggesting some confusion about "increasing"; `ln(n)` or `log(n)` (x3) which fails to be bounded above (though students might have the misconception that it is, due to the way it is often depicted in sketches).
 
 * the 5 correct respones were: `-1/n` (x2), `-1/(2^n)`, `-e^(-n)` and `2-(1/2)^n`
 
 #### (c) increasing, bounded above, and has u4=16:
 
-* 30 students gave an integer as their answer, though only 2 of them chose 16
+* 30 students gave an integer as their answer, though only 2 of them chose 16 suggesting minimal engagement with the task.
 
-* there was only 1 correct response, `16+(1/16)-(1/(2^n))`.
+* There was only 1 correct response, `16+(1/16)-(1/(2^n))`.
 
-For that student, anon19, there is some evidence of a "transformation" strategy (Antonini) moving from b to c, as they modify their previous example to suit the new constraints:
+  For that student, anon19, there is some evidence of a "transformation" strategy (Antonini) moving from b to c, as they modify their previous example to suit the new constraints:
 
 ```{r}
 responses_G %>% filter(str_detect(G_part, "G1"), str_detect(username, "anon161$|anon19$|anon97$")) %>% select(username, G_part, response) %>% distinct() %>% 
@@ -483,323 +504,72 @@ responses_G %>% filter(str_detect(G_part, "G1"), str_detect(username, "anon161$|
   basic_kable()
 ```
 
-(Also shown are two other students whose answer had the required properties _except_ having the specified value of u4; these also show evidence of a transformation strategy, though it has been unsuccessful.)
+  (Also shown are two other students whose answer had the required properties _except_ having the specified value of u4; these also show evidence of a transformation strategy, though it has been unsuccessful.)
 
-## Outcome measures
+### G2
 
-There are various possible outcome measures, based on:
+Students were somewhat more successful at this than G1.
 
-* whether to use all subsequent questions (after the learning task) or only the two questions in the Far test
-* whether to focus on the marks relating to increasing/decreasing sequences and boundedness separately
+#### (a) decreasing:
 
+* The most common correct response was `-n` (x7) with others of the form "a-bn" also common (x8).
+
+* The most common incorrect response was `n-1` (x11), with a further 10 students giving responses of the form "n-a".
+
+#### (b) decreasing and bounded below:
+
+* The most common incorrect reponse was `1` (x3) with most other incorrect responses being of the form "1-decreasing sequence", e.g. `1-1/n` or `1-1/2^n` -- perhaps inspired by the feedback on G1 which gave `1-1/2^n` as an example of a correct answer for G1b?
+
+* The most common correct response was `1+1/2^n` (x8) and other variants of this (e.g. `1+(1/2)^n` and `1/2^n`) were very common too (x17). This could perhaps be due to the use of `1-1/2^n` as the model answer for G1b. The next most common answer was `1/n` (x7).
+
+#### (c) decreasing, bounded below, and has u4=1:
+
+Unlike G1c, many students were able to give correct answers here.
+
+* The most common correct response was `15/16+1/2^n` (8 students), with a further 6 responses based on `1/2^n`.
+
+  The next most common correct response was `4/n` (3 students), with a further 4 responses based on `1/n`.
+  
+  - There is evidence of transformation again here, e.g. students adapting `1/n` from (b) to give `4/n` or `1/n+3/4` for (c). Similarly, the most common response of `15/16+1/2^n` appears to have been a transformation of the answer to (b) in all cases.
+  
+* The most common incorrect response was again `1` (x8) with a further 5 students giving other integers.
+
+  Other incorrect responses were diverse, however there were 7 responses where the sequence was decreasing and bounded but failed to have the required value for u4. These included `1/n+15/4` and `1/16+1/2^n`, and again these suggest students were transforming their examples from (b), only unsuccessfully.
 
 ```{r}
-detailed_scores <- attempt_data_all %>% 
-  mutate(
-    marks_incdec = case_when(
-      !is.na(marks_attained) & str_detect(question_name, "NearC|MidC|FarC") ~ if_else(str_detect(responsesummary, "prt1-1-T"), 1, 0),
-      !is.na(marks_attained) & str_detect(question_name, "MidG") ~
-        if_else(str_detect(responsesummary, "prt1-2-T"), 1, 0) + if_else(str_detect(responsesummary, "prt2-2-T"), 1, 0)
-    ),
-    marks_bdd = case_when(
-      !is.na(marks_attained) & str_detect(question_name, "NearC|MidC|FarC") ~ if_else(str_detect(responsesummary, "prt2-1-T"), 1, 0),
-      !is.na(marks_attained) & str_detect(question_name, "MidG") ~
-        if_else(str_detect(responsesummary, "prt3-2-T"), 1, 0) + if_else(str_detect(responsesummary, "prt4-1-T"), 1, 0)
-    )
-
-  )
-
-detailed_scores_summary <- detailed_scores %>% 
-  filter(attempt_number == 1) %>%
-  filter(str_detect(question_name, "Near|Mid|Far")) %>% 
-  group_by(userid, group, overall_group) %>% 
-  summarise(across(contains("marks"), sum, na.rm = TRUE), .groups = "drop") %>% 
+responses_G %>%
+  filter(str_detect(G_part, "G2")) %>%
+  select(username, G_part, response) %>%
+  distinct() %>%
+  pivot_wider(names_from = "G_part", values_from = "response") %>% 
   left_join(
-    # add the scores from the Far test only
-    detailed_scores %>% 
-      filter(attempt_number == 1) %>%
-      filter(str_detect(question_name, "Far")) %>% 
-      group_by(userid, group, overall_group) %>% 
-      summarise(across(c("marks_incdec", "marks_bdd"), sum, na.rm = TRUE), .groups = "drop") %>% 
-      rename_with(~ str_replace(., "marks_", "marks_far_")) %>% 
-      mutate(marks_far_attained = marks_far_incdec + marks_far_bdd),
-    by = c("userid", "group", "overall_group")
-  )
-
-detailed_scores_summary %>% head() %>% basic_kable()
-
-detailed_scores_summary %>% 
-  pivot_longer(
-    cols = contains("marks"),
-    names_to = "marks_for",
-    values_to = "mark",
-    names_prefix = "marks_"
+    responses_G %>% filter(G_part == "G2c") %>% select(username, G2c_correct = fully_correct),
+    by = "username"
   ) %>% 
-  filter(!str_detect(marks_for, "^a")) %>% 
-  drop_na() %>% 
-  ggplot(aes(x = overall_group, y = mark, colour = marks_for)) +
-  geom_violin() +
-  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
-  facet_wrap(~ marks_for, scales = "free")
-
-detailed_scores_summary %>% 
-  mutate(
-    first_task = str_sub(group, start = 1, end = 1),
-    later_tasks = str_sub(group, start = 3, end = 4)
-  ) %>% 
-  group_by(overall_group) %>%
-  mutate(n = n(), group_label = str_glue("{overall_group} (n={n})")) %>%
-  ungroup() %>% 
-  write_csv("data-clean/study1_detail.csv")
-```
-
-
-Here we carry out all the analyses to compare the results.
-
-```{r}
-compute_contrasts <- function(model) {
-  # inspect draws from the model, and compute the contasts of interest
-  contrasts <- model %>% 
-    tidy_draws() %>% 
-    select(starts_with("group"), sigma) %>% 
-    mutate(
-      CvsG_contrast = (`groupC-CG`+`groupC-GC`)/2 - (`groupG-CG`+`groupG-GC`)/2,
-      CvsG_effect = CvsG_contrast / sigma,
-      CGvsGC_contrast = (`groupC-CG`+`groupG-CG`)/2 - (`groupC-GC`+`groupG-GC`)/2,
-      CGvsGC_effect = CGvsGC_contrast / sigma,
-    )
-  contrasts_long <- contrasts %>%
-    select(-starts_with("group")) %>% 
-    pivot_longer(
-      cols = contains("vs"),
-      names_to = "parameter",
-      values_to = "est"
-    ) %>% 
-    separate(parameter, into = c("comparison", "parameter"))
-  
-  contrasts_summary <- contrasts_long %>% 
-    group_by(comparison, parameter) %>% 
-    median_hdi(est) %>% 
-    ungroup() %>% 
-    mutate(formatted_hdi = str_glue("{round(est, 3)} ({.width*100}% HDI [{round(.lower, 3)}, {round(.upper, 3)}])"))
-  
-  return(list("contrasts_long" = contrasts_long, "contrasts_summary" = contrasts_summary))
-}
-```
-
-```{r}
-fit_model <- function(data) {
-  stan_glm(
-    formula = measure ~ 0 + group,
-    data = data,
-    seed = 123,
-    refresh = 0 # to prevent messages about the MCMC iterations being printed
-  )
-}
-all_comparisons <- tibble(
-  measure = fct_inorder(c(
-    "marks_attained",
-    "marks_incdec",
-    "marks_bdd",
-    "marks_far_attained",
-    "marks_far_incdec",
-    "marks_far_bdd"
-  ))
-) %>%
-  rowwise() %>%
-  mutate(data = map(
-    measure,
-    ~ detailed_scores_summary %>% select(userid, group, `measure` = all_of(measure))
-  )) %>%
-  ungroup() %>% 
-  mutate(measure_sd = map_dbl(data, ~ .x %>% summarise(marks_sd = sd(measure, na.rm = TRUE)) %>% deframe()))
-
-all_model_fits <- all_comparisons %>% 
-  mutate(model = map(data, fit_model))
-
-all_contrasts <- all_model_fits %>% 
-  mutate(contrasts = map(model, compute_contrasts)) %>% 
-  unnest_wider(contrasts)
-
-all_contrasts %>% 
-  select(measure, contrasts_summary) %>% 
-  unnest(cols = contrasts_summary) %>% 
-  select(measure, comparison, parameter, formatted_hdi) %>% 
-  pivot_wider(
-    names_from = parameter,
-    values_from = formatted_hdi
-  ) %>%
+  arrange(G2c_correct, G2c) %>% 
   basic_kable()
-
-contrast_data_for_plotting <- all_contrasts %>% 
-  select(measure, measure_sd, contrasts_long) %>% 
-  unnest(cols = c(contrasts_long)) %>% 
-  mutate(rope_width = case_when(parameter == "contrast" ~ 0.1*measure_sd, parameter == "effect" ~ 0.1)) %>% 
-  filter(parameter == "effect") %>% 
-  mutate(comparison = fct_recode(comparison, "C* vs G*" = "CvsG",  "*CG vs *GC" = "CGvsGC")) %>%
-  mutate(far_measure = str_detect(measure, "far")) %>% 
-  mutate(
-    measure = str_remove_all(measure, "marks_|far_"),
-    measure = str_replace_all(
-       measure,
-       c(
-         "attained" = "Marks attained",
-         "incdec" = "Marks for\nincreasing/decreasing",
-         "bdd" = "Marks for\nboundedness"
-       )
-     )
-  )
-  
-
-plot_all <- contrast_data_for_plotting %>%
-  filter(!far_measure) %>% 
-  ggplot(aes(x = est, y = 0)) +
-  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
-  geom_vline(xintercept = 0, colour = "grey40") +
-  stat_dotsinterval(
-    point_interval = mode_hdi,
-    .width = .95,
-    slab_size = 0,
-    quantiles = 100
-  ) +
-  scale_y_continuous(NULL, breaks = NULL) +
-  expand_limits(x = c(-0.1, 0.1)) +
-  xlab("Effect size") +
-  facet_grid(cols = vars(comparison), rows = vars(measure), scales = "free_x", switch = "y") +
-  theme(#panel.grid = element_blank(),
-        axis.ticks = element_line(color = "grey40"),
-        strip.text.y.left = element_text(angle = 0)
-        )
-
-plot_far_only <- contrast_data_for_plotting %>%
-  filter(far_measure) %>% 
-  ggplot(aes(x = est, y = 0)) +
-  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
-  geom_vline(xintercept = 0, colour = "grey40") +
-  stat_dotsinterval(
-    point_interval = mode_hdi,
-    .width = .95,
-    slab_size = 0,
-    quantiles = 100
-  ) +
-  scale_y_continuous(NULL, breaks = NULL) +
-  expand_limits(x = c(-0.1, 0.1)) +
-  xlab("Effect size") +
-  facet_grid(cols = vars(comparison), rows = vars(measure), scales = "free_x", switch = "y") +
-  theme(#panel.grid = element_blank(),
-        axis.ticks = element_line(color = "grey40"),
-        strip.text.y.left = element_text(angle = 0)
-        )
-
-(plot_all + labs(title = "Marks on all questions")) / (plot_far_only + labs(title = "Marks on Far test questions only"))
-
-```
-
-## Main comparison
-
-Since the pattern of results is basically the same for all outcome measures, we focus on `marks_attained` across all questions.
-
-```{r}
-model <- (all_model_fits %>% filter(measure == "marks_attained") %>% pull(model))[[1]]
-rope_width <- 0.1*(all_model_fits %>% filter(measure == "marks_attained") %>% pull(measure_sd))[[1]]
-```
-
-```{r}
-means <- modelbased::estimate_means(model, ci = ci_width, centrality = "median", ci_method = "hdi")
-
-detailed_scores_summary %>% 
-  ggplot(aes(x = group, y = marks_attained, colour = group)) +
-  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
-  geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
-                  position = position_nudge(x = 0.3),
-                  size = 0.8) +
-  scale_x_discrete("", labels = detailed_scores_summary %>% filter(!is.na(marks_attained)) %>% group_by(group) %>% summarise(group_label = str_glue("{group}\n(n={n()})"), .groups = "drop") %>% deframe(), position = "top") +
-  scale_y_continuous("Marks attained (out of 15)") +
-  scale_colour_manual("Group", values = groupcolours) +
-  theme(legend.position = "none")
-
-ggsave("figs/FIG_study1_marks_attained.pdf", width = 12, height = 7, units = "cm")
-```
-
-```{r}
-detailed_scores_summary %>% 
-  group_by(group) %>% 
-  summarise(
-    n = sum(!is.na(marks_attained)),
-    mean = mean(marks_attained, na.rm = TRUE),
-    sd = sd(marks_attained, na.rm = TRUE),
-    .groups = "drop"
-  ) %>% 
-  # group is of type "glue" so force it to be a string in order to join on it
-  mutate(group = paste(group)) %>% 
-  left_join(means, by = "group") %>% 
-  # show the HDI but not the estimated mean since that's superfluous
-  select(-Mean) %>% 
-  mutate(estimate_hdi = str_glue("[{round(CI_low, 3)}, {round(CI_high, 3)}]"), .keep = "unused") %>% 
-  basic_kable(caption = "Study 1 group means", digits = 3)
 ```
 
 
-```{r compute-contrasts}
-contrasts <- model %>% 
-  tidy_draws() %>% 
-  select(starts_with("group"), sigma) %>% 
-  mutate(
-    CvsG_contrast = (`groupC-CG`+`groupC-GC`)/2 - (`groupG-CG`+`groupG-GC`)/2,
-    CvsG_effect = CvsG_contrast / sigma,
-    CGvsGC_contrast = (`groupC-CG`+`groupG-CG`)/2 - (`groupC-GC`+`groupG-GC`)/2,
-    CGvsGC_effect = CGvsGC_contrast / sigma,
-  )
-contrasts_long <- contrasts %>%
-  select(-starts_with("group")) %>% 
-  pivot_longer(
-    cols = contains("vs"),
-    names_to = "parameter",
-    values_to = "est"
-  ) %>% 
-  separate(parameter, into = c("contrast", "parameter"))
+### G3
 
-contrasts_summary <- contrasts_long %>% 
-  group_by(contrast, parameter) %>% 
-  median_hdi(est) %>% 
-  ungroup() %>% 
-  mutate(formatted_hdi = str_glue("{round(est, 3)} ({.width*100}% HDI [{round(.lower, 3)}, {round(.upper, 3)}])"))
+Almost all students who made a genuine attempt at these questions were able to give correct examples. This is interesting, as it suggests students' success in G1 and G2 may have been limited by the need to express their response as a formula.
 
-contrasts_summary %>% 
-  select(measure = contrast, parameter, formatted_hdi) %>% 
-  pivot_wider(
-    names_from = parameter,
-    values_from = formatted_hdi
-  ) %>%
-  basic_kable()
+Most of the incorrect answers were lists of only one or two numbers, suggesting students were simply giving a trivial response in order to see the model solution.
 
-p_diffs <- contrasts_long %>% 
-  mutate(key = fct_recode(contrast, "C- vs G-" = "CvsG",  "-CG vs -GC" = "CGvsGC")) %>%
-  mutate(key = fct_relevel(key, "C- vs G-")) %>% 
-  mutate(rope_width = case_when(parameter == "contrast" ~ rope_width, parameter == "effect" ~ 0.1)) %>% 
-  mutate(parameter = fct_recode(parameter, "Raw scores" = "contrast",  "Effect size" = "effect")) %>%
-  ggplot(aes(x = est, y = 0)) +
-  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
-  geom_vline(xintercept = 0, colour = "grey40") +
-  stat_dotsinterval(
-    point_interval = mode_hdi,
-    .width = .95,
-    slab_size = 0,
-    quantiles = 100
-  ) +
-  scale_y_continuous(NULL, breaks = NULL) +
-  expand_limits(x = c(-0.1, 0.1)) +
-  expand_limits(y = c(-0.1)) +
-  xlab("Estimated difference") +
-  facet_grid(rows = vars(key), cols = vars(parameter), scales = "free_x", switch = "y") +
-  theme(#panel.grid = element_blank(),
-        axis.ticks = element_line(color = "grey40"),
-        strip.text.y.left = element_text(angle = 0)
-        )
-p_diffs
-ggsave("figs/FIG_study1_marks_attained_effect.pdf", width = 14, height = 5, units = "cm")
-```
+#### (a) increasing, and different from the examples above
 
+There were only 2 incorrect answers of note:
+  - `[1,1/2,1/3,1/4,1/5,1/6,1/7,1/8]` which is decreasing
+  - `[-2,4,-8,16,-32,64,-128,256]` which is alternating
+
+#### (b) not increasing
+
+Almost all students gave examples which were decreasing, with `[8,7,6,5,4,3,2,1]` the most common (9 students). The exceptions were constant examples like `[1,1,1,1,1,1,1,1]` (8 students).
+
+#### (c) not increasing, and not decreasing
+
+The most commmon correct answer was `[1,1,1,1,1,1,1,1]` (18 students), with 5 other students using constant sequences. Alternating sequences, such as `[-1,1,-1,1,-1,1,-1,1]`, were also common (13 students in total).
 
 #### Session info
 
