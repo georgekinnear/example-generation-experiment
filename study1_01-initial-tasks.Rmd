@@ -152,6 +152,26 @@ attempts_summary_stats %>%
 ## Initial learning task: Classification
 
 ```{r}
+per_student_C_marks <- attempt_data_all %>%
+  filter(str_detect(question_name, "^C"),
+         str_detect(group, "C-"),
+         attempt_number == 1,
+         !is.na(marks_attained)) %>% 
+  select(question_name, username, marks_attained) %>% 
+  group_by(username) %>% 
+  tally(marks_attained)
+
+per_student_C_marks %>% 
+  ggplot(aes(x = n/15)) +
+  geom_histogram() +
+  geom_boxplot()
+
+per_student_C_marks %>% 
+  summarise(mean = mean(n), mean_pc = mean/15*100, .groups = "drop")
+```
+
+
+```{r}
 # Separate the raw response data into details of the 10 different sub-parts
 # - extract the details of which sub-part is which of the Alcock & Simpson items (item_part)
 # - plus the corresponding response (ans_part) and score (score_part) for each sub-part
@@ -333,6 +353,26 @@ responses_C_summary %>%
 
 
 ## Initial learning task: Example generation
+
+```{r}
+per_student_G_marks <- attempt_data_all %>%
+  filter(str_detect(question_name, "^G"),
+         str_detect(group, "G-"),
+         attempt_number == 1,
+         !is.na(marks_attained)) %>% 
+  select(question_name, username, marks_attained) %>% 
+  group_by(username) %>% 
+  tally(marks_attained)
+
+per_student_G_marks %>% 
+  ggplot(aes(x = n)) +
+  geom_histogram() +
+  geom_boxplot()
+
+per_student_G_marks %>% 
+  summarise(mean = mean(n), mean_pc = mean/12*100, .groups = "drop")
+```
+
 
 ```{r message=FALSE, warning=FALSE}
 responses_G <- attempt_data_all %>%
@@ -571,7 +611,7 @@ Almost all students gave examples which were decreasing, with `[8,7,6,5,4,3,2,1]
 
 #### (c) not increasing, and not decreasing
 
-The most commmon correct answer was `[1,1,1,1,1,1,1,1]` (18 students), with 5 other students using constant sequences. Alternating sequences, such as `[-1,1,-1,1,-1,1,-1,1]`, were also common (13 students in total).
+The most common correct answer was `[1,1,1,1,1,1,1,1]` (18 students), with 5 other students using constant sequences. Alternating sequences, such as `[-1,1,-1,1,-1,1,-1,1]`, were also common (13 students in total).
 
 #### Session info
 
