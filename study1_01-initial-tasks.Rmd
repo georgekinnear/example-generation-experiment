@@ -167,7 +167,8 @@ per_student_C_marks %>%
   geom_boxplot()
 
 per_student_C_marks %>% 
-  summarise(mean = mean(n), mean_pc = mean/15*100, .groups = "drop")
+  summarise(mean = mean(n), mean_pc = mean/15*100, .groups = "drop") %>% 
+  basic_kable()
 ```
 
 
@@ -370,7 +371,8 @@ per_student_G_marks %>%
   geom_boxplot()
 
 per_student_G_marks %>% 
-  summarise(mean = mean(n), mean_pc = mean/12*100, .groups = "drop")
+  summarise(mean = mean(n), mean_pc = mean/12*100, .groups = "drop") %>% 
+  basic_kable()
 ```
 
 
@@ -612,6 +614,114 @@ Almost all students gave examples which were decreasing, with `[8,7,6,5,4,3,2,1]
 #### (c) not increasing, and not decreasing
 
 The most common correct answer was `[1,1,1,1,1,1,1,1]` (18 students), with 5 other students using constant sequences. Alternating sequences, such as `[-1,1,-1,1,-1,1,-1,1]`, were also common (13 students in total).
+
+### G4
+
+Almost all students gave correct answers here. This could be because of the graphical nature of the input: this removes the barrier of having to enter formulae as in G1 and G2, and even of listing values as in G3. Perhaps the students also benefit from immediate visual feedback (i.e. they can _see_ their answer, unlike in the previous questions where they would have to visualise the behaviour for themselves).
+
+Here we plot all the responses together:
+
+```{r}
+responses_G4 <- responses_G %>% 
+  filter(str_detect(G_part, "G4")) %>% 
+  mutate(part = str_remove(G_part, "G4")) %>% 
+  select(part, group, username, relevant_prt, response) %>% 
+  mutate(response = str_remove_all(response, "\\[|\\]")) %>% 
+  separate(response, into = paste0("x_", c(1:8)), sep = ",")
+
+responses_G4_long <- responses_G4 %>% 
+  pivot_longer(
+    cols = starts_with("x_"),
+    names_to = "x",
+    values_to = "y",
+    names_prefix = "x_"
+  ) %>% 
+  mutate(across(c(x, y), as.numeric))
+
+responses_G4_long %>% 
+  #filter(username %in% c("anon100")) %>% 
+  # filter(str_detect(relevant_prt, "prt1-1-F")) %>% 
+  ggplot(aes(x = x, y = y, group = username, colour = relevant_prt)) +
+  geom_point(alpha = 0.5) +
+  geom_line(alpha = 0.5) +
+  facet_grid(cols = vars(part)) +
+  scale_colour_viridis_d(end = 0.8, option = "plasma") +
+  theme(legend.position = "bottom")
+```
+
+For G4a and  G4b, it is striking that most students seem to have given examples that are arithmetic sequences (increasing for G4a and decreasing for G4b).
+
+Since the plotted points are not constrained to be integers, students were not able to give exactly arithmetic answers due to the difficulty of placing the points exactly. However, computing the difference between successive terms and then looking at the standard deviation of those differences for each student, shows that many students gave examples that were extremely close to being arithmetic (i.e. the s.d. was very close to 0, meaning the term differences were very similar):
+
+```{r}
+responses_G4_long %>% 
+  filter(part %in% c("a", "b")) %>% 
+  group_by(part, group, username) %>% 
+  mutate(term_diff = y - lag(y)) %>% 
+  summarise(sd_term_diff = sd(term_diff, na.rm = TRUE), .groups = "drop") %>% 
+  ggplot(aes(x = sd_term_diff)) +
+  geom_histogram(binwidth = 0.1)
+```
+
+For instance, here is an example of one student's responses (note that the lines connecting the points were not visible to students):
+
+```{r}
+responses_G4_long %>% 
+  filter(username %in% c("anon178"), part %in% c("a", "b")) %>% 
+  ggplot(aes(x = x, y = y, group = username, colour = relevant_prt)) +
+  geom_point(alpha = 0.5) +
+  geom_line(alpha = 0.5) +
+  facet_grid(cols = vars(part)) +
+  scale_colour_viridis_d(end = 0.8, option = "plasma") +
+  theme(legend.position = "none")
+```
+
+
+For G4c, a common class of answers appears to be alternating in sign.
+
+- alternating in sign
+
+```{r}
+responses_G4_long %>% 
+  filter(part == "c") %>% 
+  mutate(sign_y = sign(y)) %>% 
+  group_by(part, group, username, relevant_prt) %>% 
+  summarise(y_sign_seq = paste0(sign_y, collapse = ","), .groups = "drop") %>% 
+  group_by(y_sign_seq) %>% 
+  tally() %>% 
+  arrange(-n) %>% 
+  basic_kable()
+```
+
+- constant sequences also appear somewhat frequently:
+
+```{r}
+responses_G4_long %>% 
+  filter(part == "c") %>% 
+  group_by(part, group, username, relevant_prt) %>% 
+  summarise(constant = n_distinct(y)==1, .groups = "drop") %>% 
+  group_by(constant) %>% 
+  tally() %>% 
+  arrange(-n) %>% 
+  basic_kable()
+```
+
+Focusing on the three students who gave an incorrect response to G4a:
+
+- anon91 and anon139 did not respond to the subsequent parts
+- anon229 gave correct responses to the subsequent parts - their example for G4c is quite similar to the one they gave for G4a, perhaps influenced by the feedback on G4a?
+
+```{r}
+responses_G4_long %>% 
+  filter(username %in% c("anon139", "anon229", "anon91")) %>% 
+  ggplot(aes(x = x, y = y, group = username, colour = username)) +
+  geom_point(alpha = 0.5) +
+  geom_line(alpha = 0.5) +
+  facet_grid(cols = vars(part)) +
+  scale_colour_viridis_d(end = 0.8, option = "plasma") +
+  theme(legend.position = "bottom")
+```
+
 
 #### Session info
 
