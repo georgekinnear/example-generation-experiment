@@ -34,7 +34,12 @@ participants = read_csv("../data-raw/study1/FAC1920-Course design research-grade
   filter(grade_1_00 == 1) %>% 
   select(username) %>% 
   # attach the info about experimental groups
-  left_join(participant_groups, by = "username")
+  left_join(participant_groups, by = "username") %>% 
+  # remove a research assistant (MF) who was viewing the materials
+  filter(username != "anon34")
+
+participants %>% 
+  write_csv("data-clean/study1/participants.csv")
 
 #
 # Question attempts

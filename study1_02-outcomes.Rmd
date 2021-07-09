@@ -48,9 +48,13 @@ theme_set(theme_minimal())
 
 For this analysis we use "intention to treat", i.e. we include all students who consented to participate, without regard for whether (or the extent to which) they engaged with the experimental tasks.
 
+The raw data has all attempts at the questions, regardless of which quiz they appeared in. So we need to make sure to remove those attempts that were made after the study had concluded (when all students were given access to all versions of the materials).
+
 ```{r read-data, message=FALSE, warning=FALSE}
 question_marks = read_csv("data-clean/study1/FAC_LGE-tasks.csv") %>%
   select(question_name, marks_available)
+
+participants <- read_csv("data-clean/study1/participants.csv")
 
 attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>% 
   # tidy up group names
@@ -70,14 +74,23 @@ attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>%
   mutate(
     # default to 1 mark per question if not specified
     marks_available = replace_na(marks_available, 1),
-    marks_attained = fraction * marks_available
+    marks_attained = fraction * marks_available,
+    # check the time of the attempt to see if it was before the end of the study
+    # (since on 2019-11-27, all versions of the materials were made available to all students)
+    attempt_time = lubridate::as_datetime(timecreated),
+    during_study = attempt_time < lubridate::ymd("2019-11-27")
   )
+
+attempt_data_all %>% 
+  janitor::tabyl(during_study) %>% 
+  basic_kable()
 ```
 
 # Data summary
 
 ```{r}
 first_attempts_summary = attempt_data_all %>% 
+  filter(during_study == TRUE) %>% 
   filter(attempt_number == 1) %>% 
   group_by(overall_group, group, username, quiz) %>% 
   summarise(
@@ -118,9 +131,11 @@ There are various possible outcome measures, based on:
 * whether to use all subsequent questions (after the learning task) or only the two questions in the Far test
 * whether to focus on the marks relating to increasing/decreasing sequences and boundedness separately
 
+We compute all these possible scores for each student -- here are the first few, for example:
 
 ```{r}
 detailed_scores <- attempt_data_all %>% 
+  filter(during_study == TRUE) %>% 
   mutate(
     marks_incdec = case_when(
       !is.na(marks_attained) & str_detect(question_name, "NearC|MidC|FarC") ~ if_else(str_detect(responsesummary, "prt1-1-T"), 1, 0),
@@ -138,22 +153,53 @@ detailed_scores <- attempt_data_all %>%
 detailed_scores_summary <- detailed_scores %>% 
   filter(attempt_number == 1) %>%
   filter(str_detect(question_name, "Near|Mid|Far")) %>% 
-  group_by(userid, group, overall_group) %>% 
+  group_by(username, group, overall_group) %>% 
   summarise(across(contains("marks"), sum, na.rm = TRUE), .groups = "drop") %>% 
   left_join(
     # add the scores from the Far test only
     detailed_scores %>% 
       filter(attempt_number == 1) %>%
       filter(str_detect(question_name, "Far")) %>% 
-      group_by(userid, group, overall_group) %>% 
+      group_by(username, group, overall_group) %>% 
       summarise(across(c("marks_incdec", "marks_bdd"), sum, na.rm = TRUE), .groups = "drop") %>% 
       rename_with(~ str_replace(., "marks_", "marks_far_")) %>% 
       mutate(marks_far_attained = marks_far_incdec + marks_far_bdd),
-    by = c("userid", "group", "overall_group")
+    by = c("username", "group", "overall_group")
   )
 
 detailed_scores_summary %>% head() %>% basic_kable()
+```
 
+We have data from `r detailed_scores %>% select(username) %>% distinct() %>% nrow()` participants. The following students consented to participate but did not complete any of the tasks:
+
+```{r}
+participants %>% 
+  anti_join(detailed_scores %>% select(username) %>% distinct(), by = "username") %>% 
+  basic_kable()
+```
+
+For completeness, we include these participants with scores of 0 on all measures.
+
+```{r}
+detailed_scores_summary <- detailed_scores_summary %>% 
+  bind_rows(
+    participants %>% 
+      anti_join(detailed_scores %>% select(username) %>% distinct(), by = "username") %>% 
+      # tidy up group names
+      mutate(
+        group = str_replace(group, "LGE Group ", ""),
+        group = str_glue("{str_sub(group, 1, 1)}-{str_sub(group, 2, 3)}"),
+        overall_group = str_sub(group, 1, 1)
+      )
+  ) %>% 
+  mutate(across(starts_with("marks"), replace_na, 0))
+```
+
+(Note: re-running the analysis without this step gives essentially the same results.)
+
+Here is the distribution of scores on each of the measures:
+
+```{r}
 detailed_scores_summary %>% 
   pivot_longer(
     cols = contains("marks"),
@@ -161,7 +207,7 @@ detailed_scores_summary %>%
     values_to = "mark",
     names_prefix = "marks_"
   ) %>% 
-  filter(!str_detect(marks_for, "^a")) %>% 
+  filter(marks_for != "available") %>% 
   drop_na() %>% 
   ggplot(aes(x = overall_group, y = mark, colour = marks_for)) +
   geom_violin() +
@@ -235,7 +281,7 @@ all_comparisons <- tibble(
   rowwise() %>%
   mutate(data = map(
     measure,
-    ~ detailed_scores_summary %>% select(userid, group, `measure` = all_of(measure))
+    ~ detailed_scores_summary %>% select(username, group, `measure` = all_of(measure))
   )) %>%
   ungroup() %>% 
   mutate(measure_sd = map_dbl(data, ~ .x %>% summarise(marks_sd = sd(measure, na.rm = TRUE)) %>% deframe()))
@@ -348,7 +394,7 @@ ggsave("figs/FIG_study1_marks_attained.pdf", width = 12, height = 7, units = "cm
 ```
 
 ```{r}
-detailed_scores_summary %>% 
+tab1 <- detailed_scores_summary %>% 
   group_by(group) %>% 
   summarise(
     n = sum(!is.na(marks_attained)),
@@ -361,8 +407,16 @@ detailed_scores_summary %>%
   left_join(means, by = "group") %>% 
   # show the HDI but not the estimated mean since that's superfluous
   select(-Mean) %>% 
-  mutate(estimate_hdi = str_glue("[{round(CI_low, 3)}, {round(CI_high, 3)}]"), .keep = "unused") %>% 
+  mutate(estimate_hdi = str_glue("[{round(CI_low, 3)}, {round(CI_high, 3)}]"), .keep = "unused")
+
+tab1 %>% 
   basic_kable(caption = "Study 1 group means", digits = 3)
+```
+
+```{r}
+tab1 %>% 
+  basic_kable(caption = "Study 1 group means", digits = 3, booktabs = T, format = "latex") %>% 
+  cat()
 ```
 
 
