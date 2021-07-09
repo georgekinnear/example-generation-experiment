@@ -1,0 +1,380 @@
+---
+title: "Study 1 analysis: subsequent tasks"
+author: "George Kinnear"
+date: "07/07/2021"
+output: 
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+#Plots
+library(ggplot2)
+library(patchwork) # for combining plots
+library(ggtext) # for markdown in plots
+library(latex2exp) # for formatting latex in plot captions
+
+# For Bayesian stats:
+library(bayestestR)
+#library(insight)
+#library(see)
+library(rstanarm)
+library(tidybayes)
+#library(BayesFactor)
+ci_width = 0.95  # Use 95% HDIs
+set.seed(20210518)
+
+# Tables
+library(knitr)
+library(kableExtra)
+basic_kable = function(df, ...) {
+  df %>% 
+    kable(...) %>%
+    kable_styling(bootstrap_options = "striped", full_width = F)
+}
+
+# Plot styling
+heathers = c("#00b3c3","#e51c24","#016637","#fcb123")
+heathers = c("#87005a", "#c66005","#016637","#fcb123")
+groupcolours = c("C-CG" = heathers[1],
+                 "C-GC" = "#6f004a", # darker heathers1
+                 "G-CG" = heathers[2],
+                 "G-GC" = "#a34e03" # darker heathers2
+                 )
+four_groups = c("CCG", "CGC", "GCG", "GGC")
+theme_set(theme_minimal())
+```
+
+```{r read-data, message=FALSE, warning=FALSE}
+question_marks = read_csv("data-clean/study1/FAC_LGE-tasks.csv") %>%
+  select(question_name, marks_available)
+
+attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>% 
+  # tidy up group names
+  mutate(
+    group = str_replace(group, "LGE Group ", ""),
+    group = str_glue("{str_sub(group, 1, 1)}-{str_sub(group, 2, 3)}"),
+    overall_group = str_sub(group, 1, 1)
+  ) %>% 
+  mutate(
+    quiz = case_when(
+      question_name %in% c("FarC1", "FarC2") ~ "FT",
+      str_detect(question_name, "Mid") ~ "S2",
+      TRUE ~ "S1"
+    )
+  ) %>% 
+  left_join(question_marks, by = "question_name") %>% 
+  mutate(
+    # default to 1 mark per question if not specified
+    marks_available = replace_na(marks_available, 1),
+    marks_attained = fraction * marks_available,
+    # check the time of the attempt to see if it was before the end of the study
+    # (since on 2019-11-27, all versions of the materials were made available to all students)
+    attempt_time = lubridate::as_datetime(timecreated),
+    during_study = attempt_time < lubridate::ymd("2019-11-27")
+  )
+```
+
+
+# Item performance
+
+```{r}
+first_attempts = attempt_data_all %>% 
+  filter(attempt_number == 1) %>% 
+  group_by(quiz, question_name, username) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+last_attempts = attempt_data_all %>% 
+  group_by(quiz, question_name, username) %>% 
+  # select the final attempt
+  top_n(n = 1, wt = attempt_number) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+best_attempts = attempt_data_all %>% 
+  group_by(quiz, question_name, username) %>% 
+  # select the best attempt
+  top_n(n = 1, wt = fraction) %>% 
+  slice(1) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+attempts_summary = bind_rows(
+  list("first" = first_attempts,
+       "last" = last_attempts,
+       "best" = best_attempts),
+  .id = "attempt_type"
+)
+
+attempts_summary_stats = attempts_summary %>% 
+  filter(attempt_type != "best") %>% 
+  group_by(quiz, question_name, attempt_type) %>% 
+  summarise(
+    mean_score = mean(fraction, na.rm = TRUE),
+    null_response = sum(is.na(fraction)) / n(),
+    n = n(),
+    .groups = "drop"
+  ) %>% 
+  ungroup() %>% 
+  mutate(
+    plot_order = case_when(
+      str_detect(question_name, "Near") ~ "1. Near",
+      str_detect(question_name, "Mid") ~ "2. Mid",
+      str_detect(question_name, "Far") ~ "3. Far"
+    )
+  ) %>% 
+  filter(!is.na(plot_order))
+```
+
+This shows the mean score on each of the items:
+
+```{r}
+attempts_summary_stats %>% 
+  ggplot(aes(x = question_name,
+             y = mean_score,
+             colour = attempt_type,
+             group = attempt_type)) +
+  geom_point() +
+  geom_line() +
+  geom_point(data = attempts_summary_stats,
+             mapping = aes(x = question_name,
+                 y = null_response),
+             shape = 1) +
+  facet_wrap(~plot_order, scales = "free_x") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "bottom") +
+  ylim(c(0,1)) +
+  labs(caption = "Hollow points show the proportion of null responses")
+```
+
+# Item details
+
+For each item, we have full details of the student response and how it was graded by STACK. Here is an example for each of the tasks:
+
+```{r message=FALSE, warning=FALSE}
+responses_raw <- attempt_data_all %>%
+  filter(
+    str_detect(question_name, "Near|Mid|Far"),
+    attempt_number == 1,
+    !is.na(marks_attained)
+  ) %>% 
+  select(group, username, question_name, questionsummary, responsesummary, marks_attained)
+
+responses_raw %>% group_by(question_name) %>% slice_head() %>% basic_kable()
+```
+
+We process this raw data to extract the answers to each part, and the score.
+
+```{r}
+responses <- responses_raw %>% 
+  # pick out the various answers - str_match_all returns a matrix, which we have to wrangle a bit
+  mutate(ans_bits = str_match_all(responsesummary, "(ans[^:]*): ([^;]*)(?=\\[score\\];)")) %>% 
+  #mutate(ans_bits = str_match_all(responsesummary, "(ans[:digit:]): ([^;]*)(?=\\[score\\];)")) %>% 
+  mutate(ans_bits = map(ans_bits, ~ tibble(part = .x[,2], response = .x[,3]))) %>% 
+  unnest(ans_bits) %>% 
+  mutate(response = str_remove_all(response, '"')) %>% 
+  # construct a simplified name for each question part
+  mutate(q_part = paste(question_name, part, sep = "_")) %>% 
+  mutate(
+    relevant_prt = case_when(
+      # pick out the PRT trace that is relevant to each part, i.e. that grades that answer
+      # for these questions, ansN corresponds to prtN in all cases
+      TRUE ~ str_match_all(responsesummary, str_glue("prt{parse_number(part)}: [^;]*(?=; |$)")) %>% as.character()
+    ),
+    fully_correct = case_when(
+      # the classification tasks all have very simple PRTs with a single node deciding the mark
+      str_detect(question_name, "C") ~ str_detect(relevant_prt, "-1-T"),
+      # MidG also has quite simple PRTs
+      q_part %in% c("MidG_ans1", "MidG_ans2", "MidG_ans3") ~ str_detect(relevant_prt, "-2-T"),
+      q_part == "MidG_ans4" ~ str_detect(relevant_prt, "-1-T"),
+      # NearG should be increasing (-1-T) and bounded (-4-T)
+      question_name == "NearG" ~ str_detect(relevant_prt, "-1-T") & str_detect(relevant_prt, "-4-T"),
+      TRUE ~ NA
+    )
+  )
+```
+
+```{r}
+responses %>% 
+  group_by(question_name, part) %>% 
+  summarise(
+    n = n(),
+    num_correct = sum(fully_correct),
+    num_incorrect = sum(!fully_correct),
+    prop_correct = num_correct / n,
+    .groups = "drop"
+  ) %>% 
+  pivot_longer(cols = starts_with("num_"), names_to = "type", values_to = "count", names_prefix = "num_") %>% 
+  mutate(signed_count = if_else(type == "correct", count, -count)) %>% 
+  mutate(question_name = fct_relevel(question_name, "NearC", "NearG", "MidC1", "MidC2", "MidG", "FarC1", "FarC2")) %>% 
+  mutate(part = fct_rev(letters[parse_number(part)])) %>% 
+  ggplot(aes(x = part, y = signed_count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  coord_flip() +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 100, 50)) +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1, guide = guide_legend(reverse = TRUE)) +
+  facet_grid(rows = vars(question_name), scales = "free", space = "free", switch = "both") +
+  theme(
+    strip.placement = "outside",
+    strip.text.y.left = element_text(angle = 0),
+    legend.position = "top"
+  ) +
+  labs(x = "")
+```
+
+```{r}
+task_order_data <- responses %>% 
+  filter(str_detect(question_name, "Near|Mid")) %>% 
+  mutate(q_type = if_else(str_detect(question_name, "C"), "C", "G")) %>% 
+  select(group, username, question_name, q_type, marks_attained) %>% 
+  distinct() %>% 
+  group_by(group, username, q_type) %>% 
+  tally(marks_attained, name = "marks_attained") %>% 
+  mutate(task_order = if_else(str_detect(group, "CG"), "Classify first", "Generate first")) %>%
+  pivot_wider(names_from = "q_type", values_from = "marks_attained", values_fill = 0)
+
+task_order_model_C <- stan_glm(
+    formula = C ~ 0 + task_order,
+    data = task_order_data,
+    seed = 123,
+    refresh = 0 # to prevent messages about the MCMC iterations being printed
+  )
+means_C <- modelbased::estimate_means(task_order_model_C, ci = ci_width, centrality = "median", ci_method = "hdi")
+contrasts_C <- modelbased::estimate_contrasts(task_order_model_C, ci = ci_width, centrality = "median", ci_method = "hdi")
+
+task_order_model_G <- stan_glm(
+    formula = G ~ 0 + task_order,
+    data = task_order_data,
+    seed = 123,
+    refresh = 0 # to prevent messages about the MCMC iterations being printed
+  )
+means_G <- modelbased::estimate_means(task_order_model_G, ci = ci_width, centrality = "median", ci_method = "hdi")
+contrasts_G <- modelbased::estimate_contrasts(task_order_model_G, ci = ci_width, centrality = "median", ci_method = "hdi")
+
+means = bind_rows("C" = means_C, "G" = means_G, .id = "q_type")
+contrasts = bind_rows("C" = contrasts_C, "G" = contrasts_G, .id = "q_type")
+
+task_order_data %>% 
+  pivot_longer(cols = c("G", "C"), names_to = "q_type", values_to = "marks_attained") %>% 
+  ggplot(aes(x = task_order, y = marks_attained)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.4, stroke = 0) +
+  geom_pointrange(data = means, aes(x = task_order, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.3),
+                  size = 0.6) +
+  facet_grid(cols = vars(q_type), labeller = labeller(q_type = c("C" = "Classification score", "G" = "Generation score"))) +
+  labs(y = "", x = "") +
+  theme(panel.spacing.x = unit(2, "lines"))
+
+ggsave("figs/FIG_study1_task_order.pdf", width = 12, height = 7, units = "cm")
+```
+
+```{r}
+task_order_means_table <- means %>% 
+  left_join(
+    task_order_data %>% 
+      pivot_longer(cols = c("G", "C"), names_to = "q_type", values_to = "marks_attained") %>% 
+      group_by(q_type, task_order) %>% 
+      summarise(
+        N = n(),
+        sd = sd(marks_attained),
+        .groups = "drop"
+      ),
+    by = c("q_type", "task_order")
+  ) %>%
+  relocate(N, .before = Mean) %>% 
+  mutate(score = if_else(q_type == "C", "Classification", "Generation"), .before = 1, .keep = "unused") %>% 
+  mutate(estimate_hdi = str_glue("[{round(CI_low, 3)}, {round(CI_high, 3)}]"), .keep = "unused")
+
+task_order_means_table %>% 
+  basic_kable(digits = 3) %>% 
+  collapse_rows(columns = 1, valign = "top")
+```
+
+```{r, comment=""}
+task_order_means_table %>% 
+  basic_kable(digits = 3, format = "latex", booktabs = T) %>% 
+  cat()
+```
+```{r}
+contrasts %>% 
+  basic_kable(digits = 3)
+```
+
+# Near tasks
+
+## NearG
+
+```{r}
+responses %>% 
+  filter(question_name == "NearG") %>% 
+  write_csv("data-clean/study1_NearG_responses.csv")
+
+responses %>% 
+  filter(question_name == "NearG") %>% 
+  group_by(fully_correct, relevant_prt, response) %>% 
+  tally() %>% 
+  arrange(relevant_prt, -n)
+
+responses %>% 
+  filter(question_name == "NearG") %>% 
+  separate(group, into = c("initial_task", "task_order"), sep = "-", remove = FALSE) %>% 
+  group_by(initial_task, task_order, fully_correct, relevant_prt) %>% 
+  arrange(response) %>% 
+  summarise(
+    responses = paste0(str_trim(response), collapse = "; "),
+    .groups = "drop"
+  ) %>% 
+  basic_kable() %>% 
+  collapse_rows(columns = c(1:3), valign = "top")
+```
+
+The single most common correct answer is `1-1/2^n` (10 students), and strikingly these all come from students in G- groups, where that example featured in the model answer for G1b.
+Other variants of `1-1/2^n` appear too, such as `1-(1/2)^n` and `5-1/2^n`, including some from students in C- groups. Adding these to the 10 already noted, there are a total of 17 examples of this type, with 14 of them from students in G- groups.
+
+Another common group of correct answers are based on`-1/n` (20 students). These are split fairly evenly between groups, so there is not much evidence that the students in -CG groups are using the example provided in NearC as a basis for answering NearG.
+
+
+# Mid tasks
+
+## MidG
+
+```{r}
+responses %>% 
+  filter(question_name == "MidG") %>% 
+  write_csv("data-clean/study1_MidG_responses.csv")
+
+responses %>% 
+  filter(question_name == "MidG") %>% 
+  group_by(q_part, fully_correct, response) %>% 
+  tally() %>% 
+  arrange(q_part, fully_correct, -n)
+
+responses %>% 
+  filter(question_name == "NearG") %>% 
+  separate(group, into = c("initial_task", "task_order"), sep = "-", remove = FALSE) %>% 
+  group_by(initial_task, task_order, fully_correct, relevant_prt) %>% 
+  arrange(response) %>% 
+  summarise(
+    responses = paste0(str_trim(response), collapse = "; "),
+    .groups = "drop"
+  ) %>% 
+  basic_kable() %>% 
+  collapse_rows(columns = c(1:3), valign = "top")
+```
+
+
+TODO - MidG_ans3 seems to be accepting 1/n among correct answers!
+
+TODO - MidG_ans4 - how many of the incorrect answers are actually decreasing and bounded below, just not arithmetic?
+
+#### Session info
+
+```{r}
+sessionInfo()
+```
