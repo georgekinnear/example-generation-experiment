@@ -34,6 +34,9 @@ participants = read_csv("../data-raw/study2/FAC_LGE2-Course design research-grad
   # attach the info about experimental groups
   left_join(participant_groups, by = "username")
 
+participants %>% 
+  write_csv("data-clean/study2/participants.csv")
+
 #
 # Question attempts
 #
