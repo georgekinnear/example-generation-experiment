@@ -52,6 +52,8 @@ theme_set(theme_minimal())
 question_marks = read_csv("data-clean/study1/FAC_LGE-tasks.csv") %>%
   select(question_name, marks_available)
 
+participants <- read_csv("data-clean/study1/participants.csv")
+
 attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>% 
   # tidy up group names
   mutate(
@@ -200,6 +202,35 @@ responses <- responses_raw %>%
 ```
 
 ```{r}
+# responses %>% 
+#   group_by(question_name, part) %>% 
+#   summarise(
+#     n = n(),
+#     num_correct = sum(fully_correct),
+#     num_incorrect = sum(!fully_correct),
+#     prop_correct = num_correct / n,
+#     .groups = "drop"
+#   ) %>% 
+#   pivot_longer(cols = starts_with("num_"), names_to = "type", values_to = "count", names_prefix = "num_") %>% 
+#   mutate(signed_count = if_else(type == "correct", count, -count)) %>% 
+#   mutate(question_name = fct_relevel(question_name, "NearC", "NearG", "MidC1", "MidC2", "MidG", "FarC1", "FarC2")) %>% 
+#   mutate(section = str_extract(question_name, "Near|Mid|Far") %>% fct_relevel("Near", "Mid", "Far")) %>% 
+#   mutate(q_part = fct_rev(paste0(str_extract(question_name, "G|C[:digit:]?"), letters[parse_number(part)]))) %>% 
+#   mutate(part = fct_rev(letters[parse_number(part)])) %>% 
+#   ggplot(aes(x = q_part, y = signed_count, fill = type)) +
+#   geom_bar(position = "stack", stat = "identity") +
+#   geom_hline(yintercept = 0) +
+#   coord_flip() +
+#   scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 100, 50)) +
+#   scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1, guide = guide_legend(reverse = TRUE)) +
+#   facet_grid(rows = vars(section), scales = "free", space = "free", switch = "both") +
+#   theme(
+#     strip.placement = "outside",
+#     strip.text.y.left = element_text(angle = 0),
+#     legend.position = "top"
+#   ) +
+#   labs(x = "")
+
 responses %>% 
   group_by(question_name, part) %>% 
   summarise(
@@ -226,6 +257,34 @@ responses %>%
     legend.position = "top"
   ) +
   labs(x = "")
+
+responses %>% 
+  group_by(question_name, part) %>% 
+  summarise(
+    n = n(),
+    num_correct = sum(fully_correct),
+    num_incorrect = sum(!fully_correct),
+    prop_correct = num_correct / n,
+    .groups = "drop"
+  ) %>% 
+  pivot_longer(cols = starts_with("num_"), names_to = "type", values_to = "count", names_prefix = "num_") %>% 
+  mutate(signed_count = if_else(type == "correct", count, -count)) %>% 
+  mutate(question_name = fct_relevel(question_name, "NearC", "NearG", "MidC1", "MidC2", "MidG", "FarC1", "FarC2")) %>% 
+  mutate(part = fct_rev(letters[parse_number(part)])) %>% 
+  ggplot(aes(x = part, y = count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  coord_flip() +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-50, 100, 50)) +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1, guide = guide_legend(reverse = TRUE)) +
+  facet_grid(rows = vars(question_name), scales = "free", space = "free", switch = "both") +
+  theme(
+    strip.placement = "outside",
+    strip.text.y.left = element_text(angle = 0),
+    legend.position = "top"
+  ) +
+  labs(x = "")
+ggsave("figs/FIG_study1_subsequent-task-scores.pdf", width = 12, height = 9, units = "cm")
 ```
 
 ```{r}
@@ -235,10 +294,29 @@ task_order_data <- responses %>%
   select(group, username, question_name, q_type, marks_attained) %>% 
   distinct() %>% 
   group_by(group, username, q_type) %>% 
-  tally(marks_attained, name = "marks_attained") %>% 
-  mutate(task_order = if_else(str_detect(group, "CG"), "Classify first", "Generate first")) %>%
-  pivot_wider(names_from = "q_type", values_from = "marks_attained", values_fill = 0)
+  tally(marks_attained, name = "marks_attained") %>%
+  pivot_wider(names_from = "q_type", values_from = "marks_attained", values_fill = 0) %>% 
+  mutate(task_order = if_else(str_detect(group, "CG"), "Classify first", "Generate first")) 
+```
 
+There are several students who did not complete any of the relevant tasks, and they seem to be disproportionately from the "Classify first" group which would skew the results:
+
+```{r}
+participants %>% 
+  anti_join(task_order_data %>% select(username) %>% distinct(), by = "username") %>% 
+  # tidy up group names
+  mutate(
+    group = str_replace(group, "LGE Group ", ""),
+    group = str_glue("{str_sub(group, 1, 1)}-{str_sub(group, 2, 3)}")
+  ) %>% 
+  mutate(task_order = if_else(str_detect(group, "CG"), "Classify first", "Generate first")) %>% 
+  janitor::tabyl(task_order) %>% 
+  basic_kable(caption = "Students who did not answer any of the Near or Mid tasks")
+```
+
+So we stick with just the `r nrow(task_order_data)` students who completed at least one of the Near/Mid tasks.
+
+```{r}
 task_order_model_C <- stan_glm(
     formula = C ~ 0 + task_order,
     data = task_order_data,
@@ -337,7 +415,7 @@ responses %>%
 The single most common correct answer is `1-1/2^n` (10 students), and strikingly these all come from students in G- groups, where that example featured in the model answer for G1b.
 Other variants of `1-1/2^n` appear too, such as `1-(1/2)^n` and `5-1/2^n`, including some from students in C- groups. Adding these to the 10 already noted, there are a total of 17 examples of this type, with 14 of them from students in G- groups.
 
-Another common group of correct answers are based on`-1/n` (20 students). These are split fairly evenly between groups, so there is not much evidence that the students in -CG groups are using the example provided in NearC as a basis for answering NearG.
+Another common group of correct answers are based on`-1/n` (20 students). These are split fairly evenly between groups, so there is not much evidence that the students in -CG groups are using the example provided in NearC (which has the form `1/(an+b)`) as a basis for answering NearG.
 
 
 # Mid tasks
@@ -356,7 +434,7 @@ responses %>%
   arrange(q_part, fully_correct, -n)
 
 responses %>% 
-  filter(question_name == "NearG") %>% 
+  filter(question_name == "MidG", q_part == "MidG_ans3") %>% 
   separate(group, into = c("initial_task", "task_order"), sep = "-", remove = FALSE) %>% 
   group_by(initial_task, task_order, fully_correct, relevant_prt) %>% 
   arrange(response) %>% 
@@ -368,8 +446,7 @@ responses %>%
   collapse_rows(columns = c(1:3), valign = "top")
 ```
 
-
-TODO - MidG_ans3 seems to be accepting 1/n among correct answers!
+TODO - analysis of answers to each part. Is there evidence of influence from previous materials (whether the G- or C- tasks, or MidC for the -CG groups)?
 
 TODO - MidG_ans4 - how many of the incorrect answers are actually decreasing and bounded below, just not arithmetic?
 

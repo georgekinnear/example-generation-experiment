@@ -376,7 +376,7 @@ G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,n+2 ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans1,n+2 ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -394,7 +394,7 @@ G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,n-2 ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F,FALSE
+",Seed: 1; ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans2,n-2 ,MidG_ans2,prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F,FALSE
 G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -412,7 +412,7 @@ G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,2-1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans3,2-1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -430,7 +430,7 @@ G-GC,anon106,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,2+1/n ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: n+2 [score]; ans2: n-2 [score]; ans3: 2-1/n [score]; ans4: 2+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans4,2+1/n ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 G-CG,anon109,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -808,7 +808,7 @@ C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,n ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,n ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -826,7 +826,7 @@ C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,-n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,-n ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -844,7 +844,7 @@ C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,1-1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1-1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -862,7 +862,7 @@ C-GC,anon115,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,1/n ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: n [score]; ans2: -n [score]; ans3: 1-1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,1/n ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 C-GC,anon117,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2248,7 +2248,7 @@ G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,2*n ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,2*n ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2266,7 +2266,7 @@ G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,-2*n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,-2*n ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2284,7 +2284,7 @@ G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,-1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,-1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2302,7 +2302,7 @@ G-GC,anon161,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,1/n ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: -1/n [score]; ans4: 1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,1/n ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 G-CG,anon162,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2464,7 +2464,7 @@ G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,1+2(n-1) ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,1+2(n-1) ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2482,7 +2482,7 @@ G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,1-2(n-1) ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,1-2(n-1) ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2500,7 +2500,7 @@ G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,1-2(1/n) ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1-2(1/n) ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -2518,7 +2518,7 @@ G-GC,anon165,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,1-2*(1/n) ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 1+2(n-1) [score]; ans2: 1-2(n-1) [score]; ans3: 1-2(1/n) [score]; ans4: 1-2*(1/n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,1-2*(1/n) ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 G-CG,anon167,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3472,7 +3472,7 @@ C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,n+1 ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans1,n+1 ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3490,7 +3490,7 @@ C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,1/2^n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F,FALSE
+",Seed: 1; ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans2,1/2^n ,MidG_ans2,prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F,FALSE
 C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3508,7 +3508,7 @@ C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1-1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans3,1-1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3526,7 +3526,7 @@ C-GC,anon193,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,1+1/n ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: n+1 [score]; ans2: 1/2^n [score]; ans3: 1-1/n [score]; ans4: 1+1/n [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | prt2-1-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans4,1+1/n ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3544,7 +3544,7 @@ C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,2*n+2 ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,2*n+2 ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3562,7 +3562,7 @@ C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,2-2*n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,2-2*n ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3580,7 +3580,7 @@ C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,1-1/(3*n) ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1-1/(3*n) ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3598,7 +3598,7 @@ C-CG,anon202,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,10-3*n/3 ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 2*n+2 [score]; ans2: 2-2*n [score]; ans3: 1-1/(3*n) [score]; ans4: 10-3*n/3 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,10-3*n/3 ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 C-CG,anon206,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3760,7 +3760,7 @@ C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,3n+1 ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,3n+1 ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3778,7 +3778,7 @@ C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,-3n+1 ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,-3n+1 ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3796,7 +3796,7 @@ C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -3814,7 +3814,7 @@ C-CG,anon211,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,-3*n-1 ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 3n+1 [score]; ans2: -3n+1 [score]; ans3: 1/n [score]; ans4: -3*n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,-3*n-1 ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 C-GC,anon212,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4120,7 +4120,7 @@ G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,2+2*n ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,2+2*n ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4138,7 +4138,7 @@ G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,2-2*n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,2-2*n ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4156,7 +4156,7 @@ G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,2-1/(2n) ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,2-1/(2n) ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4174,7 +4174,7 @@ G-GC,anon227,MidG,"In each case below, give an example of an arithmetic sequence
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,-2+1/(2n) ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 2+2*n [score]; ans2: 2-2*n [score]; ans3: 2-1/(2n) [score]; ans4: -2+1/(2n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,-2+1/(2n) ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 G-CG,anon229,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4480,7 +4480,7 @@ C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,n ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans1,n ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4498,7 +4498,7 @@ C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,1/n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F,FALSE
+",Seed: 1; ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans2,1/n ,MidG_ans2,prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F,FALSE
 C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4516,7 +4516,7 @@ C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans3,1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -4534,7 +4534,7 @@ C-GC,anon42,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_false. | prt2-2-F; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,log(n) ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: n [score]; ans2: 1/n [score]; ans3: 1/n [score]; ans4: log(n) [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 0 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_false. | prt2-2-F; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,1,ans4,log(n) ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 G-GC,anon44,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -6208,7 +6208,7 @@ C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans1,2*n ,MidG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans1,2*n ,MidG_ans1,prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T,TRUE
 C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -6226,7 +6226,7 @@ C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans2,-2*n ,MidG_ans2,prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans2,-2*n ,MidG_ans2,prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T,TRUE
 C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -6244,7 +6244,7 @@ C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans3,1-1/n ,MidG_ans3,prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T,TRUE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans3,1-1/n ,MidG_ans3,prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F,FALSE
 C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
@@ -6262,7 +6262,7 @@ C-GC,anon93,MidG,"In each case below, give an example of an arithmetic sequence 
 (D)Â Decreasing and bounded below
 
 Â  Â  Â  \( u_n=\) [[input:ans4]][[feedback:prt4]] [[validation:ans4]]
-",ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True | prt1-1-T | ATGT_true. | prt1-2-T; prt2: ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True | prt2-1-T | ATGT_true. | prt2-2-T; prt3: ATAlgEquiv_SA_not_logic. | prt3-3-F | ATLogic_True | prt3-1-T | ATGTE_true. | prt3-2-T; prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,3,ans4,1/n-1 ,MidG_ans4,prt4: ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
+",Seed: 1; ans1: 2*n [score]; ans2: -2*n [score]; ans3: 1-1/n [score]; ans4: 1/n-1 [score]; prt1: # = 1 | ATAlgEquiv_SA_not_logic. | prt1-3-F | ATLogic_True. | prt1-1-T | ATGT_true. | prt1-2-T; prt2: # = 1 | ATAlgEquiv_SA_not_logic. | prt2-3-F | ATLogic_True. | prt2-1-T | ATGT_true. | prt2-2-T; prt3: # = 0 | ATAlgEquiv_SA_not_logic. | prt3-3-F | prt3-1-F; prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,2,ans4,1/n-1 ,MidG_ans4,prt4: # = 0 | ATAlgEquiv_SA_not_logic. | prt4-1-F,FALSE
 C-CG,anon96,MidG,"In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter none.
 
 (A) Increasing
