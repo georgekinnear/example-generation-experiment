@@ -419,6 +419,41 @@ tab1 %>%
   cat()
 ```
 
+```{r}
+# inspired by https://stackoverflow.com/questions/61977439/table-below-x-axis-in-ggplot
+p1 <- detailed_scores_summary %>% 
+  ggplot(aes(x = group, y = marks_attained, colour = group)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
+  geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.3),
+                  size = 0.8) +
+  #scale_x_discrete("", labels = detailed_scores_summary %>% filter(!is.na(marks_attained)) %>% group_by(group) %>% summarise(group_label = str_glue("{group}\n(n={n()})"), .groups = "drop") %>% deframe(), position = "top") +
+  scale_x_discrete("", labels = detailed_scores_summary %>% select(group) %>% distinct(), position = "top") +
+  scale_y_continuous("Marks attained (out of 15)") +
+  scale_colour_manual("Group", values = groupcolours) +
+  theme(legend.position = "none", axis.text = element_text(size = 11))
+
+p2 <- tab1 %>% 
+  mutate(group_label = str_glue("{group}\n(n={n})")) %>% 
+  mutate(
+    n = str_glue("{n}"),
+    mean = str_glue("{round(mean, digits = 3)}"),
+    sd = str_glue("{round(sd, digits = 3)}")
+  ) %>% 
+  pivot_longer(c(n, mean, sd, estimate_hdi), names_to = "layer", values_to = "label") %>% 
+  mutate(layer = fct_relevel(layer, c("n", "sd", "mean", "estimate_hdi")) %>% fct_rev()) %>% 
+  #filter(layer != "n") %>% 
+  ggplot(aes(x = group, y = layer, label = label)) +
+  geom_text(size = 10 * 5/14) +
+  labs(y = "", x = NULL) +
+  scale_y_discrete(labels = c("n" = "N", "mean" = "Mean", "estimate_hdi" = "\n95% HDI\nfor mean")) +
+  theme_minimal() +
+  theme(axis.line = element_blank(), axis.ticks = element_blank(), axis.text.x = element_blank(),
+        panel.grid = element_blank(), strip.text = element_blank())
+  
+p1 / p2 +  plot_layout(heights = c(8, 2.5))
+ggsave("figs/FIG_study1_marks_attained_with_table.pdf", width = 15, height = 10, units = "cm")
+```
 
 ```{r compute-contrasts}
 contrasts <- model %>% 

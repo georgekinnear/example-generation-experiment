@@ -323,6 +323,44 @@ task_order_means_table %>%
   basic_kable(digits = 3, format = "latex", booktabs = T) %>% 
   cat()
 ```
+
+
+```{r}
+# inspired by https://stackoverflow.com/questions/61977439/table-below-x-axis-in-ggplot
+p1 <- task_order_scores %>% 
+  pivot_longer(cols = c("G", "C"), names_to = "q_type", values_to = "marks_attained") %>% 
+  ggplot(aes(x = task_order, y = marks_attained)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.4, stroke = 0) +
+  geom_pointrange(data = means, aes(x = task_order, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.35),
+                  size = 0.4) +
+  facet_grid(cols = vars(q_type), labeller = labeller(q_type = c("C" = "Classification score", "G" = "Generation score"))) +
+  labs(y = "", x = "") +
+  theme(panel.spacing.x = unit(2, "lines"), strip.text = element_text(size = 11))
+
+p2 <- task_order_means_table %>% 
+  mutate(
+    n = str_glue("{N}"),
+    mean = str_glue("{round(Mean, digits = 3)}"),
+    sd = str_glue("{round(sd, digits = 3)}")
+  ) %>% 
+  pivot_longer(c(n, mean, sd, estimate_hdi), names_to = "layer", values_to = "label") %>% 
+  mutate(layer = fct_relevel(layer, c("n", "sd", "mean", "estimate_hdi")) %>% fct_rev()) %>% 
+  #filter(layer != "n") %>% 
+  ggplot(aes(x = task_order, y = layer, label = label)) +
+  geom_text(size = 10 * 5/14) +
+  labs(y = "", x = NULL) +
+  scale_y_discrete(labels = c("n" = "N", "mean" = "Mean", "estimate_hdi" = "\n95% HDI\nfor mean")) +
+  theme_minimal() +
+  facet_grid(cols = vars(score), labeller = labeller(q_type = c("C" = "Classification score", "G" = "Generation score"))) +
+  theme(axis.line = element_blank(), axis.ticks = element_blank(), axis.text.x = element_blank(),
+        panel.grid = element_blank(), strip.text = element_blank(),
+        panel.spacing.x = unit(2, "lines"))
+  
+p1 / p2 +  plot_layout(heights = c(8, 3))
+ggsave("figs/FIG_studyX_task_order_with_table.pdf", width = 15, height = 10, units = "cm")
+```
+
 ```{r}
 contrasts %>% 
   basic_kable(digits = 3)
