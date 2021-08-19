@@ -1,1093 +1,183 @@
-study,group,username,question_name,q_type,questionsummary,responsesummary,marks_attained,task_order,part,response,q_part,relevant_prt,fully_correct
-study1,GCG,anon100,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon101,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 5-(1/2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-(1/2^n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon103,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon104,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n/2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n/2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon105,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon106,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,2+1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon109,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/n+9 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/n+9 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon110,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/2*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1/2*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CCG,anon112,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1+u_n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1+u_n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CGC,anon113,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 6^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,6^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon114,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n -1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n -1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon115,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CGC,anon117,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/(4*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1/(4*n+4) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon12,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon125,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: (n-1)/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,(n-1)/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon126,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2*n -1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n -1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon128,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: log(x) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,log(x) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CGC,anon13,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 4-1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,4-1/(4*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon139,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2-2/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,2-2/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon14,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon143,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon148,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/2*n  [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1/2*n  ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon149,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: x [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,x ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon151,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GGC,anon152,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GGC,anon153,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon154,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon157,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon16,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n^2-1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2-1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon160,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 257/16-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,257/16-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon161,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon162,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon164,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon165,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon167,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon169,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 7 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,7 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GGC,anon170,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon171,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/(2*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/(2*n+4) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon174,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon175,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: sin(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,sin(n) ,NearG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE
-study1,GGC,anon178,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,4 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon182,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon185,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 4^n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,4^n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon186,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon19,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon190,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon191,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon193,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon199,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon202,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -3/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-3/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon206,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: sqrt(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,sqrt(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon210,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: u_1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,u_1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon211,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/-n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1/-n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon212,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,2-1/(2*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon218,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 5/2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,5/2*n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon220,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 3*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon221,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 5-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon225,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon227,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon229,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon23,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2*n+4 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n+4 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon230,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon29,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon42,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: (2*n+3)/(n+1) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,(2*n+3)/(n+1) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GGC,anon44,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon45,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 10-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,10-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon46,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon48,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/4*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,1/4*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CCG,anon50,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CCG,anon53,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1+2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+2*n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon54,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon55,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1+1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon57,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 3*n+2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon60,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GGC,anon64,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CCG,anon65,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/(4*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GCG,anon73,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,CGC,anon74,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study1,GCG,anon75,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,GCG,anon78,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1/3**n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/3**n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CGC,anon82,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CGC,anon84,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1^-n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1^-n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon85,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon89,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n-n^2 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,n-n^2 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon90,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon91,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,GGC,anon92,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: n/(n+1) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,n/(n+1) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study1,CGC,anon93,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: u_n/5 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,u_n/5 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-study1,CCG,anon96,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: sqrt(10-n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,sqrt(10-n) ,NearG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE
-study1,GCG,anon97,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
-study2,CG,anon10,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon100,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon101,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon108,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/-n+5 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1/-n+5 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon109,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon110,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon113,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon114,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon115,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n/(n+1) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,n/(n+1) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon116,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon117,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon118,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon119,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: (1/2*n)^(-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,(1/2*n)^(-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon12,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 6^(1/n) [score]; prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,6^(1/n) ,NearG_ans1,prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE
-study2,GC,anon121,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n^3 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n^3 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon122,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n/(n+2) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,n/(n+2) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon128,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon13,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon134,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon135,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 12+n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,12+n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon136,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon137,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: sqrt(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,sqrt(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon138,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon139,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2*n/3 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n/3 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon142,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,2-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon153,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon156,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 11/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,11/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon157,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: e^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,e^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon160,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon162,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2+1/n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2+1/n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon164,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/-n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1/-n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon166,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 0 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon170,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon173,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon174,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 8 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,8 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon177,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 0-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,0-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon18,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon185,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon187,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon192,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n/(n+1)  [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,n/(n+1)  ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon194,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,-1^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon195,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: log(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon197,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 7 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,7 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon199,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon20,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon201,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 10^x [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,10^x ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon202,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 4 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,4 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon203,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon204,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon205,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon206,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon208,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 3*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon209,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon21,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon211,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/(1+1/n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1/(1+1/n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon214,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 10/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,10/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon215,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon216,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 5*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,5*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon218,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon221,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon24,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon25,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,2^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon28,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: u_n + 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,u_n + 1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon3,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon31,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon32,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: (n-1)/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,(n-1)/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon33,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon36,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -n^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,-n^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon38,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: sqrt(x) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,sqrt(x) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon41,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon44,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 2^n+12 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n+12 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon46,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: sqrt(n)+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,sqrt(n)+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon57,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1- 3/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1- 3/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon59,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon6,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon60,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon61,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/(n-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,1/(n-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon63,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon66,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon67,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,CG,anon69,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: u_n+1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,u_n+1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon72,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon78,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n^2 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n^2 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,GC,anon80,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon86,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 3*n+4 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+4 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon87,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 23 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,23 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,GC,anon88,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon89,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: (-1)*n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,(-1)*n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
-study2,CG,anon90,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-study2,GC,anon95,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1-(1/2^n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-(1/2^n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon96,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
-study2,CG,anon97,NearG,G,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",Seed: 1; ans1: sqrt(u_n-9) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,sqrt(u_n-9) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+study,group,username,question_name,q_type,responsesummary,marks_attained,task_order,part,response,q_part,relevant_prt,fully_correct,response_type,response_type_overall
+study1,GCG,anon100,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,CGC,anon101,NearG,G,ans1: 5-(1/2^n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-(1/2^n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,CGC,anon103,NearG,G,ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CGC,anon104,NearG,G,ans1: n/2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n/2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,GGC,anon105,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon106,NearG,G,ans1: 2+1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,2+1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/n,1/n
+study1,GCG,anon109,NearG,G,ans1: 1/n+9 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/n+9 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/n,1/n
+study1,CCG,anon110,NearG,G,ans1: 1/2*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1/2*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,a/n,1/n
+study1,CCG,anon112,NearG,G,ans1: 1+u_n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1+u_n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,other,other
+study1,CGC,anon113,NearG,G,ans1: 6^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,6^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study1,GGC,anon114,NearG,G,ans1: n -1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n -1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,1/2^n,1/2^n
+study1,CGC,anon115,NearG,G,ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/n,1/n
+study1,CGC,anon117,NearG,G,ans1: 1/(4*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1/(4*n+4) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/(an+b),1/n
+study1,GCG,anon12,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,CGC,anon125,NearG,G,ans1: (n-1)/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,(n-1)/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study1,CCG,anon126,NearG,G,ans1: 2*n -1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n -1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,CGC,anon128,NearG,G,ans1: log(x) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,log(x) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,other,other
+study1,CGC,anon13,NearG,G,ans1: 4-1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,4-1/(4*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,a/n,1/n
+study1,GCG,anon139,NearG,G,ans1: 2-2/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,2-2/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,a/n,1/n
+study1,CGC,anon14,NearG,G,ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,GCG,anon143,NearG,G,ans1: 1/n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/n,1/n
+study1,CCG,anon148,NearG,G,ans1: 1/2*n  [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1/2*n  ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,a/n,1/n
+study1,GGC,anon149,NearG,G,ans1: x [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,x ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,other,other
+study1,GCG,anon151,NearG,G,ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/2^n,1/2^n
+study1,GGC,anon152,NearG,G,ans1: 0 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,GGC,anon153,NearG,G,ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GCG,anon154,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GCG,anon157,NearG,G,ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,CGC,anon16,NearG,G,ans1: n^2-1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2-1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study1,GCG,anon160,NearG,G,ans1: 257/16-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,257/16-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon161,NearG,G,ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GCG,anon162,NearG,G,ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study1,GGC,anon164,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon165,NearG,G,ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GCG,anon167,NearG,G,ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study1,CGC,anon169,NearG,G,ans1: 7 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,7 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,GGC,anon170,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,CCG,anon171,NearG,G,ans1: 1/(2*n+4) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/(2*n+4) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/(an+b),1/n
+study1,CCG,anon174,NearG,G,ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,CCG,anon175,NearG,G,ans1: sin(n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,sin(n) ,NearG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE,other,other
+study1,GGC,anon178,NearG,G,ans1: 4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,4 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,CCG,anon182,NearG,G,ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon185,NearG,G,ans1: 4^n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,4^n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study1,GCG,anon186,NearG,G,ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,GGC,anon19,NearG,G,ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GGC,anon190,NearG,G,ans1: 1-(1/2)^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-(1/2)^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon191,NearG,G,ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study1,CGC,anon193,NearG,G,ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GCG,anon199,NearG,G,ans1: -1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,CCG,anon202,NearG,G,ans1: -3/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-3/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,a/n,1/n
+study1,CCG,anon206,NearG,G,ans1: sqrt(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,sqrt(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study1,GGC,anon210,NearG,G,ans1: u_1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,u_1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,other,other
+study1,CCG,anon211,NearG,G,ans1: 1/-n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1/-n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CGC,anon212,NearG,G,ans1: 2-1/(2*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,2-1/(2*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,a/n,1/n
+study1,CCG,anon218,NearG,G,ans1: 5/2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,5/2*n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,a/n,1/n
+study1,GCG,anon220,NearG,G,ans1: 3*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,CGC,anon221,NearG,G,ans1: 5-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GCG,anon225,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon227,NearG,G,ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study1,GCG,anon229,NearG,G,ans1: 1 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,integer,other
+study1,GCG,anon23,NearG,G,ans1: 2*n+4 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n+4 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,GGC,anon230,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GCG,anon29,NearG,G,ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CGC,anon42,NearG,G,ans1: (2*n+3)/(n+1) [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,(2*n+3)/(n+1) ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,(expr in n)/(an+b),1/n
+study1,GGC,anon44,NearG,G,ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CGC,anon45,NearG,G,ans1: 10-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,10-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CGC,anon46,NearG,G,ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study1,CGC,anon48,NearG,G,ans1: 1/4*n+1 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,1/4*n+1 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,a/n,1/n
+study1,CCG,anon50,NearG,G,ans1: 2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study1,CCG,anon53,NearG,G,ans1: 1+2*n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,1+2*n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,GCG,anon54,NearG,G,ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/2^n,1/2^n
+study1,GGC,anon55,NearG,G,ans1: 1+1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1+1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/2^n,1/2^n
+study1,GCG,anon57,NearG,G,ans1: 3*n+2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study1,CGC,anon60,NearG,G,ans1: n^2 [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study1,GGC,anon64,NearG,G,ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,CCG,anon65,NearG,G,ans1: -1/(4*n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/(4*n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,a/n,1/n
+study1,GCG,anon73,NearG,G,ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study1,CGC,anon74,NearG,G,ans1: ln(n) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study1,GCG,anon75,NearG,G,ans1: 1/2^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/2^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,1/2^n,1/2^n
+study1,GCG,anon78,NearG,G,ans1: 1/3**n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Classify first,ans1,1/3**n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,^n,other
+study1,CGC,anon82,NearG,G,ans1: 1^n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1^n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,^n,other
+study1,CGC,anon84,NearG,G,ans1: 1^-n [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,1^-n ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,^n,other
+study1,CCG,anon85,NearG,G,ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GGC,anon89,NearG,G,ans1: n-n^2 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,n-n^2 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,an+b,other
+study1,CCG,anon90,NearG,G,ans1: 1-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GGC,anon91,NearG,G,ans1: 5-1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,5-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study1,GGC,anon92,NearG,G,ans1: n/(n+1) [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Generate first,ans1,n/(n+1) ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study1,CGC,anon93,NearG,G,ans1: u_n/5 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,Generate first,ans1,u_n/5 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE,other,other
+study1,CCG,anon96,NearG,G,ans1: sqrt(10-n) [score]; prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,sqrt(10-n) ,NearG_ans1,prt1: ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE,other,other
+study1,GCG,anon97,NearG,G,ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon10,NearG,G,Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,CG,anon100,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon101,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,CG,anon108,NearG,G,Seed: 1; ans1: 1/-n+5 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1/-n+5 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon109,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon110,NearG,G,Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon113,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,CG,anon114,NearG,G,Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon115,NearG,G,Seed: 1; ans1: n/(n+1) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,n/(n+1) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study2,CG,anon116,NearG,G,Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/n,1/n
+study2,CG,anon117,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon118,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon119,NearG,G,Seed: 1; ans1: (1/2*n)^(-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,(1/2*n)^(-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,CG,anon12,NearG,G,Seed: 1; ans1: 6^(1/n) [score]; prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,Classify first,ans1,6^(1/n) ,NearG_ans1,prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE,1/n,1/n
+study2,GC,anon121,NearG,G,Seed: 1; ans1: -1/n^3 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n^3 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,"n^2, n^3",other
+study2,CG,anon122,NearG,G,Seed: 1; ans1: n/(n+2) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,n/(n+2) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study2,CG,anon128,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,GC,anon13,NearG,G,Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,CG,anon134,NearG,G,Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/2^n,1/2^n
+study2,GC,anon135,NearG,G,Seed: 1; ans1: 12+n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,12+n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,GC,anon136,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,GC,anon137,NearG,G,Seed: 1; ans1: sqrt(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,sqrt(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon138,NearG,G,Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/2^n,1/2^n
+study2,CG,anon139,NearG,G,Seed: 1; ans1: 2*n/3 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2*n/3 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon142,NearG,G,Seed: 1; ans1: 2-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,2-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon153,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon156,NearG,G,Seed: 1; ans1: 11/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,11/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/2^n,1/2^n
+study2,CG,anon157,NearG,G,Seed: 1; ans1: e^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,e^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,GC,anon160,NearG,G,Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,CG,anon162,NearG,G,Seed: 1; ans1: n^2+1/n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2+1/n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,1/n,1/n
+study2,CG,anon164,NearG,G,Seed: 1; ans1: 1/-n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1/-n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon166,NearG,G,Seed: 1; ans1: 0 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,0 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon170,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon173,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,CG,anon174,NearG,G,Seed: 1; ans1: 8 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,8 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,CG,anon177,NearG,G,Seed: 1; ans1: 0-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,0-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon18,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,CG,anon185,NearG,G,Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,CG,anon187,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,CG,anon192,NearG,G,Seed: 1; ans1: n/(n+1)  [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,n/(n+1)  ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study2,CG,anon194,NearG,G,Seed: 1; ans1: -1^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,-1^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,^n,other
+study2,GC,anon195,NearG,G,Seed: 1; ans1: log(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,CG,anon197,NearG,G,Seed: 1; ans1: 7 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,7 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon199,NearG,G,Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon20,NearG,G,Seed: 1; ans1: n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,CG,anon201,NearG,G,Seed: 1; ans1: 10^x [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,10^x ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,GC,anon202,NearG,G,Seed: 1; ans1: 4 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,4 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon203,NearG,G,Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/n,1/n
+study2,CG,anon204,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon205,NearG,G,Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon206,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,CG,anon208,NearG,G,Seed: 1; ans1: 3*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon209,NearG,G,Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon21,NearG,G,Seed: 1; ans1: 2*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon211,NearG,G,Seed: 1; ans1: 1/(1+1/n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1/(1+1/n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon214,NearG,G,Seed: 1; ans1: 10/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,10/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,a/n,1/n
+study2,CG,anon215,NearG,G,Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,CG,anon216,NearG,G,Seed: 1; ans1: 5*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,5*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon218,NearG,G,Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon221,NearG,G,Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,GC,anon24,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon25,NearG,G,Seed: 1; ans1: 2^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,2^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,GC,anon28,NearG,G,Seed: 1; ans1: u_n + 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,u_n + 1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,GC,anon3,NearG,G,Seed: 1; ans1: 1/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/2^n,1/2^n
+study2,CG,anon31,NearG,G,Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,CG,anon32,NearG,G,Seed: 1; ans1: (n-1)/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,(n-1)/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,(expr in n)/(an+b),1/n
+study2,CG,anon33,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon36,NearG,G,Seed: 1; ans1: -n^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,-n^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,"n^2, n^3",other
+study2,GC,anon38,NearG,G,Seed: 1; ans1: sqrt(x) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,sqrt(x) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,GC,anon41,NearG,G,Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon44,NearG,G,Seed: 1; ans1: 2^n+12 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,2^n+12 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,^n,other
+study2,CG,anon46,NearG,G,Seed: 1; ans1: sqrt(n)+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,sqrt(n)+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon57,NearG,G,Seed: 1; ans1: 1- 3/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1- 3/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,a/n,1/n
+study2,GC,anon59,NearG,G,Seed: 1; ans1: n^2+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,GC,anon6,NearG,G,Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon60,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon61,NearG,G,Seed: 1; ans1: 1/(n-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,1/(n-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/(an+b),1/n
+study2,GC,anon63,NearG,G,Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,GC,anon66,NearG,G,Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon67,NearG,G,Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Generate first,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,"n^2, n^3",other
+study2,CG,anon69,NearG,G,Seed: 1; ans1: u_n+1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,u_n+1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other
+study2,GC,anon72,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon78,NearG,G,Seed: 1; ans1: -1/n^2 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,-1/n^2 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,"n^2, n^3",other
+study2,GC,anon80,NearG,G,Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon86,NearG,G,Seed: 1; ans1: 3*n+4 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,3*n+4 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,an+b,other
+study2,GC,anon87,NearG,G,Seed: 1; ans1: 23 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,23 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,integer,other
+study2,GC,anon88,NearG,G,Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Generate first,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,1/n,1/n
+study2,CG,anon89,NearG,G,Seed: 1; ans1: (-1)*n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,(-1)*n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,an+b,other
+study2,CG,anon90,NearG,G,Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,Classify first,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE,other,other
+study2,GC,anon95,NearG,G,Seed: 1; ans1: 1-(1/2^n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Generate first,ans1,1-(1/2^n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/2^n,1/2^n
+study2,CG,anon96,NearG,G,Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,Classify first,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE,1/n,1/n
+study2,CG,anon97,NearG,G,Seed: 1; ans1: sqrt(u_n-9) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,Classify first,ans1,sqrt(u_n-9) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE,other,other

@@ -366,108 +366,320 @@ contrasts %>%
   basic_kable(digits = 3)
 ```
 
-# Near tasks
+# Interactions between tasks?
 
 ## NearG
 
+> Give an example of a sequence which is increasing and bounded above.
+
+There are a couple of hypotheses about students' answers to this task, if they are being influenced by previous tasks:
+
+1. students from study 1 G- groups will be more likely to use examples based on `1/2^n` than students from other groups, since they will have seen that as a worked solution to G1.
+
+2. excluding the study1 G- groups, students in classify-first groups will be more likely to use `1/n`-based examples than those from generate-first groups, since they will have just seen `1/(an+b)` in NearC.
+
+First we classify the type of response given by each student, blind to which group they are in:
+
 ```{r}
-responses %>% 
+nearG_responses <- responses %>% 
+  select(-questionsummary) %>% 
   filter(question_name == "NearG") %>% 
+  mutate(
+    response_type = case_when(
+      str_detect(response, "sqrt|u|log|sin|ln") ~ "other",
+      # pick off some odd cases first
+      str_trim(response) %in% c("(1/2*n)^(-1)") ~ "other",
+      # identify use of example from G1
+      str_detect(response, "/2\\^n|\\(1/2\\)\\^n") ~ "1/2^n",
+      # pick off other uses of ^n
+      str_detect(response, "\\^[-]?n|\\*\\*n") ~ "^n",
+      # identify examples similar to NearC
+      str_detect(response, "1/n(?!\\^)") ~ "1/n", # look ahead to rule out 1/n^2 etc
+      str_detect(response, "[:digit:]/[:digit:]*[\\*]?n(?!\\^)") ~ "a/n",
+      str_detect(response, "[:digit:]/\\([:digit:]*[\\*]?n\\)(?!\\^)") ~ "a/n",
+      str_detect(response, "n/\\(n\\+1\\)|\\(n-1\\)/n") ~ "(expr in n)/(an+b)",
+      str_detect(response, ".*n.*/\\([:digit:]*[\\*]*n[\\+-]*[:digit:]*\\)") ~ "(expr in n)/(an+b)",
+      str_detect(response, "/\\([:digit:]*[\\*]*n[\\+-]*[:digit:]*\\)") ~ "1/(an+b)",
+      str_detect(response, "/-n") ~ "1/n",
+      # other stuff
+      str_detect(response, "[:digit:]*[\\*]?n[:space:]*[\\+-][:space:]*[:digit:]*") ~ "an+b",
+      str_detect(response, "[:digit:]+[\\*]?n|\\([-]?[:digit:]*\\)[\\*]?n") ~ "an+b",
+      str_detect(response, "n\\^[:digit:]") ~ "n^2, n^3",
+      str_trim(response) %in% c("n", "1+n", "n/2") ~ "an+b",
+      str_detect(str_trim(response), "^[:digit:]+$") ~ "integer",
+      TRUE ~ "other"
+    ),
+    response_type_overall = case_when(
+      response_type %in% c("1/2^n") ~ "1/2^n",
+      response_type %in% c("1/n", "a/n", "(expr in n)/(an+b)", "1/(an+b)") ~ "1/n",
+      TRUE ~ "other"
+    )
+  )
+
+nearG_responses %>% 
+  group_by(response_type_overall, response_type, response) %>% 
+  tally() %>% 
+  arrange(response_type_overall, response_type, -n, response) %>% 
+  basic_kable() %>% 
+  collapse_rows(columns = c(1:2), valign = "top")
+
+nearG_responses %>% 
   write_csv("data-clean/studyX_NearG_responses.csv")
-
-responses %>% 
-  filter(question_name == "NearG") %>% 
-  group_by(task_order, fully_correct, response) %>% 
-  summarise(
-    num_responses = n(),
-    .groups = "drop"
-  ) %>% 
-  arrange(task_order, fully_correct, -num_responses) %>% 
-  basic_kable() %>% 
-  collapse_rows(columns = c(1:3), valign = "top")
 ```
 
 ```{r}
-responses %>% 
-  filter(question_name == "NearG") %>% 
-  mutate(initial_task = if_else(study == "study2", "study2", str_sub(group, start = 1, end = 1))) %>% 
-  group_by(task_order, initial_task, fully_correct, relevant_prt) %>% 
-  arrange(response) %>% 
-  summarise(
-    responses = paste0(str_trim(response), collapse = "; "),
-    .groups = "drop"
-  ) %>% 
+nearG_responses %>% 
+  group_by(response_type_overall, response_type) %>% 
+  tally() %>% 
+  arrange(response_type_overall, -n) %>% 
   basic_kable() %>% 
-  collapse_rows(columns = c(1:3), valign = "top")
+  collapse_rows(columns = c(1), valign = "top")
 ```
 
-**TODO - update this based on new numbers**
+Now to check the hypotheses:
 
-The single most common correct answer is `1-1/2^n` (10 students), and strikingly these all come from students in G- groups, where that example featured in the model answer for G1b.
-Other variants of `1-1/2^n` appear too, such as `1-(1/2)^n` and `5-1/2^n`, including some from students in C- groups. Adding these to the 10 already noted, there are a total of 17 examples of this type, with 14 of them from students in G- groups.
+> 1. students from study 1 G- groups will be more likely to use examples based on `1/2^n` than students from other groups, since they will have seen that as a worked solution to G1.
 
-Another common group of correct answers are based on`-1/n` (20 students). These are split fairly evenly between groups, so there is not much evidence that the students in -CG groups are using the example provided in NearC (which has the form `1/(an+b)`) as a basis for answering NearG.
+```{r}
+nearG_H1 <- nearG_responses %>% 
+  mutate(big_group = if_else(study == "study1" & str_detect(group, "^G"), "Study 1 G-", "Other")) %>% 
+  select(big_group, response_type_overall) %>% 
+  janitor::tabyl(big_group, response_type_overall) %>% 
+  janitor::adorn_totals(where = "col")
 
+nearG_H1 %>% 
+  basic_kable()
 
-# Mid tasks
+nearG_H1 %>% 
+  pivot_longer(cols = !c(big_group, Total), names_to = "example_type", values_to = "frequency") %>% 
+  ggplot(aes(x = big_group, y = frequency, fill = example_type, width = Total/100)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Example type", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Group", y = "Frequency")
+```
+
+This suggests that it is indeed the case that the Study 1 G- groups are more likely to use `1/2^n`-based examples.
+
+> 2. excluding the study1 G- groups, students in classify-first groups will be more likely to use `1/n`-based examples than those from generate-first groups, since they will have just seen `1/(an+b)` in NearC.
+
+```{r}
+nearG_H2 <- nearG_responses %>% 
+  filter(!(study == "study1" & str_detect(group, "^G"))) %>% 
+  mutate(big_group = if_else(str_detect(group, "G$"), "Classify first", "Generate first")) %>% 
+  select(big_group, response_type_overall) %>% 
+  janitor::tabyl(big_group, response_type_overall) %>% 
+  janitor::adorn_totals(where = "col")
+
+nearG_H2 %>% 
+  pivot_longer(cols = !c(big_group, Total), names_to = "example_type", values_to = "frequency") %>% 
+  ggplot(aes(x = big_group, y = frequency, fill = example_type, width = Total/100)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Example type", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Group", y = "Frequency")
+
+nearG_H2 %>% 
+  basic_kable()
+```
+
+While the proportion is definitely higher, it's not significantly so:
+
+```{r}
+prop.test(nearG_H2$`1/n`, nearG_H2$`Total`, alternative = "greater")
+```
+
+One table and plot for both together:
+
+```{r}
+nearG_Hs <- nearG_responses %>% 
+  mutate(big_group = case_when(
+    study == "study1" & str_detect(group, "^G") ~ "Study 1 G-",
+    str_detect(group, "G$") ~ "Classify first",
+    TRUE ~ "Generate first"
+  )) %>% 
+  mutate(big_group = fct_relevel(big_group, "Study 1 G-")) %>% # move that group first
+  select(big_group, response_type_overall) %>% 
+  janitor::tabyl(big_group, response_type_overall) %>% 
+  janitor::adorn_totals(where = "col")
+
+nearG_Hs %>% 
+  pivot_longer(cols = !c(big_group, Total), names_to = "example_type", values_to = "frequency") %>% 
+  ggplot(aes(x = big_group, y = frequency, fill = example_type, width = Total/100)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Example type", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Group", y = "Frequency")
+
+nearG_Hs %>% 
+  rename(Group = big_group) %>% 
+  relocate(N = Total, .after = Group) %>% 
+  basic_kable() %>%
+  add_header_above(c(" " = 2, "Example type" = 3))
+```
+```{r, comment=""}
+nearG_Hs %>% 
+  rename(Group = big_group) %>% 
+  relocate(N = Total, .after = Group) %>% 
+  basic_kable(digits = 3, format = "latex", booktabs = T) %>%
+  add_header_above(c(" " = 2, "Example type" = 3)) %>% 
+  cat()
+```
 
 ## MidG
 
-```{r}
-responses %>% 
-  filter(question_name == "MidG") %>% 
-  write_csv("data-clean/studyX_MidG_responses.csv")
+> In each case below, give an example of an arithmetic sequence with the stated property, by entering an expression for the general term. If it is not possible, enter `none`.
+> (a) Increasing
+> (b) Decreasing
+> (c) Bounded above
+> (d) Decreasing and bounded below
 
-responses %>% 
+First we classify the type of response given by each student, blind to which group they are in:
+
+```{r}
+midG_responses <- responses %>% 
+  select(-questionsummary) %>% 
   filter(question_name == "MidG") %>% 
-  group_by(q_part, fully_correct, response) %>% 
+  mutate(
+    response_type = case_when(
+      str_trim(response) %in% c("none") ~ "none",
+      str_detect(response, "sqrt|u|log|sin|ln|abs") ~ "other",
+      # pick off some odd cases first
+      str_trim(response) %in% c("(1/2*n)^(-1)") ~ "other",
+      # identify use of example from G1
+      str_detect(response, "/2\\^n|\\(1/2\\)\\^n") ~ "1/2^n",
+      str_detect(response, "2\\^\\(n-1\\)") ~ "1/2^n",
+      str_detect(response, "1/\\(2\\^n\\)") ~ "1/2^n",
+      # pick off other uses of ^n
+      str_detect(response, "\\^[-]?n|\\*\\*n") ~ "^n",
+      str_detect(response, "n\\^[:digit:]") ~ "n^2, n^3",
+      # identify examples similar to NearC
+      str_detect(response, "1/n(?!\\^)") ~ "1/n", # look ahead to rule out 1/n^2 etc
+      str_detect(response, "[:digit:]/[:digit:]*[\\*]?n(?!\\^)") ~ "a/n",
+      str_detect(response, "[:digit:]/\\([:digit:]*[\\*]?n\\)(?!\\^)") ~ "a/n",
+      str_detect(response, "n/\\(n\\+1\\)|\\(n-1\\)/n") ~ "(expr in n)/(an+b)",
+      str_detect(response, ".*n.*/\\([:digit:]*[\\*]*n[\\+-]*[:digit:]*\\)") ~ "(expr in n)/(an+b)",
+      str_detect(response, "/\\([:digit:]*[\\*]*n[\\+-]*[:digit:]*\\)") ~ "1/(an+b)",
+      str_detect(response, "/-n") ~ "1/n",
+      # other stuff
+      str_detect(response, "[:digit:]*[\\*]?n[:space:]*[\\+-][:space:]*[:digit:]*") ~ "an+b",
+      str_detect(response, "[-]?[:digit:]*[:space:]*[\\+-][:space:]*[:digit:]*[\\*]?n") ~ "an+b",
+      str_detect(response, "[:digit:]+[\\*]?n|\\([-]?[:digit:]*\\)[\\*]?n") ~ "an+b",
+      str_trim(response) %in% c("n", "1+n", "n/2", "2-(n)", "ln(2)-ln(2)*(n-1)", "n/2+1", "n*d") ~ "an+b",
+      str_detect(str_trim(response), "^[:digit:]+$") ~ "integer",
+      TRUE ~ "other"
+    ),
+    response_type_overall = case_when(
+      response_type %in% c("1/2^n") ~ "1/2^n",
+      response_type %in% c("1/n", "a/n", "(expr in n)/(an+b)", "1/(an+b)") ~ "1/n",
+      response_type %in% c("an+b") ~ "an+b",
+      response_type %in% c("none") ~ "none",
+      TRUE ~ "other"
+    )
+  )
+
+midG_responses %>% 
+  group_by(response_type_overall, response_type, response) %>% 
   tally() %>% 
-  arrange(q_part, fully_correct, -n) %>% 
+  arrange(response_type_overall, response_type, -n, response) %>% 
   basic_kable() %>% 
-  collapse_rows(columns = c(1:3), valign = "top")
+  collapse_rows(columns = c(1:2), valign = "top")
+
+midG_responses %>% 
+  write_csv("data-clean/studyX_MidG_responses.csv")
 ```
+
 
 ```{r}
-# responses %>% 
-#   filter(question_name == "MidG") %>% 
-#   group_by(q_part, task_order, fully_correct, relevant_prt) %>% 
-#   arrange(response) %>% 
-#   summarise(
-#     responses = paste0(str_trim(response), collapse = "; "),
-#     num_responses = n(),
-#     .groups = "drop"
-#   ) %>% 
-#   basic_kable() %>% 
-#   collapse_rows(columns = c(1:3), valign = "top")
-responses %>% 
-  filter(question_name == "MidG") %>% 
-  group_by(q_part, task_order, fully_correct, relevant_prt, response) %>% 
-  summarise(
-    num_responses = n(),
-    .groups = "drop"
-  ) %>% 
-  arrange(q_part, task_order, fully_correct, relevant_prt, -num_responses, response) %>% 
-  basic_kable() %>% 
-  collapse_rows(columns = c(1:4), valign = "top")
+nearG_Hs <- midG_responses %>% 
+  mutate(big_group = case_when(
+    study == "study1" & str_detect(group, "^G") ~ "Study 1 G-",
+    str_detect(group, "G$") ~ "Classify first",
+    TRUE ~ "Generate first"
+  )) %>% 
+  select(big_group, response_type_overall) %>% 
+  janitor::tabyl(big_group, response_type_overall) %>% 
+  janitor::adorn_totals(where = "col")
+
+nearG_Hs %>% 
+  basic_kable()
+
+midG_responses %>% 
+  select(q_part, response_type_overall) %>% 
+  janitor::tabyl(q_part, response_type_overall) %>% 
+  janitor::adorn_totals(where = "col") %>% 
+  pivot_longer(cols = !c(q_part, Total), names_to = "example_type", values_to = "frequency") %>% 
+  ggplot(aes(x = q_part, y = frequency, fill = example_type)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Example type", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Group", y = "Frequency")
 ```
+
+How does MidC1 influence answers? It was randomised, so different students will have had examples of different types to classify:
 
 ```{r}
-responses %>% 
-  filter(question_name == "MidG") %>% 
-  mutate(initial_task = if_else(study == "study2", "study2", str_sub(group, start = 1, end = 1))) %>% 
-  group_by(q_part, task_order, initial_task, fully_correct, relevant_prt) %>% 
-  arrange(response) %>% 
-  summarise(
-    responses = paste0(str_trim(response), collapse = "; "),
-    .groups = "drop"
-  ) %>% 
-  basic_kable() %>% 
-  collapse_rows(columns = c(1:3), valign = "top")
+MidC1_examples <- responses %>% 
+  filter(question_name == "MidC1") %>% 
+  select(study, group, username, questionsummary) %>% 
+  distinct() %>% 
+  separate(questionsummary, into = c("MidC1_example", "ans"), sep = " is ") %>% 
+  mutate(MidC1_example = str_remove_all(MidC1_example, "\\\\|\\(|\\)|,|\\{|\\}"))
+
+head(MidC1_examples, n = 10) %>% 
+  basic_kable()
 ```
 
-TODO - analysis of answers to each part. Is there evidence of influence from previous materials (whether the G- or C- tasks, or MidC for the -CG groups)?
+The different examples used in MidC1 will be relevant to different parts of MidG:
 
-TODO - MidG_ans4 - how many of the incorrect answers are actually decreasing and bounded below, just not arithmetic?
+| MidC1 example      | Gives answer to MidG |
+| ------------------ | -------------------- |
+| Decreasing and Bounded above | b, c |
+| Increasing and Bounded below | a |
+
+Do students make use of these examples? If so, then we'd expect to see a difference in performance on the relevant parts of MidG, based on the type of example seen in MidC1:
+
+```{r}
+midG_responses %>% 
+  left_join(MidC1_examples, by = c("study", "group", "username")) %>% 
+  select(q_part, response, fully_correct, MidC1_example, ans) %>% 
+  mutate(ans = str_sub(ans, start = 1, end = 3)) %>% 
+  group_by(q_part, ans, fully_correct) %>% 
+  tally() %>% 
+  filter(!is.na(ans)) %>% 
+  ggplot(aes(x = ans, y = n, fill = fully_correct)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Correct", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Example from MidC1", y = "Frequency") +
+  facet_grid(cols = vars(q_part))
+```
+
+There appears to be no difference.
+
+Perhaps it is restricted to just the students in the classify-first group?
+
+```{r}
+midG_responses %>% 
+  left_join(MidC1_examples, by = c("study", "group", "username")) %>% 
+  select(study, group, q_part, response, fully_correct, MidC1_example, ans) %>% 
+  mutate(study_group = if_else(str_detect(group, "G$"), "Classify first", "Generate first")) %>% 
+  mutate(ans = str_sub(ans, start = 1, end = 3)) %>% 
+  group_by(study_group, q_part, ans, fully_correct) %>% 
+  tally() %>% 
+  filter(!is.na(ans)) %>% 
+  ggplot(aes(x = ans, y = n, fill = fully_correct)) +
+  geom_bar(position = "fill", stat = "identity") +
+  scale_fill_viridis_d("Correct", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous(labels = scales::percent) +
+  labs(x = "Example from MidC1", y = "Frequency") +
+  facet_grid(cols = vars(q_part), rows = vars(study_group))
+```
+
+Even here, there is no apparent difference.
+
+
+
 
 #### Session info
 
