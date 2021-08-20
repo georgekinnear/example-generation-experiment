@@ -1,0 +1,571 @@
+---
+title: "Study 2 analysis: initial learning tasks"
+author: "George Kinnear"
+date: "19/08/2021"
+output: 
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+#Plots
+library(ggplot2)
+library(patchwork) # for combining plots
+library(ggtext) # for markdown in plots
+library(latex2exp) # for formatting latex in plot captions
+
+# For Bayesian stats:
+library(bayestestR)
+#library(insight)
+#library(see)
+library(rstanarm)
+library(tidybayes)
+#library(BayesFactor)
+ci_width = 0.95  # Use 95% HDIs
+set.seed(20210518)
+
+# Tables
+library(knitr)
+library(kableExtra)
+basic_kable = function(df, ...) {
+  df %>% 
+    kable(...) %>%
+    kable_styling(bootstrap_options = "striped", full_width = F)
+}
+
+# Plot styling
+heathers = c("#00b3c3","#e51c24","#016637","#fcb123")
+heathers = c("#87005a", "#c66005","#016637","#fcb123")
+groupcolours = c("C-CG" = heathers[1],
+                 "C-GC" = "#6f004a", # darker heathers1
+                 "G-CG" = heathers[2],
+                 "G-GC" = "#a34e03" # darker heathers2
+                 )
+four_groups = c("CCG", "CGC", "GCG", "GGC")
+theme_set(theme_minimal())
+```
+
+```{r read-data, message=FALSE, warning=FALSE}
+question_marks = read_csv("data-clean/study2/FAC_LGE2-tasks.csv") %>%
+  select(question_name, marks_available)
+
+participants <- read_csv("data-clean/study2/participants.csv")
+
+attempt_data_all = read_rds("data-clean/FAC_LGE2-attempt_data.rds") %>% 
+  # tidy up group names
+  mutate(
+    group = str_replace(group, "Group ", ""),
+    overall_group = str_sub(group, 1, 1)
+  ) %>% 
+  mutate(
+    quiz = case_when(
+      question_name %in% c("FarC1", "FarC2") ~ "FT",
+      str_detect(question_name, "Mid") ~ "S2",
+      TRUE ~ "S1"
+    )
+  ) %>% 
+  left_join(question_marks, by = "question_name") %>% 
+  mutate(
+    # default to 1 mark per question if not specified
+    marks_available = replace_na(marks_available, 1),
+    marks_attained = fraction * marks_available,
+    # check the time of the attempt to see if it was before the end of the study
+    attempt_time = lubridate::as_datetime(timecreated),
+    during_study = attempt_time < lubridate::ymd("2020-11-27")
+  )
+```
+
+
+# Item performance
+
+```{r}
+first_attempts = attempt_data_all %>% 
+  filter(during_study == TRUE) %>% 
+  filter(attempt_number == 1) %>% 
+  group_by(quiz, question_name, username) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+last_attempts = attempt_data_all %>% 
+  filter(during_study == TRUE) %>% 
+  group_by(quiz, question_name, username) %>% 
+  # select the final attempt
+  top_n(n = 1, wt = attempt_number) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+best_attempts = attempt_data_all %>% 
+  filter(during_study == TRUE) %>% 
+  group_by(quiz, question_name, username) %>% 
+  # select the best attempt
+  top_n(n = 1, wt = fraction) %>% 
+  slice(1) %>% 
+  select(quiz, question_name, username, fraction, attempt_number) %>% 
+  ungroup()
+
+attempts_summary = bind_rows(
+  list("first" = first_attempts,
+       "last" = last_attempts,
+       "best" = best_attempts),
+  .id = "attempt_type"
+)
+
+attempts_summary_stats = attempts_summary %>% 
+  filter(attempt_type != "best") %>% 
+  group_by(quiz, question_name, attempt_type) %>% 
+  summarise(
+    mean_score = mean(fraction, na.rm = TRUE),
+    null_response = sum(is.na(fraction)) / n(),
+    n = n(),
+    .groups = "drop"
+  ) %>% 
+  ungroup() %>% 
+  mutate(
+    plot_order = case_when(
+      str_detect(question_name, "^C|^G") ~ "1. Learning",
+      str_detect(question_name, "Near") ~ "2. Near",
+      str_detect(question_name, "Mid") ~ "3. Mid",
+      str_detect(question_name, "Far") ~ "4. Far"
+    )
+  )
+```
+
+This shows the mean score on each of the items:
+
+```{r}
+attempts_summary_stats %>% 
+  ggplot(aes(x = question_name,
+             y = mean_score,
+             colour = attempt_type,
+             group = attempt_type)) +
+  geom_point() +
+  geom_line() +
+  geom_point(data = attempts_summary_stats,
+             mapping = aes(x = question_name,
+                 y = null_response),
+             shape = 1) +
+  facet_wrap(~plot_order, scales = "free_x") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1),
+        legend.position = "bottom") +
+  ylim(c(0,1)) +
+  labs(caption = "Hollow points show the proportion of null responses")
+```
+
+## Initial learning task: Classification
+
+```{r}
+per_student_C_marks <- attempt_data_all %>%
+  filter(str_detect(question_name, "^C"),
+         attempt_number == 1,
+         !is.na(marks_attained)) %>% 
+  select(question_name, username, marks_attained) %>% 
+  group_by(username) %>% 
+  tally(marks_attained)
+
+per_student_C_marks %>% 
+  ggplot(aes(x = n/12)) +
+  geom_histogram() +
+  geom_boxplot()
+
+per_student_C_marks %>% 
+  summarise(mean = mean(n), mean_pc = mean/12*100, .groups = "drop") %>% 
+  basic_kable()
+```
+
+
+```{r}
+# Separate the raw response data into details of the 10 different sub-parts
+# - extract the details of which sub-part is which of the Alcock & Simpson items (item_part)
+# - plus the corresponding response (ans_part) and score (score_part) for each sub-part
+responses_C1 <- attempt_data_all %>%
+  filter(question_name == "C1",
+         attempt_number == 1,
+         !is.na(marks_attained)) %>%
+  select(group, username, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the responses to each part
+  # STACK output uses [score] to separate the responses to each part; use NA to discard the final bit that is about the PRTs
+  separate(col = responsesummary,
+           into = c(paste0("ans_part", c(1:10)), NA),
+           sep = "\\[score\\]; ",
+           remove = FALSE) %>% 
+  mutate(across(contains("ans"), ~ str_remove(., ".*: "))) %>% 
+  # pick out the scores for each part (this time discarding the first bit that holds the responses)
+  separate(col = responsesummary,
+           into = paste0("score_part", c(0:10)),
+           sep = "\\| prt") %>% 
+  select(-score_part0) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ";.*"))) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ".*-.*-"))) %>% 
+  mutate(questionsummary = str_remove_all(questionsummary, "\\[|\\]")) %>% 
+  separate(col = questionsummary,
+           into = paste0("item_part", c(1:10)),
+           sep = ",")
+
+responses_C3 <- attempt_data_all %>%
+  filter(question_name == "C3",
+         attempt_number == 1,
+         !is.na(marks_attained)) %>%
+  select(group, username, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the responses to each part
+  separate(col = responsesummary,
+           into = c(paste0("ans_part", c(14:15)), NA),
+           sep = "\\[score\\]; ",
+           remove = FALSE) %>% 
+  mutate(across(contains("ans"), ~ str_remove(., ".*: "))) %>% 
+  # pick out the scores for each part (this time discarding the first bit that holds the responses)
+  separate(col = responsesummary,
+           into = c(NA,paste0("score_part", c(14:15))),
+           sep = "\\| prt") %>% 
+  mutate(across(contains("score"), ~ str_remove(., ";.*"))) %>% 
+  mutate(across(contains("score"), ~ str_remove(., ".*-.*-"))) %>% 
+  mutate(questionsummary = str_remove_all(questionsummary, "\\[|\\]")) %>% 
+  separate(col = questionsummary,
+           into = paste0("item_part", c(14:15)),
+           sep = ",") %>% 
+  # make the item numbers 14,15 instead of 1,2
+  rowwise() %>% 
+  mutate(across(contains("item_part"), ~ as.character(sum(c(as.numeric(.x), 13)))))
+
+responses_C_long = responses_C1 %>% 
+  select(-marks_attained) %>% 
+  full_join(responses_C3 %>% select(-marks_attained), by = c("group", "username")) %>% 
+  pivot_longer(
+    # take variables of the form STUFF_partN and separate
+    # into a column for each kind of STUFF and store the
+    # values of N in a column called "part"
+    contains("part"),
+    names_to = c(".value", "part"),
+    names_sep = "_part"
+  ) %>% 
+  mutate(score = if_else(score == "T", 1, 0)) %>% 
+  mutate(score = replace_na(score, 0),
+         item = as.integer(item),
+         item = as.factor(item),
+         ans = str_remove_all(ans, '\\"| '),
+         ans = na_if(ans, ""))
+```
+
+```{r}
+responses_C_summary = responses_C_long %>% 
+  group_by(item, ans) %>% 
+  summarise(
+    count = n(),
+    .groups = "drop"
+  ) %>% 
+  arrange(item) %>% 
+  group_by(item) %>% 
+  mutate(
+    correct_ans = case_when(
+      item %in% c(2,9,11,13,15) & ans == "Increasing" ~ "Correct",
+      item %in% c(3,10) & ans == "Decreasing" ~ "Correct",
+      item %in% c(1,4,5,6,7,8,12,14) & ans == "Neither" ~ "Correct",
+      TRUE ~ "Incorrect"
+    ),
+    signed_count = if_else(correct_ans == "Correct", count, -count),
+    signed_prop = signed_count / sum(count*!is.na(ans))
+  ) %>% 
+  drop_na()
+
+# library(latex2exp) needed here
+windowsFonts(Times=windowsFont("TT Times New Roman"))
+responses_C_summary %>% 
+  mutate(item = as.numeric(item)) %>% 
+  ggplot(aes(x = item, y = signed_count, fill = ans)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  #scale_fill_grey("Answer", end = 0.8) +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-60, 100, 20)) +
+  scale_x_reverse(
+    position = "top",
+    breaks = c(1:12),
+    minor_breaks = c(1:12),
+    labels = c(
+      "1" = parse(text = TeX("1. (0,1,0,1,0,1,0,1,\\ldots)")),
+      "2" = parse(text = TeX("2. (1, 4, 9, 16, 25, 36, 49, 64,\\ldots)")),
+      "3" = parse(text = TeX("3. (1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\frac{1}{5},\\frac{1}{6},\\frac{1}{7},\\frac{1}{8},\\ldots)")),
+      "4" = parse(text = TeX("4. (1,-1,2,-2,3,-3,4,-4,\\ldots)")),
+      "5" = parse(text = TeX("5. (3,3,3,3,3,3,3,3,\\ldots)")),
+      "6" = parse(text = TeX("6. (1, 3, 2, 4, 3, 5, 4, 6,\\ldots)")),
+      "7" = parse(text = TeX("7. (6, 6, 7, 7, 8, 8, 9, 9,\\ldots)")),
+      "8" = parse(text = TeX("8. (0, 1, 0, 2, 0, 3, 0, 4,\\ldots)")),
+      "9" = parse(text = TeX("9. (\\frac{1}{2}, \\frac{3}{4}, \\frac{7}{8}, \\frac{15}{16}, \\frac{31}{32}, \\frac{63}{64}, \\frac{127}{128}, \\frac{255}{256},\\ldots)")),
+      "10" = parse(text = TeX("10. (-2,-4,-6,-8,-10,-12,-14,-16,\\ldots)")),
+      "11" = parse(text = TeX("14. Plot of u_n = 3+(-1)^n")),
+      "12" = parse(text = TeX("15. Plot of u_n = 5-3/n"))
+    )
+  ) +
+  labs(x = "") +
+  coord_flip() +
+  expand_limits(y = c(-40,40)) +
+  annotate("text", x = -0.5, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
+  annotate("text", x = -0.5, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
+  theme(axis.text.y = element_text(family="Times"),
+        panel.grid.minor.x = element_blank(),
+        legend.position = "left")
+
+ggsave("figs/FIG_study2_responses_C.pdf", width = 18, height = 12, units = "cm")
+
+
+options(knitr.kable.NA = '')
+responses_C_summary %>% 
+  pivot_wider(
+    id_cols = item,
+    names_from = ans,
+    values_from = count
+  ) %>% 
+  basic_kable(
+    #format = "latex", booktabs = T
+  )
+```
+
+
+## Initial learning task: Example generation
+
+```{r}
+per_student_G_marks <- attempt_data_all %>%
+  filter(str_detect(question_name, "^G"),
+         attempt_number == 1,
+         !is.na(marks_attained)) %>% 
+  select(question_name, username, marks_attained) %>% 
+  group_by(username) %>% 
+  tally(marks_attained)
+
+per_student_G_marks %>% 
+  ggplot(aes(x = n)) +
+  geom_histogram() +
+  geom_boxplot()
+
+per_student_G_marks %>% 
+  summarise(mean = mean(n), mean_pc = mean/3*100, .groups = "drop") %>% 
+  basic_kable()
+```
+
+
+```{r message=FALSE, warning=FALSE}
+responses_G <- attempt_data_all %>%
+  filter(
+    str_detect(question_name, "^G"),
+    attempt_number == 1,
+    !is.na(marks_attained)
+  ) %>% 
+  select(group, username, question_name, questionsummary, responsesummary, marks_attained) %>% 
+  # pick out the various answers - str_match_all returns a matrix, which we have to wrangle a bit
+  mutate(ans_bits = str_match_all(responsesummary, "(ans[^:]*): ([^;]*)(?=\\[score\\];)")) %>% 
+  mutate(ans_bits = map(ans_bits, ~ tibble(part = .x[,2], response = .x[,3]))) %>% 
+  unnest(ans_bits) %>% 
+  # construct a simplified name for each question part
+  mutate(
+    G_part = case_when(
+      # Convert Gb ans3 to G2c etc
+      question_name == "Gb" ~ paste0("G2", letters[parse_number(part)]),
+    ),
+    fully_correct = case_when(
+      G_part == "G2a" ~ str_detect(responsesummary, "prt1-1-T"),
+      G_part == "G2b" ~ str_detect(responsesummary, "prt2-4-T"),
+      G_part == "G2c" ~ str_detect(responsesummary, "prt3-4-T") & str_detect(responsesummary, "prt3-5-T"),
+    ),
+    relevant_prt = case_when(
+      # pick out the PRT trace that is relevant to each part, i.e. that grades that answer
+      is.na(G_part) ~ NA_character_,
+      question_name %in% c("Ga", "Gb", "Gc") ~ str_match_all(responsesummary, str_glue("prt{parse_number(part)}: [^;]*(?=; |$)")) %>% as.character(),
+      TRUE ~ str_match_all(responsesummary, str_glue("prt1: [^;]*(?=; |$)")) %>% as.character()
+    )
+  ) %>% 
+  select(-contains("summary"))
+
+responses_G_summary <- responses_G %>% 
+  janitor::tabyl(G_part, fully_correct) %>% 
+  select(part = G_part, incorrect = "FALSE", correct = "TRUE")
+
+responses_G_summary %>% 
+  filter(!is.na(part)) %>% 
+  pivot_longer(cols = contains("correct"), names_to = "type", values_to = "count") %>% 
+  ggplot(aes(x = part, y = count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1) +
+  scale_y_continuous("Number of responses") +
+  labs(x = "Question part")
+
+responses_G_summary %>% 
+  filter(!is.na(part)) %>%
+  mutate(part = fct_rev(part)) %>% 
+  pivot_longer(cols = contains("correct"), names_to = "type", values_to = "count") %>% 
+  mutate(signed_count = if_else(type == "correct", count, -count)) %>% 
+  ggplot(aes(x = part, y = signed_count, fill = type)) +
+  geom_bar(position = "stack", stat = "identity") +
+  geom_hline(yintercept = 0) +
+  #scale_fill_viridis_d("Answer", end = 0.85, option = "viridis") +
+  scale_fill_viridis_d("Answer", option = "plasma", end = 0.8, direction = -1, guide = guide_legend(reverse = TRUE)) +
+  #scale_fill_grey("Answer", end = 0.8) +
+  scale_y_continuous("Number of responses", labels = abs, breaks = seq(-80, 40, 10)) +
+  scale_x_discrete(
+    position = "top",
+    labels = c(
+      "G2a" = "G2a: decreasing",
+      "G2b" = "G2b: decreasing and bounded below",
+      "G2c" = parse(text = TeX("G2c: decreasing, bounded below, and has $u_4=1$"))
+    )
+  ) +
+  labs(x = "") +
+  coord_flip() +
+  expand_limits(y = c(-50,50)) +
+  #annotate("text", x = 13.2, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
+  #annotate("text", x = 13.2, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
+  theme(axis.text.y = element_text(family="Times"),
+        panel.grid.minor.x = element_blank(),
+        strip.text.y = element_blank(),
+        legend.position = "top") +
+  facet_grid(rows = vars(str_sub(part, start = 1, end = 2)), scales = "free", space = "free")
+
+ggsave("figs/FIG_study2_responses_G.pdf", width = 18, height = 8, units = "cm")
+
+responses_G_summary %>% 
+  filter(!is.na(part)) %>% 
+  basic_kable()
+```
+
+Summary of responses to G2:
+
+```{r}
+responses_G %>% 
+  group_by(G_part, fully_correct, relevant_prt, response) %>% 
+  tally() %>% 
+  group_by(G_part, fully_correct, relevant_prt) %>% 
+  summarise(
+    num_responses = sum(n),
+    responses = paste0(str_trim(response), collapse = "; "),
+    .groups = "drop"
+  ) %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+Details of all the responses are saved to `data-clean/study2_G_part_analysis.csv`.
+
+```{r}
+responses_G %>% 
+  mutate(response = str_trim(response)) %>% 
+  group_by(G_part, fully_correct, response) %>% tally() %>% arrange(G_part, fully_correct, -n) %>% 
+  write_csv("data-clean/study2_G_part_analysis.csv")
+```
+
+
+Students were overall less successful at G2 than in Study 1.
+
+It seems that many of the incorrect responses were due to students using the wrong notation, i.e. entering a recurrence relation ("contains u") rather than formula for the nth term. Many students also resorted to giving trivial responses ("integer").
+
+```{r}
+responses_G %>% 
+  mutate(response_type = case_when(
+   str_detect(response, "u") ~ "contains u",
+   str_detect(str_trim(response), "^[:digit:]+$") ~ "integer",
+   TRUE ~ "other"
+  )) %>% 
+  group_by(G_part, fully_correct, response_type) %>% 
+  tally() %>% 
+  pivot_wider(names_from = "response_type", values_from = "n") %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top") %>%
+  add_header_above(c(" " = 2, "Response type" = 3))
+```
+
+Here we focus on the "other" responses.
+
+```{r}
+responses_G_summary <- responses_G %>% 
+  mutate(response_type = case_when(
+   str_detect(response, "u") ~ "contains u",
+   str_detect(str_trim(response), "^[:digit:]+$") ~ "integer",
+   TRUE ~ "other"
+  )) %>% 
+  filter(response_type == "other") %>% 
+  group_by(G_part, fully_correct, response) %>% 
+  summarise(
+    num_responses = n(),
+    responses = paste0(str_trim(response), collapse = "; "),
+    .groups = "drop"
+  ) %>% 
+  arrange(G_part, fully_correct, -num_responses, response) %>% 
+  group_by(G_part, fully_correct, num_responses) %>% 
+  summarise(
+    responses = paste0(str_trim(response), collapse = "; "),
+    n = n(),
+    many_responses = str_glue("({n} cases): {responses}"),
+    .groups = "drop"
+  ) %>% 
+  mutate(responses = ifelse(n==1, responses, many_responses), .keep = "unused") %>% 
+  arrange(G_part, fully_correct, -num_responses)
+```
+
+
+#### (a) decreasing:
+
+```{r}
+responses_G_summary %>% 
+  filter(G_part == "G2a") %>% 
+  select(-G_part) %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+
+* The most common correct response was `-n` (x14) with others of the form "a-bn" also common (x12).
+
+* The most common incorrect response was `n-1` (x9).
+
+#### (b) decreasing and bounded below:
+
+```{r}
+responses_G_summary %>% 
+  filter(G_part == "G2b") %>% 
+  select(-G_part) %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+* The most common correct response was `1/n` (x14) with further correct responses based on this basic idea too (x4).
+  
+  Strikingly, there are hardly any responses based on `1/2^n` or similar - unlike in Study 1 (where students were exposed to that example in the feedback on G1).
+
+* The incorrect responses wer all quite diverse. Among these, 11 students gave examples that were decreasing but not bounded below (see "prt2: # = 0.5 | ATLogic_True. | prt2-1-T | prt2-3-F | prt2-4-F" in the table above).
+
+#### (c) decreasing, bounded below, and has u4=1:
+
+```{r}
+responses_G_summary %>% 
+  filter(G_part == "G2c") %>% 
+  select(-G_part) %>% 
+  basic_kable() %>%
+  collapse_rows(columns = 1:2, valign = "top")
+```
+
+Unlike in Study 1, there were no correct responses based on using `1/2^n`.
+
+The most common correct response was `4/n` (x14), and in most cases (x11) this seemed to be based on a transformation of the student's answer to G2b: 9 students modified `1/n` to produce `4/n`, and 2 students modified `2/n` and `5/n`.
+
+
+
+```{r}
+responses_G %>%
+  filter(str_detect(G_part, "G2")) %>%
+  select(username, G_part, response) %>%
+  distinct() %>%
+  pivot_wider(names_from = "G_part", values_from = "response") %>% 
+  filter(str_detect(G2c, "4/n")) %>% 
+  arrange(G2b) %>% 
+  basic_kable()
+```
+
+
+
+#### Session info
+
+```{r}
+sessionInfo()
+```
