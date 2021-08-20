@@ -501,7 +501,7 @@ nearG_Hs <- nearG_responses %>%
   mutate(big_group = fct_relevel(big_group, "Study 1 G-")) %>% # move that group first
   select(big_group, response_type_overall) %>% 
   janitor::tabyl(big_group, response_type_overall) %>% 
-  janitor::adorn_totals(where = "col")
+  janitor::adorn_totals(where = "col") 
 
 nearG_Hs %>% 
   pivot_longer(cols = !c(big_group, Total), names_to = "example_type", values_to = "frequency") %>% 
@@ -512,6 +512,9 @@ nearG_Hs %>%
   labs(x = "Group", y = "Frequency")
 
 nearG_Hs %>% 
+  janitor::adorn_percentages(,,!c(Total, big_group)) %>%
+  janitor::adorn_pct_formatting(digits = 0,,,!c(Total, big_group)) %>%
+  janitor::adorn_ns(position = "front",,,!c(Total, big_group)) %>% 
   rename(Group = big_group) %>% 
   relocate(N = Total, .after = Group) %>% 
   basic_kable() %>%
@@ -519,9 +522,12 @@ nearG_Hs %>%
 ```
 ```{r, comment=""}
 nearG_Hs %>% 
+  janitor::adorn_percentages(,,!c(Total, big_group)) %>%
+  janitor::adorn_pct_formatting(digits = 0,,,!c(Total, big_group)) %>%
+  janitor::adorn_ns(position = "front",,,!c(Total, big_group)) %>% 
   rename(Group = big_group) %>% 
   relocate(N = Total, .after = Group) %>% 
-  basic_kable(digits = 3, format = "latex", booktabs = T) %>%
+  basic_kable(format = "latex", booktabs = T) %>%
   add_header_above(c(" " = 2, "Example type" = 3)) %>% 
   cat()
 ```
@@ -678,8 +684,87 @@ midG_responses %>%
 
 Even here, there is no apparent difference.
 
+Looking at the actual content of the responses:
+
+```{r}
+midGandC <- midG_responses %>% 
+  left_join(MidC1_examples, by = c("study", "group", "username")) %>% 
+  select(study, group, username, q_part, fully_correct, response_type, response_type_overall, response, MidC1_example, MidC1_type = ans)
+```
+
+```{r}
+midGandC %>% 
+  filter(q_part %in% c("MidG_ans1", "MidG_ans2", "MidG_ans3")) %>% 
+  janitor::tabyl(q_part) %>% 
+  janitor::adorn_totals(where = "row") %>% 
+  select(-percent) %>% 
+  basic_kable(caption = "Responses to relevant MidG tasks")
+```
 
 
+### Increasing and Bounded below
+
+These examples from MidC1 are of exactly the right type for MidG_ans1. How often do students quote that example?
+
+```{r}
+midGandC %>% 
+  filter(q_part == "MidG_ans1") %>% 
+  filter(MidC1_type == "Increasing and Bounded below") %>% 
+  select(study, group, username, response, MidC1_example) %>% 
+  # Use the Ryacas computer algebra system to compare the two answers
+  # To prepare, need to add implied multiplication to the expressions
+  mutate(
+    response = str_replace(response, "2u_n", "2*u_n"),
+    response = str_replace(response, "\\)(?=[:digit:])", "\\)\\*"),
+    response = str_replace(response, "(?<=[:digit:])\\(", "\\*\\("),
+    response = str_replace(response, "(?<=[:digit:])n", "\\*n"),
+    diff = paste0(response, "-(", str_replace(MidC1_example, "(?<=[:digit:])n", "\\*n"), ")")
+  ) %>%  
+  mutate(
+    response_diff = map_chr(diff, ~ .x %>% Ryacas::y_fn("Simplify") %>% Ryacas::yac_str()),
+    .keep = "unused"
+  ) %>% 
+  arrange(response_diff) %>% 
+  basic_kable()
+```
+
+Not often at all! There are only a couple of cases of students using the identical answer (`3*n-1` and `2*n+2`), both of whom are in the study2 CG group. There are a few more cases where the answer differs only by a constant (e.g. `3n-1` becomes `3*n+1`). But overall the examples seem to be quite unrelated to MidC1.
+
+
+### Decreasing and Bounded above
+
+These examples from MidC1 are of exactly the right type for MidG_ans2 and MidG_ans3. How often do students quote that example?
+
+```{r}
+midGandC %>% 
+  filter(q_part %in% c("MidG_ans2", "MidG_ans3")) %>% 
+  filter(MidC1_type == "Decreasing and Bounded above") %>% 
+  select(study, group, username, q_part, response, MidC1_example) %>% 
+  # Use the Ryacas computer algebra system to compare the two answers
+  # To prepare, need to add implied multiplication to the expressions
+  mutate(
+    response_raw = response,
+    response = str_replace(response, "2u_n", "2*u_n"),
+    response = str_replace(response, "\\)(?=[:digit:])", "\\)\\*"),
+    response = str_replace(response, "(?<=[:digit:])\\(", "\\*\\("),
+    response = str_replace(response, "(?<=[:digit:])n", "\\*n"),
+    response = str_replace(response, "none", "0"),
+    response = str_replace(response, "\\[8,6,4,2\\]", "0"),
+    response = str_replace(response, "u_\\(n-1\\)", "un"),
+    response = str_replace(response, "\\)\\(", "\\)\\*\\("),
+    diff = paste0(response, "-(", str_replace(MidC1_example, "(?<=[:digit:])n", "\\*n"), ")")
+  ) %>% mutate(
+    response_diff = map_chr(diff, ~ .x %>% Ryacas::y_fn("Simplify") %>% Ryacas::yac_str()),
+    .keep = "unused"
+  ) %>% 
+  select(-response) %>% 
+  arrange(response_diff) %>% 
+  basic_kable()
+```
+
+There are 6 cases of the MidC1 example being used verbatim in MidG ans2 or ans3, all by students in classify-first groups.
+
+There are several "near matches" like `5-3n` becoming `2-3n` but it's hard to be definitive in saying that MidC1 was the inspiration for the answer.
 
 #### Session info
 
