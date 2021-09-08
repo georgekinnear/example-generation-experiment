@@ -1,0 +1,553 @@
+group,username,question_name,questionsummary,responsesummary,marks_attained,part,response,q_part,relevant_prt,fully_correct
+CG,anon10,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon100,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon101,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon108,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/-n+5 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1/-n+5 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon109,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon110,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon113,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon114,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon115,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n/(n+1) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,n/(n+1) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon116,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon117,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon118,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon119,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: (1/2*n)^(-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,(1/2*n)^(-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon12,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 6^(1/n) [score]; prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,0,ans1,6^(1/n) ,NearG_ans1,prt1: # = 0 | ATAlgEquiv_SA_not_logic. | prt1-1-F | ATAlgEquiv_SA_not_logic. | prt1-2-F,FALSE
+GC,anon121,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n^3 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n^3 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon122,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n/(n+2) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,n/(n+2) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon128,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon13,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon134,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon135,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 12+n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,12+n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon136,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon137,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: sqrt(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,sqrt(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon138,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/2^n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/2^n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon139,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2*n/3 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2*n/3 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon142,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,2-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon153,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon156,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 11/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,11/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon157,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: e^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,e^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon160,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon162,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2+1/n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2+1/n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon164,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/-n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1/-n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon166,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 0 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,0 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon170,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon173,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon174,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 8 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,8 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon177,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 0-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,0-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon18,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon185,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon187,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon192,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n/(n+1)  [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,n/(n+1)  ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon194,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,-1^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon195,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: log(n+1) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,log(n+1) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon197,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 7 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,7 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon199,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon20,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon201,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 10^x [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,10^x ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon202,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 4 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,4 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon203,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon204,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon205,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: log(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,log(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon206,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon208,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 3*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,3*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon209,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon21,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon211,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/(1+1/n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1/(1+1/n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon214,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 10/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,10/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon215,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon216,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 5*n [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,5*n ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon218,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon221,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon24,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon25,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,2^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon28,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: u_n + 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,u_n + 1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon3,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/2^n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1/2^n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon31,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon32,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: (n-1)/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,(n-1)/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon33,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon36,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -n^2 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,-n^2 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon38,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: sqrt(x) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,sqrt(x) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon41,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon44,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 2^n+12 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,2^n+12 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon46,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: sqrt(n)+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,sqrt(n)+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon57,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1- 3/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1- 3/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon59,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2+1 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2+1 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon6,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon60,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon61,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/(n-1) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1/(n-1) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon63,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon66,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon67,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: n^2 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,n^2 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+CG,anon69,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: u_n+1 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,u_n+1 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon72,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon78,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n^2 [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n^2 ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+GC,anon80,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: -1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon86,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 3*n+4 [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,3*n+4 ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon87,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 23 [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,23 ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+GC,anon88,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1/n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,1/n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon89,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: (-1)*n [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,(-1)*n ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
+CG,anon90,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: ln(n) [score]; prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,ln(n) ,NearG_ans1,prt1: # = 0.5 | ATLogic_True. | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
+GC,anon95,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1-(1/2^n) [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1-(1/2^n) ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon96,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: 1-1/n [score]; prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,1,ans1,1-1/n ,NearG_ans1,prt1: # = 1 | ATLogic_True. | prt1-1-T | prt1-3-F | ATLogic_True. | prt1-4-T,TRUE
+CG,anon97,NearG,"Give an example of a sequence which is increasing and bounded above.
+
+(Give your answer as a formula for the \(n\)th term.)
+
+\(u_n=\) [[input:ans1]] [[validation:ans1]]
+",Seed: 1; ans1: sqrt(u_n-9) [score]; prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,0,ans1,sqrt(u_n-9) ,NearG_ans1,prt1: # = 0 | prt1-1-F | ATLogic_True. | prt1-2-T,FALSE
