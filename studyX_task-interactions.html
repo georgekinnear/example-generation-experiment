@@ -11,7 +11,7 @@
 
 <meta name="author" content="George Kinnear" />
 
-<meta name="date" content="2021-11-08" />
+<meta name="date" content="2021-08-09" />
 
 <title>Combined analysis of Near/Mid tasks from Study 1 and Study 2</title>
 
@@ -1930,7 +1930,7 @@ pre code {
 
 <h1 class="title toc-ignore">Combined analysis of Near/Mid tasks from Study 1 and Study 2</h1>
 <h4 class="author">George Kinnear</h4>
-<h4 class="date">11/08/2021</h4>
+<h4 class="date">08/09/2021</h4>
 
 </div>
 
@@ -2464,7 +2464,9 @@ Generate first
 </tbody>
 </table>
 <p>So we stick with just the 207 students who completed at least one of the Near/Mid tasks.</p>
-<pre class="r"><code>task_order_model_C &lt;- stan_glm(
+<pre class="r"><code>task_order_scores %&gt;% write_csv(&quot;studyX_task_order_scores.csv&quot;)
+
+task_order_model_C &lt;- stan_glm(
     formula = C ~ 0 + task_order,
     data = task_order_scores,
     seed = 123,
