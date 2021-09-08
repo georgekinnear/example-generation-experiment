@@ -245,12 +245,6 @@ G-GC,anon178,NearG,"Give an example of a sequence which is increasing and bounde
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
 ",ans1: 4 [score]; prt1: prt1-1-F | ATLogic_True | prt1-2-T,0,ans1,4 ,NearG_ans1,prt1: prt1-1-F | ATLogic_True | prt1-2-T,FALSE
-G-GC,anon179,NearG,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: 1-1/2^n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,ans1,1-1/2^n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
 C-CG,anon182,NearG,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
@@ -269,12 +263,6 @@ G-CG,anon186,NearG,"Give an example of a sequence which is increasing and bounde
 
 \(u_n=\) [[input:ans1]] [[validation:ans1]]
 ",ans1: 1+n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,0.5,ans1,1+n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | prt1-4-F,FALSE
-C-CG,anon189,NearG,"Give an example of a sequence which is increasing and bounded above.
-
-(Give your answer as a formula for the \(n\)th term.)
-
-\(u_n=\) [[input:ans1]] [[validation:ans1]]
-",ans1: -1/n [score]; prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,1,ans1,-1/n ,NearG_ans1,prt1: ATLogic_True | prt1-1-T | prt1-3-F | ATLogic_True | prt1-4-T,TRUE
 G-GC,anon19,NearG,"Give an example of a sequence which is increasing and bounded above.
 
 (Give your answer as a formula for the \(n\)th term.)
