@@ -62,6 +62,8 @@ task_order_data <- bind_rows(
   .id = "study"
 ) %>% 
   mutate(username = paste(study, username, sep = "_"))
+
+task_order_data %>% write_csv("data-clean/studyX_detail.csv")
 ```
 
 Here we carry out all the analyses to compare the results.
