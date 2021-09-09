@@ -1,0 +1,353 @@
+---
+title: "Combined analysis of outcome measures for Study 1 and Study 2"
+author: "George Kinnear"
+date: "09/09/2021"
+output: 
+  html_document:
+    code_folding: hide
+    df_print: paged
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+library(tidyverse)
+
+#Plots
+library(ggplot2)
+library(patchwork) # for combining plots
+
+# For Bayesian stats:
+library(bayestestR)
+#library(insight)
+#library(see)
+library(rstanarm)
+library(tidybayes)
+#library(BayesFactor)
+ci_width = 0.95  # Use 95% HDIs
+set.seed(20210518)
+
+# Tables
+library(knitr)
+library(kableExtra)
+basic_kable = function(df, ...) {
+  df %>% 
+    kable(...) %>%
+    kable_styling(bootstrap_options = "striped", full_width = F)
+}
+
+# Plot styling
+heathers = c("#00b3c3","#e51c24","#016637","#fcb123")
+heathers = c("#87005a", "#c66005","#016637","#fcb123")
+groupcolours = c("C-CG" = heathers[1],
+                 "C-GC" = "#6f004a", # darker heathers1
+                 "G-CG" = heathers[2],
+                 "G-GC" = "#a34e03" # darker heathers2
+                 )
+four_groups = c("CCG", "CGC", "GCG", "GGC")
+theme_set(theme_minimal())
+```
+
+For the comparison of the generate-first and classificy-first groups, the results in Studies 1 and 2 were somewhat different:
+
+* Study 1 found an effect of -0.475 with 95% HDI [−0.804,−0.149]
+* Study 2 found an effect of -0.064 with 95% HDI [−0.401, 0.299]
+
+For this analysis, we combine both datasets to produce a single effect size estimate.
+
+```{r read-data, message=FALSE, warning=FALSE}
+task_order_data <- bind_rows(
+  "study1" = read_csv("data-clean/study1_detail.csv") %>%
+              select(username, group = later_tasks, starts_with("marks")),
+  "study2" = read_csv("data-clean/study2_detail.csv") %>%
+              select(username, group, starts_with("marks")),
+  .id = "study"
+) %>% 
+  mutate(username = paste(study, username, sep = "_"))
+```
+
+Here we carry out all the analyses to compare the results.
+
+```{r}
+compute_contrasts <- function(model) {
+  # inspect draws from the model, and compute the contasts of interest
+  contrasts <- model %>% 
+    tidy_draws() %>% 
+    select(starts_with("group"), sigma) %>% 
+    mutate(
+      CGvsGC_contrast = `groupCG`-`groupGC`,
+      CGvsGC_effect = CGvsGC_contrast / sigma,
+    )
+  contrasts_long <- contrasts %>%
+    select(-starts_with("group")) %>% 
+    pivot_longer(
+      cols = contains("vs"),
+      names_to = "parameter",
+      values_to = "est"
+    ) %>% 
+    separate(parameter, into = c("comparison", "parameter"))
+  
+  contrasts_summary <- contrasts_long %>% 
+    group_by(comparison, parameter) %>% 
+    median_hdi(est) %>% 
+    ungroup() %>% 
+    mutate(formatted_hdi = str_glue("{round(est, 3)} ({.width*100}% HDI [{round(.lower, 3)}, {round(.upper, 3)}])"))
+  
+  return(list("contrasts_long" = contrasts_long, "contrasts_summary" = contrasts_summary))
+}
+```
+
+```{r}
+fit_model <- function(data) {
+  stan_glm(
+    formula = measure ~ 0 + group,
+    data = data,
+    seed = 123,
+    refresh = 0 # to prevent messages about the MCMC iterations being printed
+  )
+}
+all_comparisons <- tibble(
+  measure = fct_inorder(c(
+    "marks_attained",
+    "marks_incdec",
+    "marks_bdd",
+    "marks_far_attained",
+    "marks_far_incdec",
+    "marks_far_bdd"
+  ))
+) %>%
+  rowwise() %>%
+  mutate(data = map(
+    measure,
+    ~ task_order_data %>% select(username, group, `measure` = all_of(measure))
+  )) %>%
+  ungroup() %>% 
+  mutate(measure_sd = map_dbl(data, ~ .x %>% summarise(marks_sd = sd(measure, na.rm = TRUE)) %>% deframe()))
+
+all_model_fits <- all_comparisons %>% 
+  mutate(model = map(data, fit_model))
+
+all_contrasts <- all_model_fits %>% 
+  mutate(contrasts = map(model, compute_contrasts)) %>% 
+  unnest_wider(contrasts)
+
+all_contrasts %>% 
+  select(measure, contrasts_summary) %>% 
+  unnest(cols = contrasts_summary) %>% 
+  select(measure, comparison, parameter, formatted_hdi) %>% 
+  pivot_wider(
+    names_from = parameter,
+    values_from = formatted_hdi
+  ) %>%
+  basic_kable()
+
+contrast_data_for_plotting <- all_contrasts %>% 
+  select(measure, measure_sd, contrasts_long) %>% 
+  unnest(cols = c(contrasts_long)) %>% 
+  mutate(rope_width = case_when(parameter == "contrast" ~ 0.1*measure_sd, parameter == "effect" ~ 0.1)) %>% 
+  filter(parameter == "effect") %>% 
+  #mutate(comparison = fct_recode(comparison, "C* vs G*" = "CvsG",  "*CG vs *GC" = "CGvsGC")) %>%
+  mutate(far_measure = str_detect(measure, "far")) %>% 
+  mutate(
+    measure = str_remove_all(measure, "marks_|far_"),
+    measure = str_replace_all(
+       measure,
+       c(
+         "attained" = "Marks attained",
+         "incdec" = "Marks for\nincreasing/decreasing",
+         "bdd" = "Marks for\nboundedness"
+       )
+     )
+  )
+  
+
+plot_all <- contrast_data_for_plotting %>%
+  filter(!far_measure) %>% 
+  ggplot(aes(x = est, y = 0)) +
+  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  stat_dotsinterval(
+    point_interval = mode_hdi,
+    .width = .95,
+    slab_size = 0,
+    quantiles = 100
+  ) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  expand_limits(x = c(-0.1, 0.1)) +
+  xlab("Effect size") +
+  facet_grid(cols = vars(comparison), rows = vars(measure), scales = "free_x", switch = "y") +
+  theme(#panel.grid = element_blank(),
+        axis.ticks = element_line(color = "grey40"),
+        strip.text.y.left = element_text(angle = 0)
+        )
+
+plot_far_only <- contrast_data_for_plotting %>%
+  filter(far_measure) %>% 
+  ggplot(aes(x = est, y = 0)) +
+  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  stat_dotsinterval(
+    point_interval = mode_hdi,
+    .width = .95,
+    slab_size = 0,
+    quantiles = 100
+  ) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  expand_limits(x = c(-0.1, 0.1)) +
+  xlab("Effect size") +
+  facet_grid(cols = vars(comparison), rows = vars(measure), scales = "free_x", switch = "y") +
+  theme(#panel.grid = element_blank(),
+        axis.ticks = element_line(color = "grey40"),
+        strip.text.y.left = element_text(angle = 0)
+        )
+
+(plot_all + labs(title = "Marks on all questions")) / (plot_far_only + labs(title = "Marks on Far test questions only"))
+
+```
+
+## Main comparison
+
+Since the pattern of results is basically the same for all outcome measures, we focus on `marks_attained` across all questions.
+
+```{r}
+model <- (all_model_fits %>% filter(measure == "marks_attained") %>% pull(model))[[1]]
+rope_width <- 0.1*(all_model_fits %>% filter(measure == "marks_attained") %>% pull(measure_sd))[[1]]
+```
+
+```{r}
+means <- modelbased::estimate_means(model, ci = ci_width, centrality = "median", ci_method = "hdi")
+
+task_order_data %>% 
+  ggplot(aes(x = group, y = marks_attained)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
+  geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.3),
+                  size = 0.8) +
+  scale_x_discrete("", labels = task_order_data %>% filter(!is.na(marks_attained)) %>% group_by(group) %>% summarise(group_label = str_glue("{group}\n(n={n()})"), .groups = "drop") %>% deframe(), position = "top") +
+  scale_y_continuous("Marks attained (out of 15)") +
+  theme(legend.position = "none")
+
+ggsave("figs/FIG_studyX_marks_attained.pdf", width = 12, height = 7, units = "cm")
+```
+
+```{r}
+tab1 <- task_order_data %>% 
+  group_by(group) %>% 
+  summarise(
+    n = sum(!is.na(marks_attained)),
+    mean = mean(marks_attained, na.rm = TRUE),
+    sd = sd(marks_attained, na.rm = TRUE),
+    .groups = "drop"
+  ) %>% 
+  # group is of type "glue" so force it to be a string in order to join on it
+  mutate(group = paste(group)) %>% 
+  left_join(means, by = "group") %>% 
+  # show the HDI but not the estimated mean since that's superfluous
+  select(-Mean) %>% 
+  mutate(estimate_hdi = str_glue("[{round(CI_low, 3)}, {round(CI_high, 3)}]"), .keep = "unused")
+
+tab1 %>% 
+  basic_kable(caption = "Study 1 and 2 combined group means", digits = 3)
+```
+
+```{r}
+tab1 %>% 
+  basic_kable(caption = "Study 1 and 2 combined group means", digits = 3, booktabs = T, format = "latex") %>% 
+  cat()
+```
+
+```{r}
+# inspired by https://stackoverflow.com/questions/61977439/table-below-x-axis-in-ggplot
+p1 <- task_order_data %>% 
+  ggplot(aes(x = group, y = marks_attained)) +
+  ggbeeswarm::geom_beeswarm(alpha = 0.5) +
+  geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
+                  position = position_nudge(x = 0.3),
+                  size = 0.8) +
+  scale_x_discrete("", labels = task_order_data %>% select(group) %>% distinct(), position = "top") +
+  scale_x_discrete("", labels = c("CG" = "Classify first", "GC" = "Generate first"), position = "top") +
+  scale_y_continuous("Marks attained (out of 15)") +
+  theme(legend.position = "none", axis.text = element_text(size = 11))
+
+p2 <- tab1 %>% 
+  mutate(group_label = str_glue("{group}\n(n={n})")) %>% 
+  mutate(
+    n = str_glue("{n}"),
+    mean = str_glue("{round(mean, digits = 3)}"),
+    sd = str_glue("{round(sd, digits = 3)}")
+  ) %>% 
+  pivot_longer(c(n, mean, sd, estimate_hdi), names_to = "layer", values_to = "label") %>% 
+  mutate(layer = fct_relevel(layer, c("n", "sd", "mean", "estimate_hdi")) %>% fct_rev()) %>% 
+  #filter(layer != "n") %>% 
+  ggplot(aes(x = group, y = layer, label = label)) +
+  geom_text(size = 10 * 5/14) +
+  labs(y = "", x = NULL) +
+  scale_y_discrete(labels = c("n" = "N", "mean" = "Mean", "estimate_hdi" = "\n95% HDI\nfor mean")) +
+  theme_minimal() +
+  theme(axis.line = element_blank(), axis.ticks = element_blank(), axis.text.x = element_blank(),
+        panel.grid = element_blank(), strip.text = element_blank())
+  
+p1 / p2 +  plot_layout(heights = c(8, 2.5))
+ggsave("figs/FIG_studyX_marks_attained_with_table.pdf", width = 10, height = 10, units = "cm")
+```
+
+```{r compute-contrasts}
+contrasts <- model %>% 
+  tidy_draws() %>% 
+  select(starts_with("group"), sigma) %>% 
+  mutate(
+    CGvsGC_contrast = `groupCG`-`groupGC`,
+    CGvsGC_effect = CGvsGC_contrast / sigma,
+  )
+contrasts_long <- contrasts %>%
+  select(-starts_with("group")) %>% 
+  pivot_longer(
+    cols = contains("vs"),
+    names_to = "parameter",
+    values_to = "est"
+  ) %>% 
+  separate(parameter, into = c("contrast", "parameter"))
+
+contrasts_summary <- contrasts_long %>% 
+  group_by(contrast, parameter) %>% 
+  median_hdi(est) %>% 
+  ungroup() %>% 
+  mutate(formatted_hdi = str_glue("{round(est, 3)} ({.width*100}% HDI [{round(.lower, 3)}, {round(.upper, 3)}])"))
+
+contrasts_summary %>% 
+  select(measure = contrast, parameter, formatted_hdi) %>% 
+  pivot_wider(
+    names_from = parameter,
+    values_from = formatted_hdi
+  ) %>%
+  basic_kable()
+
+p_diffs <- contrasts_long %>% 
+  mutate(rope_width = case_when(parameter == "contrast" ~ rope_width, parameter == "effect" ~ 0.1)) %>% 
+  mutate(parameter = fct_recode(parameter, "Raw scores" = "contrast",  "Effect size" = "effect")) %>%
+  ggplot(aes(x = est, y = 0)) +
+  geom_rect(aes(xmin = -rope_width, xmax = rope_width), ymin = 0, ymax = 1, fill = "skyblue", alpha = 0.1) +
+  geom_vline(xintercept = 0, colour = "grey40") +
+  stat_dotsinterval(
+    point_interval = mode_hdi,
+    .width = .95,
+    slab_size = 0,
+    quantiles = 100
+  ) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  expand_limits(x = c(-0.1, 0.1)) +
+  expand_limits(y = c(-0.1)) +
+  xlab("Estimated difference") +
+  facet_grid(cols = vars(parameter), scales = "free_x", switch = "y") +
+  theme(#panel.grid = element_blank(),
+        axis.ticks = element_line(color = "grey40"),
+        strip.text.y.left = element_text(angle = 0)
+        )
+p_diffs
+ggsave("figs/FIG_studyX_marks_attained_effect.pdf", width = 14, height = 4, units = "cm")
+```
+
+
+#### Session info
+
+```{r}
+sessionInfo()
+```
