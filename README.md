@@ -1,4 +1,4 @@
-# example-generation-experiment
+# Comparing example generation with classification in the learning of new mathematics concepts
 
 ## Data
 
@@ -21,13 +21,20 @@ The sub-folders for `study1` and `study2` contain the anonymised data from Moodl
 
 ### Study 1
 - [study1_01-initial-tasks.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_01-initial-tasks.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_01-initial-tasks.html))
+- [study1_02-subsequent-tasks.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_02-subsequent-tasks.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_02-subsequent-tasks.html))
+- [study1_03-outcomes.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_03-outcomes.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study1_03-outcomes.html))
 
 ### Study 2
 
+- [study2_01-initial-tasks.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_01-initial-tasks.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_01-initial-tasks.html))
+- [study2_02-subsequent-tasks.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_02-subsequent-tasks.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_02-subsequent-tasks.html))
+- [study2_03-outcomes.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_03-outcomes.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/study2_03-outcomes.html))
 
 ### Study X
 These analyses combine data from both studies:
 
+- [studyX_01-outcomes.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/studyX_01-outcomes.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/studyX_01-outcomes.html))
+- [studyX_02-task-interactions.Rmd](https://github.com/georgekinnear/example-generation-experiment/blob/main/studyX_02-task-interactions.Rmd) ([output](https://htmlpreview.github.io/?https://github.com/georgekinnear/example-generation-experiment/blob/main/studyX_02-task-interactions.html))
 
 
 ## Data preparation - from `data-raw` to `data-clean`
