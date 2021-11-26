@@ -37,10 +37,10 @@ basic_kable = function(df, ...) {
 # Plot styling
 heathers = c("#00b3c3","#e51c24","#016637","#fcb123")
 heathers = c("#87005a", "#c66005","#016637","#fcb123")
-groupcolours = c("C-CG" = heathers[1],
-                 "C-GC" = "#6f004a", # darker heathers1
-                 "G-CG" = heathers[2],
-                 "G-GC" = "#a34e03" # darker heathers2
+groupcolours = c("G-CG" = heathers[1],
+                 "G-GC" = "#6f004a", # darker heathers1
+                 "C-CG" = heathers[2],
+                 "C-GC" = "#a34e03" # darker heathers2
                  )
 four_groups = c("CCG", "CGC", "GCG", "GGC")
 theme_set(theme_minimal())
@@ -380,6 +380,7 @@ rope_width <- 0.1*(all_model_fits %>% filter(measure == "marks_attained") %>% pu
 means <- modelbased::estimate_means(model, ci = ci_width, centrality = "median", ci_method = "hdi")
 
 detailed_scores_summary %>% 
+  mutate(group = fct_rev(group)) %>% 
   ggplot(aes(x = group, y = marks_attained, colour = group)) +
   ggbeeswarm::geom_beeswarm(alpha = 0.5) +
   geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
@@ -422,6 +423,7 @@ tab1 %>%
 ```{r}
 # inspired by https://stackoverflow.com/questions/61977439/table-below-x-axis-in-ggplot
 p1 <- detailed_scores_summary %>% 
+  mutate(group = fct_rev(group)) %>% 
   ggplot(aes(x = group, y = marks_attained, colour = group)) +
   ggbeeswarm::geom_beeswarm(alpha = 0.5) +
   geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
@@ -434,6 +436,7 @@ p1 <- detailed_scores_summary %>%
   theme(legend.position = "none", axis.text = element_text(size = 11))
 
 p2 <- tab1 %>% 
+  mutate(group = fct_rev(group)) %>% 
   mutate(group_label = str_glue("{group}\n(n={n})")) %>% 
   mutate(
     n = str_glue("{n}"),
