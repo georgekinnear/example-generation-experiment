@@ -313,19 +313,21 @@ responses_C_summary %>%
     labels = c(
       "1" = parse(text = TeX("1. (0,1,0,1,0,1,0,1,\\ldots)")),
       "2" = parse(text = TeX("2. (1, 4, 9, 16, 25, 36, 49, 64,\\ldots)")),
-      "3" = parse(text = TeX("3. (1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\frac{1}{5},\\frac{1}{6},\\frac{1}{7},\\frac{1}{8},\\ldots)")),
+      #"3" = parse(text = TeX("3. (1,\\frac{1}{2},\\frac{1}{3},\\frac{1}{4},\\frac{1}{5},\\frac{1}{6},\\frac{1}{7},\\frac{1}{8},\\ldots)")),
+      "3" = parse(text = TeX("3. (1,\\frac{$_1$}{$^2$},\\frac{$_1$}{$^3$},\\frac{$_1$}{$^4$},\\frac{$_1$}{$^5$},\\frac{$_1$}{$^6$},\\frac{$_1$}{$^7$},\\frac{$_1$}{$^8$},\\ldots)")),
       "4" = parse(text = TeX("4. (1,-1,2,-2,3,-3,4,-4,\\ldots)")),
       "5" = parse(text = TeX("5. (3,3,3,3,3,3,3,3,\\ldots)")),
       "6" = parse(text = TeX("6. (1, 3, 2, 4, 3, 5, 4, 6,\\ldots)")),
       "7" = parse(text = TeX("7. (6, 6, 7, 7, 8, 8, 9, 9,\\ldots)")),
       "8" = parse(text = TeX("8. (0, 1, 0, 2, 0, 3, 0, 4,\\ldots)")),
-      "9" = parse(text = TeX("9. (\\frac{1}{2}, \\frac{3}{4}, \\frac{7}{8}, \\frac{15}{16}, \\frac{31}{32}, \\frac{63}{64}, \\frac{127}{128}, \\frac{255}{256},\\ldots)")),
+      #"9" = parse(text = TeX("9. (\\frac{1}{2}, \\frac{3}{4}, \\frac{7}{8}, \\frac{15}{16}, \\frac{31}{32}, \\frac{63}{64}, \\frac{127}{128}, \\frac{255}{256},\\ldots)")),
+      "9" = parse(text = TeX("9. (\\frac{$_1$}{$^2$}, \\frac{$_3$}{$^4$}, \\frac{$_7$}{$^8$}, \\frac{$_{15}$}{$^{16}$}, \\frac{$_{31}$}{$^{32}$}, \\frac{$_{63}$}{$^{64}$}, \\frac{$_{127}$}{$^{128}$}, \\frac{$_{255}$}{$^{256}$},\\ldots)")),
       "10" = parse(text = TeX("10. (-2,-4,-6,-8,-10,-12,-14,-16,\\ldots)")),
-      "11" = parse(text = TeX("11. u_n = n^2+1")),
-      "12" = parse(text = TeX("12. u_n = 3+(-1)^n")),
-      "13" = parse(text = TeX("13. u_n = 5-1/(2^n)")),
-      "14" = parse(text = TeX("14. Plot of u_n = 3+(-1)^n")),
-      "15" = parse(text = TeX("15. Plot of u_n = 5-3/n"))
+      "11" = parse(text = TeX("11. $u_n = n^2+1$")),
+      "12" = parse(text = TeX("12. $u_n = 3+(-1)^n$")),
+      "13" = parse(text = TeX("13. $u_n = 5-1/(2^n)$")),
+      "14" = parse(text = TeX("14. Plot of $u_n = 3+(-1)^n$")),
+      "15" = parse(text = TeX("15. Plot of $u_n = 5-3/n$"))
     )
   ) +
   labs(x = "") +
@@ -333,9 +335,9 @@ responses_C_summary %>%
   expand_limits(y = c(-40,40)) +
   annotate("text", x = -0.5, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
   annotate("text", x = -0.5, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
-  theme(axis.text.y = element_text(family="Times"),
+  theme(axis.text.y = element_text(family="Times", size = 10),
         panel.grid.minor.x = element_blank(),
-        legend.position = "left")
+        legend.position = "bottom")
 
 ggsave("figs/FIG_study1_responses_C.pdf", width = 18, height = 12, units = "cm")
 
@@ -477,13 +479,13 @@ responses_G_summary %>%
   expand_limits(y = c(-50,50)) +
   #annotate("text", x = 13.2, y = 5, label = "Correct", fontface = "bold", hjust = "left", vjust = "top") +
   #annotate("text", x = 13.2, y = -5, label = "Incorrect", fontface = "bold", hjust = "right", vjust = "top") +
-  theme(axis.text.y = element_text(family="Times"),
+  theme(axis.text.y = element_text(family="Times", size = 10),
         panel.grid.minor.x = element_blank(),
         strip.text.y = element_blank(),
         legend.position = "top") +
   facet_grid(rows = vars(str_sub(part, start = 1, end = 2)), scales = "free", space = "free")
 
-ggsave("figs/FIG_study1_responses_G.pdf", width = 18, height = 8, units = "cm")
+ggsave("figs/FIG_study1_responses_G.pdf", width = 18, height = 9, units = "cm")
 
 responses_G_summary %>% 
   filter(!is.na(part)) %>% 

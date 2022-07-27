@@ -57,6 +57,7 @@ question_marks = read_csv("data-clean/study2/FAC_LGE2-tasks.csv") %>%
 participants <- read_csv("data-clean/study2/participants.csv")
 
 attempt_data_all = read_rds("data-clean/FAC_LGE2-attempt_data.rds") %>% 
+  select(-3) %>% # remove problematic column
   # tidy up group names
   mutate(
     group = str_replace(group, "Group ", ""),
@@ -421,7 +422,7 @@ p1 <- detailed_scores_summary %>%
   geom_pointrange(data = means, aes(x = group, y = Mean, ymin = CI_low, ymax = CI_high),
                   position = position_nudge(x = 0.3),
                   size = 0.8) +
-  scale_x_discrete("", labels = detailed_scores_summary %>% select(group) %>% distinct(), position = "top") +
+  #scale_x_discrete("", labels = detailed_scores_summary %>% select(group) %>% distinct(), position = "top") +
   scale_x_discrete("", labels = c("CG" = "Classify first", "GC" = "Generate first"), position = "top") +
   scale_y_continuous("Marks attained (out of 15)") +
   theme(legend.position = "none", axis.text = element_text(size = 11))

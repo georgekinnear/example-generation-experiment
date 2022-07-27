@@ -57,6 +57,7 @@ question_marks = read_csv("data-clean/study1/FAC_LGE-tasks.csv") %>%
 participants <- read_csv("data-clean/study1/participants.csv")
 
 attempt_data_all = read_rds("data-clean/FAC_LGE-attempt_data.rds") %>% 
+  select(-3) %>% # remove problematic column
   # tidy up group names
   mutate(
     group = str_replace(group, "LGE Group ", ""),
@@ -192,7 +193,17 @@ detailed_scores_summary <- detailed_scores_summary %>%
         overall_group = str_sub(group, 1, 1)
       )
   ) %>% 
-  mutate(across(starts_with("marks"), replace_na, 0))
+  mutate(across(starts_with("marks"), replace_na, 0)) %>% 
+  left_join(
+    # add the scores from the initial learning tasks
+    detailed_scores %>% 
+      filter(attempt_number == 1) %>%
+      filter(str_detect(question_name, "^[CG]")) %>% 
+      group_by(username, group, overall_group) %>% 
+      summarise(across(c("marks_attained"), sum, na.rm = TRUE), .groups = "drop") %>% 
+      rename_with(~ str_replace(., "marks_", "learning_task_marks_")),
+    by = c("username", "group", "overall_group")
+  )
 ```
 
 (Note: re-running the analysis without this step gives essentially the same results.)
@@ -265,6 +276,7 @@ fit_model <- function(data) {
     formula = measure ~ 0 + group,
     data = data,
     seed = 123,
+    # prior = normal(6, 2.5),  uncomment this line to use an informed prior
     refresh = 0 # to prevent messages about the MCMC iterations being printed
   )
 }
@@ -367,7 +379,7 @@ plot_far_only <- contrast_data_for_plotting %>%
 
 ```
 
-## Main comparison
+# Main comparison
 
 Since the pattern of results is basically the same for all outcome measures, we focus on `marks_attained` across all questions.
 
@@ -375,6 +387,19 @@ Since the pattern of results is basically the same for all outcome measures, we 
 model <- (all_model_fits %>% filter(measure == "marks_attained") %>% pull(model))[[1]]
 rope_width <- 0.1*(all_model_fits %>% filter(measure == "marks_attained") %>% pull(measure_sd))[[1]]
 ```
+
+## Priors
+
+Here are the details of the weakly informative prior produced by the defaults in `rstanarm`:
+
+```{r}
+bayestestR::describe_prior(model) %>% basic_kable()
+
+bayestestR::simulate_prior(model) %>% pivot_longer(everything(), names_to = "group", values_to = "marks_attained") %>% ggplot(aes(y = group, x = marks_attained)) + ggdist::stat_halfeye(alpha = 0.5)
+```
+These are very broad priors (indeed, going beyond the range of possible scores). However, replacing them with more informed priors (e.g., `prior = normal(6, 2.5)`) or even flat priors (`prior = NULL`) does not substantially change the results: the various HDIs have slightly different endpoints, but the conclusions remain the same.
+
+## Group means
 
 ```{r}
 means <- modelbased::estimate_means(model, ci = ci_width, centrality = "median", ci_method = "hdi")
@@ -449,7 +474,7 @@ p2 <- tab1 %>%
   ggplot(aes(x = group, y = layer, label = label)) +
   geom_text(size = 10 * 5/14) +
   labs(y = "", x = NULL) +
-  scale_y_discrete(labels = c("n" = "N", "mean" = "Mean", "estimate_hdi" = "\n95% HDI\nfor mean")) +
+  scale_y_discrete(labels = c("n" = "N", "mean" = "Estimated mean", "estimate_hdi" = "\n95% HDI\nfor mean")) +
   theme_minimal() +
   theme(axis.line = element_blank(), axis.ticks = element_blank(), axis.text.x = element_blank(),
         panel.grid = element_blank(), strip.text = element_blank())
@@ -457,6 +482,8 @@ p2 <- tab1 %>%
 p1 / p2 +  plot_layout(heights = c(8, 2.5))
 ggsave("figs/FIG_study1_marks_attained_with_table.pdf", width = 15, height = 10, units = "cm")
 ```
+
+## Contrasts
 
 ```{r compute-contrasts}
 contrasts <- model %>% 
