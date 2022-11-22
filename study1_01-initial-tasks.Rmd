@@ -339,7 +339,7 @@ responses_C_summary %>%
         panel.grid.minor.x = element_blank(),
         legend.position = "bottom")
 
-ggsave("figs/FIG_study1_responses_C.pdf", width = 18, height = 12, units = "cm")
+ggsave("figs/FIG_study1_responses_C.eps", width = 18, height = 12, units = "cm", device = cairo_ps)
 
 
 options(knitr.kable.NA = '')
@@ -485,7 +485,7 @@ responses_G_summary %>%
         legend.position = "top") +
   facet_grid(rows = vars(str_sub(part, start = 1, end = 2)), scales = "free", space = "free")
 
-ggsave("figs/FIG_study1_responses_G.pdf", width = 18, height = 9, units = "cm")
+ggsave("figs/FIG_study1_responses_G.eps", width = 18, height = 9, units = "cm", device = cairo_ps)
 
 responses_G_summary %>% 
   filter(!is.na(part)) %>% 

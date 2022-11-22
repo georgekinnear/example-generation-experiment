@@ -285,7 +285,7 @@ responses %>%
     legend.position = "top"
   ) +
   labs(x = "")
-ggsave("figs/FIG_study1_subsequent-task-scores.pdf", width = 12, height = 9, units = "cm")
+ggsave("figs/FIG_study1_subsequent-task-scores.eps", device = cairo_ps, width = 12, height = 9, units = "cm")
 ```
 
 ```{r}
@@ -350,7 +350,7 @@ task_order_data %>%
   labs(y = "", x = "") +
   theme(panel.spacing.x = unit(2, "lines"))
 
-ggsave("figs/FIG_study1_task_order.pdf", width = 12, height = 7, units = "cm")
+ggsave("figs/FIG_study1_task_order.eps", device = cairo_ps, width = 12, height = 7, units = "cm")
 ```
 
 ```{r}

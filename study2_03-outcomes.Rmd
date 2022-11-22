@@ -385,7 +385,7 @@ detailed_scores_summary %>%
   scale_y_continuous("Marks attained (out of 15)") +
   theme(legend.position = "none")
 
-ggsave("figs/FIG_study2_marks_attained.pdf", width = 12, height = 7, units = "cm")
+ggsave("figs/FIG_study2_marks_attained.eps", device = cairo_ps, width = 12, height = 7, units = "cm")
 ```
 
 ```{r}
@@ -446,7 +446,7 @@ p2 <- tab1 %>%
         panel.grid = element_blank(), strip.text = element_blank())
   
 p1 / p2 +  plot_layout(heights = c(8, 2.5))
-ggsave("figs/FIG_study2_marks_attained_with_table.pdf", width = 10, height = 10, units = "cm")
+ggsave("figs/FIG_study2_marks_attained_with_table.eps", device = cairo_ps, width = 10, height = 10, units = "cm")
 ```
 
 ```{r compute-contrasts}
@@ -502,7 +502,7 @@ p_diffs <- contrasts_long %>%
         strip.text.y.left = element_text(angle = 0)
         )
 p_diffs
-ggsave("figs/FIG_study2_marks_attained_effect.pdf", width = 14, height = 4, units = "cm")
+ggsave("figs/FIG_study2_marks_attained_effect.eps", device = cairo_ps, width = 14, height = 4, units = "cm")
 ```
 
 

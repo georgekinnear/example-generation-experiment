@@ -235,7 +235,7 @@ responses %>%
       legend.position = "top"
     ) +
     labs(x = "")
-ggsave("figs/FIG_study2_subsequent-task-scores.pdf", width = 15, height = 9, units = "cm")
+ggsave("figs/FIG_study2_subsequent-task-scores.eps", device = cairo_ps, width = 15, height = 9, units = "cm")
 ```
 
 ```{r}
@@ -295,7 +295,7 @@ task_order_scores %>%
   labs(y = "", x = "") +
   theme(panel.spacing.x = unit(2, "lines"))
 
-ggsave("figs/FIG_studyX_task_order.pdf", width = 12, height = 7, units = "cm")
+ggsave("figs/FIG_studyX_task_order.eps", device = cairo_ps, width = 12, height = 7, units = "cm")
 ```
 
 ```{r}
@@ -360,7 +360,7 @@ p2 <- task_order_means_table %>%
         panel.spacing.x = unit(2, "lines"))
   
 p1 / p2 +  plot_layout(heights = c(8, 3))
-ggsave("figs/FIG_studyX_task_order_with_table.pdf", width = 15, height = 10, units = "cm")
+ggsave("figs/FIG_studyX_task_order_with_table.eps", device = cairo_ps, width = 15, height = 10, units = "cm")
 ```
 
 ```{r}
